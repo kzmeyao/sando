@@ -13,6 +13,19 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'places',
+        path: `${__dirname}/src/places`
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-plugin-catch-links', 'gatsby-plugin-react-helmet']
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
