@@ -28,7 +28,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         path
-        date(formatString: "YYYY-MM-DD")
+        date(formatString: "YYYY-mm-DD")
         place
         country
       }
