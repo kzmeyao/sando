@@ -1,9 +1,5 @@
 import React from 'react';
-
-const FilterType = {
-  COUNTRY: 'COUNTRY',
-  YEAR: 'YEAR'
-};
+import Filters from './internals/filters';
 
 class Posts extends React.Component {
   constructor(props) {
@@ -20,21 +16,30 @@ class Posts extends React.Component {
       yearFilters: Array.from(years).sort((a, b) => a > b)
     };
   }
+  setFilter = (filterType, index) => {
+    this.setState({
+      currentFilterIndex: index,
+      currentFilterType: filterType
+    });
+  };
   render() {
+    const {
+      countryFilters,
+      currentFilterIndex,
+      currentFilterType,
+      yearFilters
+    } = this.state;
+
     return (
-      <div>
-        <div>COUNTRIES</div>
-        <ul>
-          {this.state.countryFilters.map(country => (
-            <li key={country}>{country}</li>
-          ))}
-        </ul>
-        <div>YEARS</div>
-        <ul>
-          {this.state.yearFilters.map(year => (
-            <li key={year}>{year}</li>
-          ))}
-        </ul>
+      <div className="pure-g">
+        <div className="pure-u-1-5">
+          <Filters
+            countryFilters={countryFilters}
+            setFilter={this.setFilter}
+            yearFilters={yearFilters}
+          />
+        </div>
+        <div className="pure-u-4-5">Content</div>
       </div>
     );
   }
