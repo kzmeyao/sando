@@ -21,21 +21,27 @@ class Posts extends React.Component {
 
     this.state = { filters };
   }
-  render() {
-    const { filters } = this.state;
-    const { location, posts } = this.props;
-    const { type, filter } = queryString.parse(location.search);
-    const currentFilter = filter
-      ? decodeURIComponent(filter)
-      : filters[FilterType.YEARS][0];
-    const currentFilterType = type ? type.toUpperCase() : FilterType.YEARS;
-    const filteredPosts = posts.filter(post => {
-      if (currentFilterType === FilterType.COUNTRIES) {
-        return post.country === currentFilter;
-      } else {
-        return post.date.split('-')[0] === currentFilter.toString();
+  filterPosts(filter, filterType) {
+    return this.props.posts.filter(post => {
+      if (filterType === FilterType.COUNTRIES) {
+        return post.country === filter;
+      } else if (filterType === FilterType.YEARS) {
+        return post.date.split('-')[0] === filter.toString();
       }
     });
+  }
+  render() {
+    const { filters } = this.state;
+    const { type, filter } = queryString.parse(this.props.location.search);
+    const defaultFilter = filters[FilterType.YEARS][0];
+    let currentFilter = filter ? decodeURIComponent(filter) : defaultFilter;
+    let currentFilterType = type ? type.toUpperCase() : FilterType.YEARS;
+    let filteredPosts = this.filterPosts(currentFilter, currentFilterType);
+    if (filteredPosts.length === 0) {
+      currentFilter = defaultFilter;
+      currentFilterType = FilterType.YEARS;
+      filteredPosts = this.filterPosts(currentFilter, currentFilterType);
+    }
 
     return (
       <div className="pure-g">
