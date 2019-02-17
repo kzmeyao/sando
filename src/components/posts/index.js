@@ -28,6 +28,7 @@ class Posts extends React.Component {
       } else if (filterType === FilterType.YEARS) {
         return post.date.split('-')[0] === filter.toString();
       }
+      return [];
     });
   }
   render() {

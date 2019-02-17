@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
 
@@ -21,6 +20,7 @@ const IndexPage = () => (
                 date
                 path
                 place
+                regionHierarchy
               }
             }
           }
@@ -35,9 +35,6 @@ const IndexPage = () => (
         <Layout>
           <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
           <Posts posts={posts} />
-          <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-            <Image />
-          </div>
         </Layout>
       );
     }}
