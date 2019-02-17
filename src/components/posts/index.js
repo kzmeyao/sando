@@ -1,5 +1,7 @@
 import React from 'react';
 import Filters from './internals/filters';
+import FilteredPosts from './internals/filtered-posts';
+import { FilterType } from './internals/posts-types';
 
 class Posts extends React.Component {
   constructor(props) {
@@ -11,9 +13,13 @@ class Posts extends React.Component {
       countries.add(country);
       years.add(date.split('-')[0]);
     }
+    const filters = {};
+    filters[FilterType.COUNTRIES] = Array.from(countries).sort();
+    filters[FilterType.YEARS] = Array.from(years).sort((a, b) => a > b);
     this.state = {
-      countryFilters: Array.from(countries).sort(),
-      yearFilters: Array.from(years).sort((a, b) => a > b)
+      currentFilterIndex: 0,
+      currentFilterType: FilterType.YEARS,
+      filters
     };
   }
   setFilter = (filterType, index) => {
@@ -23,25 +29,29 @@ class Posts extends React.Component {
     });
   };
   render() {
-    const {
-      countryFilters,
-      currentFilterIndex,
-      currentFilterType,
-      yearFilters
-    } = this.state;
+    const { currentFilterIndex, currentFilterType, filters } = this.state;
+    const currentFilter = filters[currentFilterType][currentFilterIndex];
+    const filteredPosts = this.props.posts.filter(post => {
+      if (currentFilterType === FilterType.COUNTRIES) {
+        return post.country === currentFilter;
+      } else {
+        return post.date.split('-')[0] === currentFilter.toString();
+      }
+    });
 
     return (
       <div className="pure-g">
         <div className="pure-u-1-5">
           <Filters
-            countryFilters={countryFilters}
             currentFilterIndex={currentFilterIndex}
             currentFilterType={currentFilterType}
+            filters={filters}
             setFilter={this.setFilter}
-            yearFilters={yearFilters}
           />
         </div>
-        <div className="pure-u-4-5">Content</div>
+        <div className="pure-u-4-5">
+          <FilteredPosts posts={filteredPosts} />
+        </div>
       </div>
     );
   }

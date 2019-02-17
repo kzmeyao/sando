@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
@@ -35,14 +34,6 @@ const IndexPage = () => (
       return (
         <Layout>
           <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-          {posts.map(post => {
-            const { path, place } = post;
-            return (
-              <Link key={path} to={path}>
-                {place}
-              </Link>
-            );
-          })}
           <Posts posts={posts} />
           <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
             <Image />

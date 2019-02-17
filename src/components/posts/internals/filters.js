@@ -6,6 +6,7 @@ const Filters = ({
   countryFilters,
   currentFilterIndex,
   currentFilterType,
+  filters,
   setFilter,
   yearFilters
 }) => (
@@ -13,14 +14,14 @@ const Filters = ({
     <FilterList
       currentFilterType={currentFilterType}
       currentFilterIndex={currentFilterIndex}
-      filters={countryFilters}
+      filters={filters[FilterType.COUNTRIES]}
       filterType={FilterType.COUNTRIES}
       setFilter={setFilter}
     />
     <FilterList
       currentFilterType={currentFilterType}
       currentFilterIndex={currentFilterIndex}
-      filters={yearFilters}
+      filters={filters[FilterType.YEARS]}
       filterType={FilterType.YEARS}
       setFilter={setFilter}
     />
