@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+.filters a {
+  color: #333333;
+  text-decoration: none;
+}
+
 .filters li.selected {
   font-weight: bold;
 }

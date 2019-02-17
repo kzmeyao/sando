@@ -1,39 +1,30 @@
 import React from 'react';
+import { Link } from '@reach/router';
 import { FilterType } from './posts-types';
 import './filters.css';
 
-const Filters = ({
-  countryFilters,
-  currentFilterIndex,
-  currentFilterType,
-  filters,
-  setFilter,
-  yearFilters
-}) => (
+const Filters = ({ currentFilter, currentFilterType, filters }) => (
   <div className="filters">
     <FilterList
+      currentFilter={currentFilter}
       currentFilterType={currentFilterType}
-      currentFilterIndex={currentFilterIndex}
       filters={filters[FilterType.COUNTRIES]}
       filterType={FilterType.COUNTRIES}
-      setFilter={setFilter}
     />
     <FilterList
+      currentFilter={currentFilter}
       currentFilterType={currentFilterType}
-      currentFilterIndex={currentFilterIndex}
       filters={filters[FilterType.YEARS]}
       filterType={FilterType.YEARS}
-      setFilter={setFilter}
     />
   </div>
 );
 
 const FilterList = ({
+  currentFilter,
   currentFilterType,
-  currentFilterIndex,
   filters,
-  filterType,
-  setFilter
+  filterType
 }) => {
   const isSameFilterType = currentFilterType === filterType;
 
@@ -41,15 +32,16 @@ const FilterList = ({
     <>
       <h5>{filterType}</h5>
       <ul>
-        {filters.map((filter, index) => (
+        {filters.map(filter => (
           <li
             className={
-              isSameFilterType && currentFilterIndex === index ? 'selected' : ''
+              isSameFilterType && filter === currentFilter ? 'selected' : ''
             }
             key={filter}
-            onClick={() => setFilter(filterType, index)}
           >
-            {filter}
+            <Link to={`?type=${filterType.toLowerCase()}&filter=${filter}`}>
+              {filter}
+            </Link>
           </li>
         ))}
       </ul>

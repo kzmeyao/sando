@@ -1,4 +1,6 @@
 import React from 'react';
+import { Location } from '@reach/router';
+import queryString from 'query-string';
 import Filters from './internals/filters';
 import FilteredPosts from './internals/filtered-posts';
 import { FilterType } from './internals/posts-types';
@@ -16,22 +18,18 @@ class Posts extends React.Component {
     const filters = {};
     filters[FilterType.COUNTRIES] = Array.from(countries).sort();
     filters[FilterType.YEARS] = Array.from(years).sort((a, b) => a > b);
-    this.state = {
-      currentFilterIndex: 0,
-      currentFilterType: FilterType.YEARS,
-      filters
-    };
+
+    this.state = { filters };
   }
-  setFilter = (filterType, index) => {
-    this.setState({
-      currentFilterIndex: index,
-      currentFilterType: filterType
-    });
-  };
   render() {
-    const { currentFilterIndex, currentFilterType, filters } = this.state;
-    const currentFilter = filters[currentFilterType][currentFilterIndex];
-    const filteredPosts = this.props.posts.filter(post => {
+    const { filters } = this.state;
+    const { location, posts } = this.props;
+    const { type, filter } = queryString.parse(location.search);
+    const currentFilter = filter
+      ? decodeURIComponent(filter)
+      : filters[FilterType.YEARS][0];
+    const currentFilterType = type ? type.toUpperCase() : FilterType.YEARS;
+    const filteredPosts = posts.filter(post => {
       if (currentFilterType === FilterType.COUNTRIES) {
         return post.country === currentFilter;
       } else {
@@ -43,10 +41,9 @@ class Posts extends React.Component {
       <div className="pure-g">
         <div className="pure-u-1-5">
           <Filters
-            currentFilterIndex={currentFilterIndex}
+            currentFilter={currentFilter}
             currentFilterType={currentFilterType}
             filters={filters}
-            setFilter={this.setFilter}
           />
         </div>
         <div className="pure-u-4-5">
@@ -57,4 +54,8 @@ class Posts extends React.Component {
   }
 }
 
-export default Posts;
+export default props => (
+  <Location>
+    {locationProps => <Posts {...locationProps} {...props} />}
+  </Location>
+);
