@@ -1,4 +1,4 @@
 export const FilterType = {
-  COUNTRY: 'COUNTRY',
-  YEAR: 'YEAR'
+  COUNTRIES: 'COUNTRIES',
+  YEARS: 'YEARS'
 };

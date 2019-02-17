@@ -35,6 +35,8 @@ class Posts extends React.Component {
         <div className="pure-u-1-5">
           <Filters
             countryFilters={countryFilters}
+            currentFilterIndex={currentFilterIndex}
+            currentFilterType={currentFilterType}
             setFilter={this.setFilter}
             yearFilters={yearFilters}
           />
