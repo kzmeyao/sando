@@ -18,6 +18,7 @@ const IndexPage = () => (
               frontmatter {
                 country
                 date
+                excerpt
                 path
                 place
                 regionHierarchy

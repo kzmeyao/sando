@@ -29,8 +29,10 @@ export const pageQuery = graphql`
       frontmatter {
         country
         date
+        excerpt
         path
         place
+        regionHierarchy
       }
     }
   }
