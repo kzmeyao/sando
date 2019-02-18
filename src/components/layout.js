@@ -23,10 +23,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="content">
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()} Kevin Yao, Built with{' '}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <footer>© Kevin Yao, {new Date().getFullYear()}</footer>
         </div>
       </>
     )}

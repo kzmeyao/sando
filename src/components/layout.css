@@ -623,3 +623,9 @@ pre tt:after {
   max-width: 960px;
   padding: 1em 0;
 }
+
+footer {
+  color: #777777;
+  font-size: 75%;
+  text-align: right;
+}
