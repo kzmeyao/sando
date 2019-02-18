@@ -1,5 +1,6 @@
 import React from 'react';
 import PostCard from './post-card';
+import './filtered-posts.css';
 
 const FilteredPosts = ({ posts }) => (
   <div className="filtered-posts">

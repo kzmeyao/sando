@@ -30,7 +30,7 @@ const FilterList = ({
 
   return (
     <>
-      <h5>{filterType}</h5>
+      <h6>{filterType}</h6>
       <ul>
         {filters.map(filter => (
           <li

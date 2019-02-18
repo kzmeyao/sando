@@ -332,7 +332,6 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -344,7 +343,6 @@ ul {
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -618,4 +616,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1em 0;
 }

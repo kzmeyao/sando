@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Image from '../../image';
+import './post-card.css';
 
 const PostCard = ({ post }) => {
   const { path, place, regionHierarchy } = post;
@@ -9,8 +10,8 @@ const PostCard = ({ post }) => {
       <Link to={path}>
         <Image />
       </Link>
-      <small>{regionHierarchy.toUpperCase()}</small>
-      <h3>{place}</h3>
+      <div className="subtitle">{regionHierarchy.toUpperCase()}</div>
+      <h4>{place}</h4>
     </div>
   );
 };

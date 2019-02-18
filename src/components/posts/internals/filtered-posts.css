@@ -1,0 +1,7 @@
+.filtered-posts li:nth-child(even) {
+  padding-left: 1rem;
+}
+
+.filtered-posts li:nth-child(odd) {
+  padding-right: 1rem;
+}

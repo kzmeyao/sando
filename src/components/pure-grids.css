@@ -290,3 +290,11 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-24-24 {
   width: 100%;
 }
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pure-u-padding-one {
+  padding: 1em;
+}
