@@ -19,6 +19,7 @@ const IndexPage = () => (
                 country
                 date
                 excerpt
+                heroImage
                 path
                 place
                 regionHierarchy

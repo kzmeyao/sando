@@ -39,7 +39,7 @@ const FilterList = ({
             }
             key={filter}
           >
-            <Link to={`?type=${filterType.toLowerCase()}&filter=${filter}`}>
+            <Link to={`/?type=${filterType.toLowerCase()}&filter=${filter}`}>
               {filter}
             </Link>
           </li>

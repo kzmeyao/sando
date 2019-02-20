@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         country
         date
         excerpt
+        heroImage
         path
         place
         regionHierarchy
