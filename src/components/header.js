@@ -6,8 +6,8 @@ import './header.css';
 const Header = ({ siteTitle }) => (
   <header>
     <div className="content pure-g">
-      <div className="pure-u-1-5 pure-u-padding-one" />
-      <div className="pure-u-4-5 pure-u-padding-one">
+      <div className="pure-u-1-6 pure-u-padding-one" />
+      <div className="pure-u-5-6 pure-u-padding-one">
         <Link
           to="/"
           style={{
