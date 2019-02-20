@@ -626,5 +626,6 @@ pre tt:after {
 footer {
   color: #777777;
   font-size: 75%;
+  padding: 0 1em;
   text-align: right;
 }
