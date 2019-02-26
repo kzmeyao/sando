@@ -5,3 +5,13 @@
 .filtered-posts li:nth-child(odd) {
   padding-right: 1rem;
 }
+
+@media screen and (max-width: 48em) {
+  .filtered-posts li:nth-child(even) {
+    padding-left: 0;
+  }
+
+  .filtered-posts li:nth-child(odd) {
+    padding-right: 0;
+  }
+}

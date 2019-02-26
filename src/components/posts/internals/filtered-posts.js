@@ -6,7 +6,7 @@ const FilteredPosts = ({ posts }) => (
   <div className="filtered-posts">
     <ul className="pure-g">
       {posts.map(post => (
-        <li className="pure-u-1-2" key={post.place}>
+        <li className="pure-u-1 pure-u-m-1-2" key={post.place}>
           <PostCard post={post} />
         </li>
       ))}

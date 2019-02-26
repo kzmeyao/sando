@@ -623,6 +623,13 @@ pre tt:after {
   padding: 1em 0;
 }
 
+@media screen and (max-width: 48em) {
+  .content {
+    max-width: 24em;
+    padding: 1em;
+  }
+}
+
 footer {
   color: #777777;
   font-size: 75%;
