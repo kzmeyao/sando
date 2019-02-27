@@ -299,7 +299,7 @@ this the same font stack that Normalize.css sets for the `body`.
   padding: 1em;
 }
 
-@media screen and (min-width: 35.5em) {
+@media screen and (min-width: 35.5625em) {
   .pure-u-s-1,
   .pure-u-s-1-1,
   .pure-u-s-1-2,
@@ -513,7 +513,7 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 48.0625em) {
   .pure-u-m-1,
   .pure-u-m-1-1,
   .pure-u-m-1-2,
@@ -727,7 +727,7 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .pure-u-l-1,
   .pure-u-l-1-1,
   .pure-u-l-1-2,
@@ -941,7 +941,7 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 80.0625em) {
   .pure-u-xl-1,
   .pure-u-xl-1-1,
   .pure-u-xl-1-2,
@@ -1155,7 +1155,7 @@ this the same font stack that Normalize.css sets for the `body`.
   }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 48.0625em) {
   .pure-u-s-0 {
     display: none;
   }
