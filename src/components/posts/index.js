@@ -2,6 +2,7 @@ import React from 'react';
 import { Location } from '@reach/router';
 import queryString from 'query-string';
 import Filters from './internals/filters';
+import FilterMenu from './internals/filter-menu';
 import FilteredPosts from './internals/filtered-posts';
 import { FilterType } from './internals/posts-types';
 
@@ -46,7 +47,10 @@ class Posts extends React.Component {
 
     return (
       <div className="pure-g">
-        <div className="pure-u-s-0 pure-u-l-1-6 pure-u-padding-one">
+        <div className="pure-u-1 pure-u-l-0">
+          <FilterMenu currentFilter={currentFilter} />
+        </div>
+        <div className="pure-u-s-0 pure-u-m-0 pure-u-l-1-6 pure-u-padding-one">
           <Filters
             currentFilter={currentFilter}
             currentFilterType={currentFilterType}

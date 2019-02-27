@@ -11,3 +11,9 @@ header a {
 header h2 {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 48.0625em) {
+  header {
+    text-align: center;
+  }
+}

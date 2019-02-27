@@ -1,0 +1,10 @@
+.filter-menu .menu-trigger {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 48.0625em) {
+  .filter-menu {
+    text-align: center;
+  }
+}
