@@ -1160,3 +1160,9 @@ this the same font stack that Normalize.css sets for the `body`.
     display: none;
   }
 }
+
+@media screen and (max-width: 64.0625em) {
+  .pure-u-m-0 {
+    display: none;
+  }
+}

@@ -46,14 +46,14 @@ class Posts extends React.Component {
 
     return (
       <div className="pure-g">
-        <div className="pure-u-s-0 pure-u-m-1-6 pure-u-padding-one">
+        <div className="pure-u-s-0 pure-u-l-1-6 pure-u-padding-one">
           <Filters
             currentFilter={currentFilter}
             currentFilterType={currentFilterType}
             filters={filters}
           />
         </div>
-        <div className="pure-u-s-1 pure-u-m-5-6 pure-u-padding-one">
+        <div className="pure-u-s-1 pure-u-l-5-6 pure-u-padding-one">
           <FilteredPosts posts={filteredPosts} />
         </div>
       </div>
