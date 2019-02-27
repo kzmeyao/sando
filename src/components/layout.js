@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Modal from './modal';
 import './layout.css';
 import './pure-base.css';
 import './pure-grids.css';
@@ -25,6 +26,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer>© Kevin Yao, {new Date().getFullYear()}</footer>
         </div>
+        <Modal />
       </>
     )}
   />
