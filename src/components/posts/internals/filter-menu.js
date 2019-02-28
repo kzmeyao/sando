@@ -22,7 +22,9 @@ const FilterMenu = ({ currentFilter }) => {
 
 const FilterModal = ({ close }) => {
   return ReactDOM.createPortal(
-    <Modal close={close}>HI</Modal>,
+    <Modal classNames="filter-modal" close={close}>
+      HI
+    </Modal>,
     document.getElementById('modal-root')
   );
 };

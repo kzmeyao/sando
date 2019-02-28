@@ -641,3 +641,8 @@ footer {
   padding: 0 1em;
   text-align: right;
 }
+
+body.open-modal {
+  position: fixed;
+  overflow: hidden;
+}
