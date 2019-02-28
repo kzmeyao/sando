@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer>© Kevin Yao, {new Date().getFullYear()}</footer>
         </div>
-        <Modal />
+        <div id="modal-root" />
       </>
     )}
   />
