@@ -11,4 +11,26 @@
 
 .filter-modal {
   background-color: #f2efec;
+  font-size: 120%;
+}
+
+.filter-modal button.modal-close {
+  all: unset;
+  cursor: pointer;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.filter-modal .modal-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.filter-modal .filters {
+  text-align: center;
 }

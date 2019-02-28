@@ -3,19 +3,21 @@ import { Link } from 'gatsby';
 import { FilterType } from './posts-types';
 import './filters.css';
 
-const Filters = ({ currentFilter, currentFilterType, filters }) => (
+const Filters = ({ currentFilter, currentFilterType, filters, onSelect }) => (
   <div className="filters">
     <FilterList
       currentFilter={currentFilter}
       currentFilterType={currentFilterType}
       filters={filters[FilterType.COUNTRIES]}
       filterType={FilterType.COUNTRIES}
+      onSelect={onSelect}
     />
     <FilterList
       currentFilter={currentFilter}
       currentFilterType={currentFilterType}
       filters={filters[FilterType.YEARS]}
       filterType={FilterType.YEARS}
+      onSelect={onSelect}
     />
   </div>
 );
@@ -24,7 +26,8 @@ const FilterList = ({
   currentFilter,
   currentFilterType,
   filters,
-  filterType
+  filterType,
+  onSelect
 }) => {
   const isSameFilterType = currentFilterType === filterType;
 
@@ -39,7 +42,10 @@ const FilterList = ({
             }
             key={filter}
           >
-            <Link to={`/?type=${filterType.toLowerCase()}&filter=${filter}`}>
+            <Link
+              onClick={onSelect}
+              to={`/?type=${filterType.toLowerCase()}&filter=${filter}`}
+            >
               {filter}
             </Link>
           </li>

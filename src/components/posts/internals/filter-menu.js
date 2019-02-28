@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './filter-menu.css';
 
+import Filters from './filters';
 import Modal from '../../modal';
 
-const FilterMenu = ({ currentFilter }) => {
+const FilterMenu = props => {
+  const { currentFilter } = props;
   const [showModal, toggleModal] = useState(false);
 
   return (
@@ -15,17 +17,14 @@ const FilterMenu = ({ currentFilter }) => {
         </span>
         <span className="current-filter pure-u-s-0">: {currentFilter}</span>
       </div>
-      {showModal && <FilterModal close={() => toggleModal(false)} />}
+      {showModal &&
+        ReactDOM.createPortal(
+          <Modal classNames="filter-modal" close={() => toggleModal(false)}>
+            <Filters {...props} onSelect={() => toggleModal(false)} />
+          </Modal>,
+          document.getElementById('modal-root')
+        )}
     </>
-  );
-};
-
-const FilterModal = ({ close }) => {
-  return ReactDOM.createPortal(
-    <Modal classNames="filter-modal" close={close}>
-      HI
-    </Modal>,
-    document.getElementById('modal-root')
   );
 };
 
