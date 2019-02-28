@@ -7,6 +7,10 @@
 }
 
 @media screen and (max-width: 48em) {
+  .filtered-posts li {
+    padding-bottom: 1rem;
+  }
+
   .filtered-posts li:nth-child(even) {
     padding-left: 0;
   }
