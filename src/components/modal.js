@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './modal.css';
 
 const toggleBodyClass = () =>
@@ -10,8 +10,13 @@ const Modal = ({ children, classNames, close }) => {
     return toggleBodyClass;
   });
 
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 100);
+  });
+
   return (
-    <div className={`modal ${classNames || ''}`}>
+    <div className={`modal ${classNames || ''} ${show ? 'show-modal' : ''}`}>
       <div className="modal-content">{children}</div>
       <button className="modal-close" onClick={close}>
         x

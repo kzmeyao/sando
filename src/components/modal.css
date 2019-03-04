@@ -1,6 +1,14 @@
 .modal {
   height: 100%;
+  opacity: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  visibility: hidden;
+}
+
+.modal.show-modal {
+  opacity: 1;
+  transition: opacity 0.25s;
+  visibility: visible;
 }
