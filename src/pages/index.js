@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import { HomeHeader } from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Posts from '../components/posts';
@@ -34,7 +35,7 @@ const IndexPage = () => (
         edge => edge.node.frontmatter
       );
       return (
-        <Layout>
+        <Layout header={<HomeHeader title="sando" />}>
           <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
           <Posts posts={posts} />
         </Layout>

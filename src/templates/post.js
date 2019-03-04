@@ -3,15 +3,16 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
+import { PostHeader } from '../components/header';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
+  const { place, regionHierarchy } = post.frontmatter;
   return (
-    <Layout>
+    <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <div className="blog-post-container">
-        <Helmet title={`Your Blog Name - ${post.frontmatter.place}`} />
+        <Helmet title={`sando - ${place}`} />
         <div className="blog-post">
-          <h1>{post.frontmatter.place}</h1>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
