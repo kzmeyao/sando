@@ -10,13 +10,10 @@ export default function Template({ data }) {
   const { place, regionHierarchy } = post.frontmatter;
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
-      <div className="blog-post-container">
+      <div className="pure-grid">
         <Helmet title={`sando - ${place}`} />
-        <div className="blog-post">
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+        <div className="pure-u-1 pure-u-padding-one">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
     </Layout>
