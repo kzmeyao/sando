@@ -12,6 +12,12 @@ header h2 {
   margin-bottom: 0;
 }
 
+header .subtitle {
+  color: #333333;
+  font-size: 65%;
+  margin-bottom: 0.5em;
+}
+
 @media screen and (max-width: 48.0625em) {
   header {
     text-align: center;

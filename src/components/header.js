@@ -24,7 +24,7 @@ const PostHeader = ({ title, subtitle }) => (
   <header>
     <div className="content pure-g">
       <div className="pure-u-1 pure-u-padding-one">
-        {subtitle}
+        <div className="subtitle">{subtitle.toUpperCase()}</div>
         <h2>{title}</h2>
       </div>
     </div>
