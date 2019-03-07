@@ -21,6 +21,8 @@ const IndexPage = () => (
                 date
                 excerpt
                 heroImage
+                imagePrefix
+                images
                 path
                 place
                 regionHierarchy
