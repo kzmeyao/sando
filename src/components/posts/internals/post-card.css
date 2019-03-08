@@ -17,10 +17,9 @@
 }
 
 .post-card .subtitle {
-  color: #777777;
-  font-size: 50%;
-  font-weight: bold;
-  margin-top: 1em;
+  color: #333333;
+  font-size: 60%;
+  margin: 0.5em 0;
 }
 
 .post-card p {
