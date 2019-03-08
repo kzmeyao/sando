@@ -5,18 +5,21 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Gallery from '../components/post/gallery';
 import { PostHeader } from '../components/header';
+import PostText from '../components/post/post-text';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { imagePrefix, images, place, regionHierarchy } = post.frontmatter;
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
-      <div className="pure-grid">
+      <div className="pure-grid pure-u-padding-one">
         <Helmet title={`sando - ${place}`} />
-        <div className="pure-u-1 pure-u-padding-one">
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="pure-u-1 pure-u-m-2-5">
+          <PostText html={post.html} />
         </div>
-        <Gallery imagePrefix={imagePrefix} images={images} />
+        <div className="pure-u-1 pure-u-m-3-5">
+          <Gallery imagePrefix={imagePrefix} images={images} />
+        </div>
       </div>
     </Layout>
   );

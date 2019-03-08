@@ -11,3 +11,13 @@ regionHierarchy: 'Puerto Jimenez, Costa Rica'
 ---
 
 Oooooh-weeee, my first blog post!
+
+Every perception of color is an illusion. We do not see colors as they really are. In our perception they alter one another. In order to use color effectively it is necessary to recognize that color deceives continually. In visual perception a color is almost never seen as it really is — as it physically is. This fact makes color the most relative medium in art.
+
+Every perception of color is an illusion. We do not see colors as they really are. In our perception they alter one another. In order to use color effectively it is necessary to recognize that color deceives continually. In visual perception a color is almost never seen as it really is — as it physically is. This fact makes color the most relative medium in art.
+
+Every perception of color is an illusion. We do not see colors as they really are. In our perception they alter one another. In order to use color effectively it is necessary to recognize that color deceives continually. In visual perception a color is almost never seen as it really is — as it physically is. This fact makes color the most relative medium in art.
+
+Every perception of color is an illusion. We do not see colors as they really are. In our perception they alter one another. In order to use color effectively it is necessary to recognize that color deceives continually. In visual perception a color is almost never seen as it really is — as it physically is. This fact makes color the most relative medium in art.
+
+Every perception of color is an illusion. We do not see colors as they really are. In our perception they alter one another. In order to use color effectively it is necessary to recognize that color deceives continually. In visual perception a color is almost never seen as it really is — as it physically is. This fact makes color the most relative medium in art.
