@@ -12,7 +12,7 @@ const Gallery = ({ imagePrefix, images }) => {
         if (row.includes('|')) {
           const [firstImg, secondImg] = row.split('|');
           return (
-            <div key={row} className="pure-grid image-pair">
+            <div key={row} className="pure-g image-pair">
               <div className="pure-u-1-2">
                 <LazyImage relSrc={`${imagePrefix}-${firstImg}`} />
               </div>
@@ -24,7 +24,7 @@ const Gallery = ({ imagePrefix, images }) => {
         }
 
         return (
-          <div key={row} className="pure-grid">
+          <div key={row} className="pure-g">
             <div className="pure-u-1">
               <LazyImage relSrc={`${imagePrefix}-${row}`} />
             </div>
