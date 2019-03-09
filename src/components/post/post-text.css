@@ -1,5 +1,11 @@
+.post-text blockquote {
+  background-color: #e1dbd6;
+  margin: 0 0 1em;
+  padding: 2em;
+}
+
 .post-text p {
-  font-size: 85%;
+  font-size: 80%;
   line-height: 1.5;
 }
 
