@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyImage from '../common/LazyImage';
+
 import './gallery.css';
 
 const Gallery = ({ imagePrefix, images }) => {
@@ -8,33 +10,23 @@ const Gallery = ({ imagePrefix, images }) => {
     <div className="image-gallery">
       {imageRows.map(row => {
         if (row.includes('|')) {
-          const ids = row.split('|');
+          const [firstImg, secondImg] = row.split('|');
           return (
-            <div className="pure-grid image-pair">
+            <div key={row} className="pure-grid image-pair">
               <div className="pure-u-1-2">
-                <img
-                  src={`https://res.cloudinary.com/sando/image/upload/${imagePrefix}-${
-                    ids[0]
-                  }`}
-                />
+                <LazyImage relSrc={`${imagePrefix}-${firstImg}`} />
               </div>
               <div className="pure-u-1-2">
-                <img
-                  src={`https://res.cloudinary.com/sando/image/upload/${imagePrefix}-${
-                    ids[1]
-                  }`}
-                />
+                <LazyImage relSrc={`${imagePrefix}-${secondImg}`} />
               </div>
             </div>
           );
         }
 
         return (
-          <div className="pure-grid">
+          <div key={row} className="pure-grid">
             <div className="pure-u-1">
-              <img
-                src={`https://res.cloudinary.com/sando/image/upload/${imagePrefix}-${row}`}
-              />
+              <LazyImage relSrc={`${imagePrefix}-${row}`} />
             </div>
           </div>
         );
