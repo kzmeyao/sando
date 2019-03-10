@@ -36,6 +36,6 @@
   text-align: left;
 }
 
-.post-card .read-more:hover {
+.post-card:hover .read-more {
   color: #333333;
 }
