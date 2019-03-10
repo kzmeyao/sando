@@ -21,17 +21,13 @@ const HomeHeader = ({ title }) => (
   </header>
 );
 
-const goBack = () => {
-  window && window.history.back();
-};
-
 const PostHeader = ({ title, subtitle }) => (
   <header>
     <div className="content pure-g">
       <div className="pure-u-1 pure-u-padding-one">
-        <a className="pure-u-s-0 back-link" href="#" onClick={goBack}>
-          {'<'} back
-        </a>
+        <Link className="pure-u-s-0 home-link" to="/">
+          home
+        </Link>
         <div className="subtitle">{subtitle.toUpperCase()}</div>
         <h2>{title}</h2>
       </div>

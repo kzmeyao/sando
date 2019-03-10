@@ -9,7 +9,7 @@ header a {
   text-decoration: none;
 }
 
-header .back-link {
+header .home-link {
   color: #666666;
   font-size: 70%;
   margin-top: 1.5em;
@@ -17,7 +17,7 @@ header .back-link {
   top: 0;
 }
 
-header .back-link:hover {
+header .home-link:hover {
   color: #111111;
 }
 
