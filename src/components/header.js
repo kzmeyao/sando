@@ -7,6 +7,7 @@ const HomeHeader = ({ title }) => (
     <div className="content pure-g">
       <div className="pure-u-m-0 pure-u-l-1-6 pure-u-padding-one" />
       <div className="pure-u-1 pure-u-l-5-6 pure-u-padding-one">
+        <div className="subtitle">&nbsp;</div>
         <Link
           to="/"
           style={{
