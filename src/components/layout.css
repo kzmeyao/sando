@@ -619,13 +619,13 @@ pre tt:after {
 
 .content {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1080px;
   padding: 1em 0;
 }
 
 @media screen and (max-width: 48.0625em) {
   .content {
-    max-width: 26em;
+    max-width: 28em;
   }
 }
 
