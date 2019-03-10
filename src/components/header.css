@@ -6,6 +6,19 @@ header {
 
 header a {
   color: #333333;
+  text-decoration: none;
+}
+
+header .back-link {
+  color: #666666;
+  font-size: 70%;
+  margin-top: 1.5em;
+  position: absolute;
+  top: 0;
+}
+
+header .back-link:hover {
+  color: #111111;
 }
 
 header h2 {
