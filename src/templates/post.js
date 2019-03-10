@@ -10,14 +10,21 @@ import PostText from '../components/post/post-text';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  const { imagePrefix, images, place, regionHierarchy } = post.frontmatter;
+  const {
+    date,
+    imagePrefix,
+    images,
+    photoGear,
+    place,
+    regionHierarchy
+  } = post.frontmatter;
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <Helmet title={`sando - ${place}`} />
       <div className="pure-g pure-u-padding-one">
         <div className="pure-u-1 pure-u-m-2-5">
           <PostText html={post.html} />
-          <PostMetadata />
+          <PostMetadata date={date} photoGear={photoGear} />
         </div>
         <div className="pure-u-1 pure-u-m-3-5">
           <Gallery imagePrefix={imagePrefix} images={images} />
@@ -39,6 +46,7 @@ export const pageQuery = graphql`
         imagePrefix
         images
         path
+        photoGear
         place
         regionHierarchy
       }

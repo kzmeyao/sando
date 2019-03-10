@@ -24,6 +24,7 @@ const IndexPage = () => (
                 imagePrefix
                 images
                 path
+                photoGear
                 place
                 regionHierarchy
               }

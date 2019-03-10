@@ -1,13 +1,13 @@
 import React from 'react';
 import './post-metadata.css';
 
-const PostMetadata = ({}) => (
+const PostMetadata = ({ date, photoGear }) => (
   <div className="post-metadata">
     <dl>
-      <dt>Date visited</dt>
-      <dd>2014</dd>
+      <dt>Year visited</dt>
+      <dd>{date.split('-')[0]}</dd>
       <dt>Photo gear used</dt>
-      <dd>Pentax K5IIs, Sony RX1</dd>
+      <dd>{photoGear}</dd>
       <dt>Share</dt>
       <dd>Twitter, Facebook, Copy URL</dd>
     </dl>
