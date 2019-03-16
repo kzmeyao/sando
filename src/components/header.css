@@ -26,34 +26,23 @@ header .subtitle {
 }
 
 nav {
-  margin: -1em 0 2em;
+  margin: -1em 0 3em;
   text-align: right;
 }
 
 nav a {
   color: #666666;
   font-size: 70%;
-  padding-left: 3em;
 }
 
 nav a:hover {
   color: #111111;
 }
 
-@media screen and (max-width: 48.0625em) {
-  nav {
-    margin-bottom: 3em;
-  }
+nav a:nth-child(1) {
+  float: left;
+}
 
-  nav a {
-    padding: 0 0 0 0;
-  }
-
-  nav a:nth-child(1) {
-    float: left;
-  }
-
-  nav a:nth-child(2) {
-    float: right;
-  }
+nav a:nth-child(2) {
+  float: right;
 }
