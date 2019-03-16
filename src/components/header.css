@@ -41,6 +41,10 @@ nav a:hover {
 }
 
 @media screen and (max-width: 48.0625em) {
+  nav {
+    margin-bottom: 3em;
+  }
+
   nav a {
     padding: 0 0 0 0;
   }
