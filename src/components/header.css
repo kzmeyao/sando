@@ -5,6 +5,7 @@ header {
 
 header a {
   color: #333333;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -40,21 +41,15 @@ nav a:hover {
 }
 
 @media screen and (max-width: 48.0625em) {
-  nav {
-    text-align: center;
-  }
-
   nav a {
-    display: inline-block;
     padding: 0 0 0 0;
-    width: 50%;
   }
 
   nav a:nth-child(1) {
-    text-align: left;
+    float: left;
   }
 
   nav a:nth-child(2) {
-    text-align: right;
+    float: right;
   }
 }
