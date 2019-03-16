@@ -1,24 +1,11 @@
 header {
   background-color: #ffffff;
-  padding-top: 3rem;
   margin-bottom: 0;
 }
 
 header a {
   color: #333333;
   text-decoration: none;
-}
-
-header .home-link {
-  color: #666666;
-  font-size: 70%;
-  margin-top: 1.5em;
-  position: absolute;
-  top: 0;
-}
-
-header .home-link:hover {
-  color: #111111;
 }
 
 header h2 {
@@ -34,5 +21,40 @@ header .subtitle {
 @media screen and (max-width: 48.0625em) {
   header {
     text-align: center;
+  }
+}
+
+nav {
+  margin: -1em 0 2em;
+  text-align: right;
+}
+
+nav a {
+  color: #666666;
+  font-size: 70%;
+  padding-left: 3em;
+}
+
+nav a:hover {
+  color: #111111;
+}
+
+@media screen and (max-width: 48.0625em) {
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0 0 0 0;
+    width: 50%;
+  }
+
+  nav a:nth-child(1) {
+    text-align: left;
+  }
+
+  nav a:nth-child(2) {
+    text-align: right;
   }
 }
