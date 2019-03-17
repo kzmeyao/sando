@@ -11,4 +11,6 @@ place: 'Rio Celeste'
 regionHierarchy: 'Parque Nacional Volcan Tenorio, Costa Rica'
 ---
 
+> I had a fair bit of skeptism when I first encountered pictures of Rio Celeste online, but seeing the place in person showed me just how wrong I was. The greens from the forest and the blues from the water come together harmoniously to form the perfect palette. It's no wonder why the locals say: _"when God finished painting the sky, he washed his brushes in the Rio Celeste"_.
+
 Oooooh-weeee, my first blog post!
