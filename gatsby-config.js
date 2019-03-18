@@ -9,13 +9,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'places',
         path: `${__dirname}/src/places`
       }
@@ -23,11 +16,9 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: ['gatsby-plugin-catch-links', 'gatsby-plugin-react-helmet']
+        // plugins: ['gatsby-plugin-catch-links', 'gatsby-plugin-react-helmet']
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
