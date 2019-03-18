@@ -20,7 +20,10 @@ class Posts extends React.Component {
     filters[FilterType.COUNTRIES] = Array.from(countries).sort();
     filters[FilterType.YEARS] = Array.from(years).sort((a, b) => a > b);
 
-    this.state = { filters };
+    this.state = { filters, isServer: true };
+  }
+  componentDidMount() {
+    this.setState({ isServer: false });
   }
   filterPosts(filter, filterType) {
     return this.props.posts.filter(post => {
@@ -33,6 +36,9 @@ class Posts extends React.Component {
     });
   }
   render() {
+    if (this.state.isServer) {
+      return null;
+    }
     const { filters } = this.state;
     const { type, filter } = queryString.parse(this.props.location.search);
     const defaultFilter = filters[FilterType.YEARS][0];
