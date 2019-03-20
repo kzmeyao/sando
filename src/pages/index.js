@@ -39,7 +39,7 @@ const IndexPage = () => (
       );
       return (
         <Layout header={<HomeHeader title="sando" />}>
-          <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+          <SEO title="Home" keywords={['sando']} />
           <Posts posts={posts} />
         </Layout>
       );

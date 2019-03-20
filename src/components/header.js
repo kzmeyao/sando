@@ -36,7 +36,7 @@ const PostHeader = ({ title, subtitle }) => (
 const Navigation = () => (
   <nav>
     <Link to="/">home</Link>
-    <Link to="/">about</Link>
+    <Link to="/about">about</Link>
   </nav>
 );
 
