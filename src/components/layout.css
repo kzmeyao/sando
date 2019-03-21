@@ -610,7 +610,7 @@ pre tt:after {
 .content {
   margin: 0 auto;
   max-width: 1080px;
-  padding: 1em 0;
+  padding: 1em 1em;
 }
 
 @media screen and (max-width: 48.0625em) {
