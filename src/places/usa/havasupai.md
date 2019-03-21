@@ -7,7 +7,7 @@ imagePrefix: 'bosque-del-cabo/bosque'
 images: '2'
 path: '/places/havasupai-arizona'
 place: 'Havasupai'
-regionHierarchy: 'Arizona, Japan'
+regionHierarchy: 'Arizona, USA'
 ---
 
 Oooooh-weeee, my first blog post!

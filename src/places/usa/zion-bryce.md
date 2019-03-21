@@ -6,7 +6,7 @@ heroImage: ''
 imagePrefix: 'bosque-del-cabo/bosque'
 images: '2'
 path: '/places/zion-bryce-usa'
-place: 'Zion/Bryce Canyon National Park'
+place: 'Zion/Bryce Canyon'
 regionHierarchy: 'Utah, USA'
 ---
 
