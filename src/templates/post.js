@@ -20,7 +20,7 @@ export default function Template({ data }) {
   } = post.frontmatter;
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
-      <Helmet title={`sando - ${place}`} />
+      <Helmet title={`${place} | sando`} />
       <div className="pure-g pure-u-padding-one">
         <div className="pure-u-1 pure-u-m-2-5">
           <PostText html={post.html} />
