@@ -10,7 +10,7 @@ const PostMetadata = ({ date, photoGear }) => {
   };
 
   return (
-    <div className="border-t border-solid border-grey-light sticky pin-t">
+    <div className="border-t border-solid border-grey-light md:sticky pin-t">
       <dl className="text-sm text-grey-darkest mb-8">
         <dt className={dtClass}>Year visited</dt>
         <dd>{date.split('-')[0]}</dd>
