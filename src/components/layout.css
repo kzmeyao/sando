@@ -75,12 +75,6 @@ body {
   padding: 1em 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    max-width: 30em;
-  }
-}
-
 body.open-modal {
   height: 100%;
   overflow: hidden;
@@ -111,7 +105,7 @@ body.open-modal {
   padding-right: 1rem;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 47.725em) {
   .filtered-posts li:nth-child(even) {
     padding-left: 0;
   }

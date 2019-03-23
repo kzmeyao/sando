@@ -3,9 +3,9 @@ import PostCard from './post-card';
 
 const FilteredPosts = ({ posts }) => (
   <div className="filtered-posts">
-    <ul className="flex flex-wrap list-reset pt-5">
+    <ul className="flex flex-wrap justify-center list-reset pt-5">
       {posts.map(post => (
-        <li className="w-full md:w-1/2 mb-6" key={post.place}>
+        <li className="w-full md:w-1/2 mb-6 max-w-sm" key={post.place}>
           <PostCard post={post} />
         </li>
       ))}
