@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
+const contentClass = 'content md:text-left';
 const headerClass = 'bg-white pb-4 text-center lg:text-left';
 const headingClass = 'font-heading pt-2 text-3xl text-black';
 const subtitleClass = 'text-xs text-black';
@@ -9,10 +10,10 @@ const navLinkClass =
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
-    <div className="content">
+    <div className={contentClass}>
       <Navigation />
       <div className={subtitleClass}>&nbsp;</div>
-      <Link className="no-underline" to="/">
+      <Link className="no-underline inline-block" to="/">
         <h1 className={headingClass}>{title}</h1>
       </Link>
     </div>
@@ -21,7 +22,7 @@ const HomeHeader = ({ title }) => (
 
 const PostHeader = ({ title, subtitle }) => (
   <header className={headerClass}>
-    <div className="content">
+    <div className={contentClass}>
       <Navigation />
       <div className={subtitleClass}>{subtitle.toUpperCase()}</div>
       <h1 className={headingClass}>{title}</h1>
