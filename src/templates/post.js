@@ -21,12 +21,12 @@ export default function Template({ data }) {
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <Helmet title={`${place} | sando`} />
-      <div className="pure-g pure-u-padding-one">
-        <div className="pure-u-1 pure-u-m-2-5">
+      <div className="flex flex-wrap pt-4">
+        <div className="md:w-2/5 md:pr-8">
           <PostText html={post.html} />
           <PostMetadata date={date} photoGear={photoGear} />
         </div>
-        <div className="pure-u-1 pure-u-m-3-5">
+        <div className="md:w-3/5">
           <Gallery imagePrefix={imagePrefix} images={images} />
         </div>
       </div>

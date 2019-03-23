@@ -1,12 +1,11 @@
 import React from 'react';
 import PostCard from './post-card';
-import './filtered-posts.css';
 
 const FilteredPosts = ({ posts }) => (
   <div className="filtered-posts">
-    <ul className="pure-g">
+    <ul className="flex flex-wrap list-reset pt-5">
       {posts.map(post => (
-        <li className="pure-u-1 pure-u-m-1-2" key={post.place}>
+        <li className="w-full md:w-1/2 mb-6" key={post.place}>
           <PostCard post={post} />
         </li>
       ))}

@@ -1,42 +1,42 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import './header.css';
+
+const headerClass = 'bg-white pb-4 text-center lg:text-left';
+const headingClass = 'font-heading pt-2 text-3xl text-black';
+const subtitleClass = 'text-xs text-black';
+const navLinkClass =
+  'no-underline text-xs text-grey-darkest hover:text-black hover:underline';
 
 const HomeHeader = ({ title }) => (
-  <header>
-    <div className="content pure-g">
-      <div className="pure-u-1 pure-u-padding-one">
-        <Navigation />
-        <div className="subtitle">&nbsp;</div>
-        <Link
-          to="/"
-          style={{
-            textDecoration: 'none'
-          }}
-        >
-          <h2>{title}</h2>
-        </Link>
-      </div>
+  <header className={headerClass}>
+    <div className="content">
+      <Navigation />
+      <div className={subtitleClass}>&nbsp;</div>
+      <Link className="no-underline" to="/">
+        <h1 className={headingClass}>{title}</h1>
+      </Link>
     </div>
   </header>
 );
 
 const PostHeader = ({ title, subtitle }) => (
-  <header>
-    <div className="content pure-g">
-      <div className="pure-u-1 pure-u-padding-one">
-        <Navigation />
-        <div className="subtitle">{subtitle.toUpperCase()}</div>
-        <h2>{title}</h2>
-      </div>
+  <header className={headerClass}>
+    <div className="content">
+      <Navigation />
+      <div className={subtitleClass}>{subtitle.toUpperCase()}</div>
+      <h1 className={headingClass}>{title}</h1>
     </div>
   </header>
 );
 
 const Navigation = () => (
-  <nav>
-    <Link to="/">home</Link>
-    <Link to="/about">about</Link>
+  <nav className="clearfix pt-2 pb-10">
+    <Link className={`${navLinkClass} float-left`} to="/">
+      home
+    </Link>
+    <Link className={`${navLinkClass} float-right`} to="/about">
+      about
+    </Link>
   </nav>
 );
 

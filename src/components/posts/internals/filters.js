@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { FilterType } from './posts-types';
-import './filters.css';
 
 const Filters = ({ currentFilter, currentFilterType, filters, onSelect }) => (
-  <div className="filters">
+  <div className="pt-5">
     <FilterList
       currentFilter={currentFilter}
       currentFilterType={currentFilterType}
@@ -33,16 +32,19 @@ const FilterList = ({
 
   return (
     <>
-      <h6>{filterType}</h6>
-      <ul>
+      <h3 className="pb-2 text-grey-dark text-xs">{filterType}</h3>
+      <ul className="list-reset mb-8">
         {filters.map(filter => (
           <li
             className={
-              isSameFilterType && filter === currentFilter ? 'selected' : ''
+              isSameFilterType && filter === currentFilter
+                ? 'font-bold leading-tight'
+                : 'leading-tight'
             }
             key={filter}
           >
             <Link
+              className="no-underline text-grey-darkest"
               onClick={onSelect}
               to={`/?type=${filterType.toLowerCase()}&filter=${filter}`}
             >

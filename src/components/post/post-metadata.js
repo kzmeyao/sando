@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './post-metadata.css';
+
+const dtClass = 'font-bold mt-6 mb-2';
 
 const PostMetadata = ({ date, photoGear }) => {
   const [copied, setCopied] = useState(false);
@@ -9,16 +10,20 @@ const PostMetadata = ({ date, photoGear }) => {
   };
 
   return (
-    <div className="post-metadata">
-      <dl>
-        <dt>Year visited</dt>
+    <div className="border-t border-solid border-grey-light sticky pin-t">
+      <dl className="text-sm text-grey-darkest mb-8">
+        <dt className={dtClass}>Year visited</dt>
         <dd>{date.split('-')[0]}</dd>
-        <dt>Photo gear used</dt>
+        <dt className={dtClass}>Photo gear used</dt>
         <dd>{photoGear}</dd>
-        <dt>Share</dt>
+        <dt className={dtClass}>Share</dt>
         <dd>
           <div onClick={copyToClipboard}>
-            {copied ? 'Copied!' : <span className="copy-link">Copy URL</span>}
+            {copied ? (
+              'Copied!'
+            ) : (
+              <span className="cursor-pointer underline">Copy URL</span>
+            )}
           </div>
         </dd>
       </dl>

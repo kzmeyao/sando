@@ -1,10 +1,12 @@
 import React from 'react';
-import './internals/about.css';
+
+const headingClass = 'font-heading text-xl text-grey-darkest my-6';
+const pClass = 'text-sm leading-loose text-grey-darkest';
 
 const About = () => (
-  <div className="about">
-    <h4>About the website:</h4>
-    <p>
+  <>
+    <h2 className={headingClass}>About the website:</h2>
+    <p className={pClass}>
       On my first trip to Japan, I ended up joining the cult of the humble egg
       salad sando after just one bite. For the uninitiated, `sando` is short for
       sandwich, and the egg salad sando is the perfect sandwich. Its simplicity,
@@ -14,8 +16,8 @@ const About = () => (
       better name for it than to name it after the thing that started it all.
     </p>
     <br />
-    <h4>About the author:</h4>
-    <p>
+    <h2 className={headingClass}>About the author:</h2>
+    <p className={pClass}>
       I'm a software engineer by trade, but I'm also a serial dabbler. My
       curiosity often leads me down creative rabbitholes and I spend an
       inordinate amount of time learning and making something until I find
@@ -25,7 +27,7 @@ const About = () => (
       eventually designing my own house. Come to think of it, even building this
       site happened on a whim - here's hoping that it'll last.
     </p>
-  </div>
+  </>
 );
 
 export default About;

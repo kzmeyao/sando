@@ -52,22 +52,22 @@ class Posts extends React.Component {
     }
 
     return (
-      <div className="pure-g">
-        <div className="pure-u-1 pure-u-l-0">
+      <div className="lg:flex">
+        <div className="lg:hidden">
           <FilterMenu
             currentFilter={currentFilter}
             currentFilterType={currentFilterType}
             filters={filters}
           />
         </div>
-        <div className="pure-u-s-0 pure-u-m-0 pure-u-l-1-6 pure-u-padding-one">
+        <div className="hidden lg:block lg:w-1/6">
           <Filters
             currentFilter={currentFilter}
             currentFilterType={currentFilterType}
             filters={filters}
           />
         </div>
-        <div className="pure-u-s-1 pure-u-l-5-6 pure-u-padding-one">
+        <div className="lg:w-5/6">
           <FilteredPosts posts={filteredPosts} />
         </div>
       </div>

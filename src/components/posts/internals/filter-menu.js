@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import './filter-menu.css';
 
 import Filters from './filters';
 import Modal from '../../modal';
+
+import './filter-menu.css';
 
 const FilterMenu = props => {
   const { currentFilter } = props;
@@ -11,11 +12,14 @@ const FilterMenu = props => {
 
   return (
     <>
-      <div className="filter-menu content">
-        <span className="menu-trigger" onClick={() => toggleModal(true)}>
+      <div className="mt-5 mb-2 text-center md:text-left">
+        <span
+          className="cursor-pointer underline"
+          onClick={() => toggleModal(true)}
+        >
           FILTER
         </span>
-        <span className="current-filter pure-u-s-0">: {currentFilter}</span>
+        <span className="hidden md:inline">: {currentFilter}</span>
       </div>
       {showModal &&
         ReactDOM.createPortal(
