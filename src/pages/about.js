@@ -8,9 +8,7 @@ import SEO from '../components/seo';
 const AboutPage = () => (
   <Layout header={<HomeHeader title="sando" />}>
     <SEO title="About" />
-    <div className="pure-u-padding-one">
-      <About />
-    </div>
+    <About />
   </Layout>
 );
 

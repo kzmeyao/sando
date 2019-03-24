@@ -18,14 +18,14 @@ const About = () => (
     <br />
     <h2 className={headingClass}>About the author:</h2>
     <p className={pClass}>
-      I'm a software engineer by trade, but I'm also a serial dabbler. My
-      curiosity often leads me down creative rabbitholes and I spend an
-      inordinate amount of time learning and making something until I find
-      another new thing to take its place. For example, I've composed songs
-      while learning to play guitar, made the first scene of a JRPG while
+      Hi, my name is Kevin Yao. I'm a software engineer by trade, but I'm also a
+      serial dabbler. My curiosity often leads me down creative rabbitholes and
+      I spend an inordinate amount of time learning and making something until I
+      find another new thing to take its place. For example, I've composed songs
+      while learning to play guitar, created the first scene of a JRPG while
       learning how to draw pixel art, 3d-modeled a house while dreaming of
       eventually designing my own house. Come to think of it, even building this
-      site happened on a whim - here's hoping that it'll last.
+      website happened on a whim - here's hoping that it'll last.
     </p>
   </>
 );
