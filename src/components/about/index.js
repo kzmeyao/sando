@@ -20,12 +20,13 @@ const About = () => (
     <p className={pClass}>
       Hi, my name is Kevin Yao. I'm a software engineer by trade, but I'm also a
       serial dabbler. My curiosity often leads me down creative rabbitholes and
-      I spend an inordinate amount of time learning and making something until I
-      find another new thing to take its place. For example, I've composed songs
-      while learning to play guitar, created the first scene of a JRPG while
-      learning how to draw pixel art, 3d-modeled a house while dreaming of
-      eventually designing my own house. Come to think of it, even building this
-      website happened on a whim - here's hoping that it'll last.
+      I spend an inordinate amount of time immersing myself in the subject and 
+      creating something out of it. For example, I've composed songs while teaching 
+      myself how to play guitar, put together the first scene of a JRPG while 
+      learning how to draw pixel art, 3d-modeled a house while dreaming of eventually 
+      designing my own house, etc. Come to think of it, even building this website 
+      happened on a whim. Unlike my other projects though, this one is completely 
+      public, so I sincerely hope you enjoy the content.
     </p>
   </>
 );
