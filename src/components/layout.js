@@ -10,7 +10,7 @@ const Layout = ({ children, header }) => (
     </main>
     <footer className="text-sm text-right text-grey-darker">
       <div className="content">
-        *** This site is under heavy construction. © Kevin Yao,{' '}
+        This site is under heavy construction. © Kevin Yao,{' '}
         {new Date().getFullYear()}
       </div>
     </footer>
