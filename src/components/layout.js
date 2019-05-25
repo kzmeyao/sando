@@ -10,8 +10,7 @@ const Layout = ({ children, header }) => (
     </main>
     <footer className="text-sm text-right text-grey-darker">
       <div className="content">
-        This site is under heavy construction. © Kevin Yao,{' '}
-        {new Date().getFullYear()}
+        This site is under construction. © Kevin Yao, {new Date().getFullYear()}
       </div>
     </footer>
     <div id="modal-root" />
