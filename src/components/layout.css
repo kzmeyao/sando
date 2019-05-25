@@ -69,17 +69,31 @@ body {
   background-color: #f2efec;
 }
 
-.content {
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 1em 2em;
+main {
+  flex-grow: 1;
 }
 
-body.open-modal {
+footer {
+  flex-shrink: 0;
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site.open-modal {
   height: 100%;
   overflow: hidden;
   position: fixed;
   width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1em 2em;
 }
 
 .post-text blockquote {

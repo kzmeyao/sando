@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './modal.css';
 
 const toggleBodyClass = () =>
-  document.getElementsByTagName('body')[0].classList.toggle('open-modal');
+  document.getElementsByClassName('site')[0].classList.toggle('open-modal');
 
 const Modal = ({ children, classNames, close }) => {
   useEffect(() => {
