@@ -15,8 +15,8 @@ regionHierarchy: 'Tokyo Metropolis, Japan'
 
 Tokyo is one of the densest cities on Earth, yet with so many people, it is surprisingly orderly. Streets are almost completely void of trash cans, yet they remain clean. People are expected to carry their trash with them until they get home and I found myself stuffing onigiri and sandwich wrappers in my pockets on more than one occasion.
 
-Speaking of onigiris and sandwiches, the convenience stores in Japan shine. Jam-packed with a huge selection of food and beverages at a great value, they are worth multiple visits. My goto combination is the tuna mayo onigiri, the egg salad sando, and a random eye-catching drink from the fridge section. The constant variety, eye-catching seasonal flavors, and limited edition goods keep life interesting.
+Speaking of onigiris and sandwiches, the convenience stores in Japan shine. Jam-packed with a huge selection of food and beverages at a great value, they are worth multiple visits. My goto combination is the tuna mayo onigiri, the egg salad sando, and a random eye-catching drink from the fridge section. The constant variety, seasonal flavors, and limited edition goods keep life interesting.
 
-Aside from the relatively cheap convenience store eats, Tokyo is full of great restaurants. Most of the time, you can simply just point to one and go instead of having to look up reviews ahead of time. The quality bar is just that much higher, that it is rare to have a really horrible experience with the food (especially if you’re used to the standard American fare).
+Aside from the relatively cheap convenience store eats, Tokyo is also full of great restaurants. Most of the time, you can simply just point to one and go instead of having to look up reviews ahead of time. The quality bar is just that much higher, that it is rare to have a really horrible experience with the food (especially if you’re used to the standard American fare).
 
-If you are on the fence about going to Japan, just go. Start with Tokyo as it is the gateway city. It will change your perspective and maybe your life as well like it did mine.
+If you are on the fence about going to Japan, just go. Start with Tokyo as it is the gateway city. It will change your perspective and maybe your life as well as it did mine.
