@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { toFilterKey } from 'utils';
 import { FilterType } from 'constants/types';
 
 const Filters = ({ currentFilter, currentFilterType, filters, onSelect }) => (
@@ -21,13 +22,6 @@ const Filters = ({ currentFilter, currentFilterType, filters, onSelect }) => (
   </div>
 );
 
-const toFilterKey = (filter, filterType) => {
-  if (filter && filterType === FilterType.COUNTRIES) {
-    return filter.toLowerCase().replace(/[^a-z]+/g, '');
-  }
-  return filter;
-};
-
 const FilterList = ({
   currentFilter,
   currentFilterType,
@@ -44,8 +38,7 @@ const FilterList = ({
         {filters.map(filter => (
           <li
             className={
-              isSameFilterType &&
-              toFilterKey(filter, filterType) === currentFilter
+              isSameFilterType && toFilterKey(filter) === currentFilter
                 ? 'font-bold leading-tight'
                 : 'leading-tight'
             }
@@ -54,10 +47,7 @@ const FilterList = ({
             <Link
               className="no-underline text-grey-darkest"
               onClick={onSelect}
-              to={`/${filterType.toLowerCase()}/${toFilterKey(
-                filter,
-                filterType
-              )}/`}
+              to={`/${filterType.toLowerCase()}/${toFilterKey(filter)}/`}
             >
               {filter}
             </Link>

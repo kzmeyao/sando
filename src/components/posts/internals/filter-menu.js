@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 
 import Filters from './filters';
 import Modal from '../../modal';
+import { toFilterKey, fromFilterKey } from 'utils';
 
 import './filter-menu.css';
 
 const FilterMenu = props => {
-  const { currentFilter } = props;
+  const { currentFilter, currentFilterType, filters } = props;
   const [showModal, toggleModal] = useState(false);
 
   return (
@@ -19,7 +20,7 @@ const FilterMenu = props => {
         >
           FILTER
         </span>
-        <span className="hidden md:inline">: {currentFilter}</span>
+        {currentFilter ? `: ${fromFilterKey(currentFilter, filters)}` : ''}
       </div>
       {showModal &&
         ReactDOM.createPortal(
