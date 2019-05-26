@@ -2,8 +2,8 @@ const path = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-
-  const blogPostTemplate = path.resolve(`src/templates/post.js`);
+  const blogPostTemplate = path.resolve('src/templates/post.js');
+  const postsTemplate = path.resolve('src/templates/posts.js');
 
   return graphql(`
     {
@@ -14,6 +14,8 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             frontmatter {
+              country
+              date
               path
             }
           }
@@ -25,11 +27,40 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges;
+    const years = new Set();
+    const countries = new Set();
+
+    posts.forEach(edge => {
+      const { country, date, path } = edge.node.frontmatter;
+      countries.add(country.toLowerCase().replace(/[^a-z]+/g, ''));
+      years.add(date.split('-')[0]);
       createPage({
-        path: node.frontmatter.path,
+        path,
         component: blogPostTemplate,
         context: {} // additional data can be passed via context
+      });
+    });
+
+    [...years].forEach(year => {
+      createPage({
+        path: `/years/${year}/`,
+        component: postsTemplate,
+        context: {
+          filterType: 'YEARS',
+          filter: year
+        }
+      });
+    });
+
+    [...countries].forEach(country => {
+      createPage({
+        path: `/countries/${country}/`,
+        component: postsTemplate,
+        context: {
+          filterType: 'COUNTRIES',
+          filter: country
+        }
       });
     });
   });

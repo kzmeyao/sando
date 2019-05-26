@@ -1,10 +1,10 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import { HomeHeader } from '../components/header';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Posts from '../components/posts';
+import { HomeHeader } from 'components/header';
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import Posts from 'components/posts';
 
 const IndexPage = () => (
   <StaticQuery

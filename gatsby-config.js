@@ -5,6 +5,7 @@ module.exports = {
     title: 'sando'
   },
   plugins: [
+    'gatsby-plugin-resolve-src',
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
