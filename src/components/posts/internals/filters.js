@@ -45,7 +45,7 @@ const FilterList = ({
             key={filter}
           >
             <Link
-              className="no-underline text-grey-darkest"
+              className="hover:font-bold no-underline text-grey-darkest"
               onClick={onSelect}
               to={`/${filterType.toLowerCase()}/${toFilterKey(filter)}/`}
             >
