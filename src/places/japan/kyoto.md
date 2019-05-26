@@ -1,6 +1,6 @@
 ---
 country: 'Japan'
-date: '2016-03-26'
+date: '2016-03-29'
 excerpt: 'Work in progress'
 heroImage: 'kyoto/kyoto-10.jpg'
 imagePrefix: 'kyoto/kyoto'
