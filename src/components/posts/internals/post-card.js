@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const PostCard = ({ post }) => {
   const { excerpt, heroImage, path, place, regionHierarchy } = post;
   return (
-    <div className="group post-card">
+    <div className="group">
       <Link className="no-underline text-grey-darkest" to={`${path}`}>
         <img
           src={`https://res.cloudinary.com/sando/image/upload/w_600/${heroImage}`}
