@@ -788,12 +788,12 @@ module.exports = {
   */
 
   modules: {
-    appearance: ['responsive'],
-    backgroundAttachment: ['responsive'],
+    appearance: [],
+    backgroundAttachment: [],
     backgroundColors: ['responsive', 'hover'],
-    backgroundPosition: ['responsive'],
-    backgroundRepeat: ['responsive'],
-    backgroundSize: ['responsive'],
+    backgroundPosition: [],
+    backgroundRepeat: [],
+    backgroundSize: [],
     borderCollapse: [],
     borderColors: ['responsive', 'hover'],
     borderRadius: ['responsive'],
@@ -837,7 +837,7 @@ module.exports = {
     visibility: ['responsive'],
     whitespace: ['responsive'],
     width: ['responsive'],
-    zIndex: ['responsive']
+    zIndex: []
   },
 
   /*
