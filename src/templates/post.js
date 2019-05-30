@@ -26,7 +26,7 @@ export default function Template({ data }) {
           <PostText html={post.html} />
           <PostMetadata date={date} photoGear={photoGear} />
         </div>
-        <div className="md:w-1/2 lg:w-3/5">
+        <div className="md:w-1/2 lg:w-3/5 w-full">
           <Gallery imagePrefix={imagePrefix} images={images} />
         </div>
       </div>
