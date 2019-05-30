@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 
 import Filters from './filters';
 import Modal from '../../modal';
-import { toFilterKey, fromFilterKey } from 'utils';
+import { fromFilterKey } from 'utils';
 
 import './filter-menu.css';
 
 const FilterMenu = props => {
-  const { currentFilter, currentFilterType, filters } = props;
+  const { currentFilter, filters } = props;
   const [showModal, toggleModal] = useState(false);
 
   return (
