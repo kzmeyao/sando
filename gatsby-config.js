@@ -9,6 +9,12 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
+      resolve: 'gatsby-plugin-polyfill-io',
+      options: {
+        features: ['IntersectionObserver']
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'places',
