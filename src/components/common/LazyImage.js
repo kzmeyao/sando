@@ -2,10 +2,13 @@ import React, { memo, useEffect, useRef, useState } from 'react';
 
 const imgPath = 'https://res.cloudinary.com/sando/image/upload/';
 
-const loadImage = (src, setImage) => {
+const loadImage = (src, setImage, setFadeIn) => {
   const image = new Image();
   image.onload = () => {
     setImage(image);
+    setTimeout(() => {
+      setFadeIn(true);
+    }, 100);
   };
   image.src = src;
 };
@@ -14,6 +17,7 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
   const [intersected, setIntersected] = useState(false);
   const [node, setNode] = useState(null);
   const [image, setImage] = useState(null);
+  const [fadeIn, setFadeIn] = useState(false);
   const observer = useRef(null);
   const imgSrc = `${imgPath}${relSrc}`;
 
@@ -31,20 +35,20 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
   useEffect(() => {
     if (intersected) {
       observer.current.disconnect();
-      setTimeout(() => {
-        loadImage(imgSrc, setImage);
-      }, 300); // temporary
+      loadImage(imgSrc, setImage, setFadeIn);
     }
   }, [intersected]);
 
   const aspectRatio = isVertical ? '2-3' : '3-2';
   const classes = image
     ? 'w-full'
-    : `aspect-ratio-${aspectRatio} bg-grey-light relative w-full`;
+    : `aspect-ratio-${aspectRatio} relative w-full`;
 
   return (
     <div className={classes} ref={setNode}>
-      {image && <img src={imgSrc} />}
+      {image && (
+        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} />
+      )}
       <noscript>
         <img className="absolute pin-t" src={imgSrc} />
       </noscript>
