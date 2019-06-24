@@ -20,3 +20,7 @@ Speaking of onigiris and sandwiches, the convenience stores in Japan shine. Jam-
 Aside from the relatively cheap convenience store eats, Tokyo is also full of great restaurants. Most of the time, you can simply just point to one and go instead of having to look up reviews ahead of time. The quality bar is just that much higher, that it is rare to have a really horrible experience with the food (especially if you’re used to the standard American fare).
 
 If you are on the fence about going to Japan, just go. Start with Tokyo as it is the gateway city. It will change your perspective and maybe your life as well as it did mine.
+
+**Landmarks:** _Akihabara, Meiji Jingu, Omotesando, Senso-ji, Shibuya Crossing, Shijuku Gyoen_
+
+**Food/Drink:** _Ichiran Ramen, Irokawa, Marugo, Toranomon Koffee_
