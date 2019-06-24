@@ -11,7 +11,7 @@ const About = () => (
       salad sando after just one bite. For the uninitiated, `sando` is short for
       sandwich, and the egg salad sando is the perfect sandwich. Its simplicity,
       taste, and value just can't be beat. It's probably not even a stretch to
-      that this bite cemented my love for travel. So here I am, writing this
+      say that this bite cemented my love for travel. So here I am, writing this
       travel journal / travel guide, and I can't think of a better name for it
       than to name it after the thing that started it all.
     </p>
