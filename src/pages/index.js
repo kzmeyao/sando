@@ -26,6 +26,7 @@ const IndexPage = () => (
                 path
                 photoGear
                 place
+                recommendations
                 regionHierarchy
               }
             }

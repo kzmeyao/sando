@@ -16,6 +16,7 @@ export default function Template({ data }) {
     images,
     photoGear,
     place,
+    recommendations,
     regionHierarchy
   } = post.frontmatter;
   return (
@@ -24,7 +25,11 @@ export default function Template({ data }) {
       <div className="flex flex-wrap pt-4">
         <div className="md:w-1/2 lg:w-2/5 md:pr-8">
           <PostText html={post.html} />
-          <PostMetadata date={date} photoGear={photoGear} />
+          <PostMetadata
+            date={date}
+            photoGear={photoGear}
+            recommendations={recommendations}
+          />
         </div>
         <div className="md:w-1/2 lg:w-3/5 w-full">
           <Gallery imagePrefix={imagePrefix} images={images} />
@@ -48,6 +53,7 @@ export const pageQuery = graphql`
         path
         photoGear
         place
+        recommendations
         regionHierarchy
       }
     }

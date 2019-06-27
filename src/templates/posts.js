@@ -34,6 +34,7 @@ export const pageQuery = graphql`
             path
             photoGear
             place
+            recommendations
             regionHierarchy
           }
         }
