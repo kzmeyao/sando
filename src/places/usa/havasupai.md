@@ -6,7 +6,7 @@ heroImage: 'havasupai/havasu-5.jpg'
 imagePrefix: 'havasupai/havasu'
 images: '1,2|4,3,5,6|7,8,9,10,11|12,13,14,15|17,16,18,20,19|21'
 path: '/places/havasupai-arizona'
-photoGear: 'Pentax K1 (24-70mm|31mm|100mm), Sony RX1'
+photoGear: 'Pentax K1 (24-70|31|100mm), Sony RX1'
 place: 'Havasupai'
 regionHierarchy: 'Havasupai, Arizona, USA'
 ---
