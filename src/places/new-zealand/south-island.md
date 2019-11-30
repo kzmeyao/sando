@@ -12,4 +12,4 @@ recommendations: 'Aoraki/Mount National Park, Bespoke Kitchen, Fergburger, Fjord
 regionHierarchy: 'New Zealand'
 ---
 
-> "Did you visit Hobbiton?" That's the single most-asked question I received after visiting New Zealand. Sorry to disappoint, but the answer is no. The sweeping views of snow-capped mountains and blue lakes peaked my interest more so than visiting movie sets, so we ended up spending more time exploring South Island and its rich diverse natural landscapes. Hobbits will have to wait for another time.
+Words under contruction.
