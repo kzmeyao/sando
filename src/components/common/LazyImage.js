@@ -47,10 +47,10 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
   return (
     <div className={classes} ref={setNode}>
       {image && (
-        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} />
+        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} inline />
       )}
       <noscript>
-        <img className="absolute pin-t" src={imgSrc} />
+        <img className="absolute top-0" src={imgSrc} inline />
       </noscript>
     </div>
   );

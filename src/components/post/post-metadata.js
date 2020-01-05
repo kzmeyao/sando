@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const dtClass = 'font-bold mt-6 mb-2';
+const dtClass = 'font-bold mt-6';
 
 const PostMetadata = ({ date, photoGear, recommendations }) => {
   const [copied, setCopied] = useState(false);
@@ -10,7 +10,7 @@ const PostMetadata = ({ date, photoGear, recommendations }) => {
   };
 
   return (
-    <div className="border-t border-solid border-grey-light md:sticky pin-t">
+    <div className="border-t border-solid border-grey-light md:sticky top-0">
       <dl className="text-sm text-grey-darkest mb-8">
         {recommendations && (
           <>

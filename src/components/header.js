@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const headerClass = 'bg-white pb-4 text-center md:text-left';
-const headingClass = 'font-heading pt-2 text-3xl text-black';
+const headerClass = 'bg-white pb-2 text-center md:text-left';
+const headingClass = 'font-heading font-semibold text-3xl text-black';
 const subtitleClass = 'text-xs text-black';
 const navLinkClass =
   'no-underline text-xs text-grey-darkest hover:text-black hover:underline';

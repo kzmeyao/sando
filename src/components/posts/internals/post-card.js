@@ -12,7 +12,7 @@ const PostCard = ({ post }) => {
         <div className="group-hover:underline text-xxs pt-3">
           {regionHierarchy.toUpperCase()}
         </div>
-        <h2 className="font-heading pt-3 text-1xl">{place}</h2>
+        <h2 className="font-heading font-semibold pt-3 text-2xl">{place}</h2>
         <p className="pt-3 leading-normal text-sm">{excerpt}</p>
         <div className="italic group-hover:underline pt-3 text-xs text-grey-dark">
           Read more

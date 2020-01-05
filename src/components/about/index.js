@@ -1,6 +1,6 @@
 import React from 'react';
 
-const headingClass = 'font-heading text-xl text-grey-darkest my-6';
+const headingClass = 'font-heading font-semibold text-xl text-grey-darkest my-4';
 const pClass = 'text-sm leading-loose text-grey-darkest';
 
 const About = () => (
