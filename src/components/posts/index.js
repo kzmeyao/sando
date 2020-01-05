@@ -18,7 +18,7 @@ class Posts extends React.Component {
     }
     const filters = {};
     filters[FilterType.COUNTRIES] = Array.from(countries).sort();
-    filters[FilterType.YEARS] = Array.from(years).sort((a, b) => a > b);
+    filters[FilterType.YEARS] = Array.from(years).sort((a, b) => b - a);
 
     this.state = {
       currentFilter: filter,
