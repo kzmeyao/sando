@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const headerClass = 'bg-white pb-2 text-center md:text-left';
+const headerClass = 'bg-white text-center md:text-left';
 const headingClass = 'font-heading font-semibold text-3xl text-black';
 const subtitleClass = 'text-xs text-black';
 const navLinkClass =
@@ -30,7 +30,7 @@ const PostHeader = ({ title, subtitle }) => (
 );
 
 const Navigation = () => (
-  <nav className="clearfix pt-2 pb-10">
+  <nav className="clearfix pb-12">
     <Link className={`${navLinkClass} float-left`} to="/">
       home
     </Link>
