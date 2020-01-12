@@ -122,7 +122,7 @@ module.exports = {
     },
     borderColor: theme => ({
       default: theme('colors.grey-light'),
-      ...theme('colors'),
+      ...theme('colors')
     }),
     borderRadius: {
       none: '0',
@@ -286,7 +286,7 @@ module.exports = {
     },
     stroke: {
       current: 'currentColor'
-    },
+    }
   },
   variants: {
     backgroundColor: ['responsive', 'hover'],
@@ -331,9 +331,9 @@ module.exports = {
     textAlign: ['responsive'],
     textColor: ['responsive', 'hover'],
     fontSize: ['responsive'],
-    fontStyle: ['responsive', 'group-hover', 'hover'],
+    fontStyle: ['responsive', 'hover'],
     fontSmoothing: ['responsive'],
-    textDecoration: ['responsive'],
+    textDecoration: ['responsive', 'group-hover'],
     textTransform: ['responsive'],
     letterSpacing: ['responsive'],
     userSelect: ['responsive'],
