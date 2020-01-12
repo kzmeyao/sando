@@ -33,7 +33,7 @@ const FilterList = ({
 
   return (
     <>
-      <h3 className="font-semibold pb-2 text-grey-dark text-xs">{filterType}</h3>
+      <h3 className="pb-3 text-grey-dark text-s">{filterType}</h3>
       <ul className="mb-8">
         {filters.map(filter => (
           <li
