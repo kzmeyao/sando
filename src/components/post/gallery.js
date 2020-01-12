@@ -11,13 +11,13 @@ const Gallery = ({ imagePrefix, images }) => {
           const [firstImg, secondImg] = row.split('|');
           return (
             <div key={row} className="flex pb-2">
-              <div className="w-1/2 pr-2">
+              <div className="w-1/2 pr-1">
                 <LazyImage
                   isVertical={true}
                   relSrc={`${imagePrefix}-${firstImg}`}
                 />
               </div>
-              <div className="w-1/2 pl-2">
+              <div className="w-1/2 pl-1">
                 <LazyImage
                   isVertical={true}
                   relSrc={`${imagePrefix}-${secondImg}`}
