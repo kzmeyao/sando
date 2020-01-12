@@ -4,8 +4,7 @@ import React from 'react';
 const headerClass = 'bg-white text-center md:text-left';
 const headingClass = 'font-heading font-semibold text-3xl text-black';
 const subtitleClass = 'text-xs text-black';
-const navLinkClass =
-  'no-underline text-xs text-grey-darkest hover:underline';
+const navLinkClass = 'no-underline text-xs text-grey-darkest hover:underline';
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
@@ -30,12 +29,12 @@ const PostHeader = ({ title, subtitle }) => (
 );
 
 const Navigation = () => (
-  <nav className="clearfix pb-12">
+  <nav className="clearfix pb-12 lg:mb-12">
     <Link className={`${navLinkClass} float-left`} to="/">
-      home
+      HOME
     </Link>
     <Link className={`${navLinkClass} float-right`} to="/about">
-      about
+      ABOUT
     </Link>
   </nav>
 );
