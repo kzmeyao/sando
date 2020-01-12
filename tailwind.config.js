@@ -333,7 +333,7 @@ module.exports = {
     fontSize: ['responsive'],
     fontStyle: ['responsive', 'hover'],
     fontSmoothing: ['responsive'],
-    textDecoration: ['responsive', 'group-hover'],
+    textDecoration: ['responsive', 'hover', 'group-hover'],
     textTransform: ['responsive'],
     letterSpacing: ['responsive'],
     userSelect: ['responsive'],

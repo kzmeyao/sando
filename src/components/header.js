@@ -5,7 +5,7 @@ const headerClass = 'bg-white text-center md:text-left';
 const headingClass = 'font-heading font-semibold text-3xl text-black';
 const subtitleClass = 'text-xs text-black';
 const navLinkClass =
-  'no-underline text-xs text-grey-darkest hover:text-black hover:underline';
+  'no-underline text-xs text-grey-darkest hover:underline';
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
