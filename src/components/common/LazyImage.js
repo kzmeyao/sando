@@ -37,7 +37,7 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
       observer.current.disconnect();
       loadImage(imgSrc, setImage, setFadeIn);
     }
-  }, [intersected]);
+  }, [imgSrc, intersected]);
 
   const aspectRatio = isVertical ? '2-3' : '3-2';
   const classes = image
@@ -47,10 +47,10 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
   return (
     <div className={classes} ref={setNode}>
       {image && (
-        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} inline />
+        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} inline="true" />
       )}
       <noscript>
-        <img className="absolute top-0" src={imgSrc} inline />
+        <img className="absolute top-0" src={imgSrc} inline="true" />
       </noscript>
     </div>
   );
