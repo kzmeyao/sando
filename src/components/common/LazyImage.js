@@ -41,8 +41,8 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
 
   const aspectRatio = isVertical ? '2-3' : '3-2';
   const classes = image
-    ? 'w-full'
-    : `aspect-ratio-${aspectRatio} relative w-full`;
+    ? 'w-full bg-grey-light'
+    : `aspect-ratio-${aspectRatio} relative w-full bg-grey-light`;
 
   return (
     <div className={classes} ref={setNode}>
