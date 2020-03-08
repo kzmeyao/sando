@@ -1,7 +1,7 @@
 ---
 country: 'New Zealand'
 date: '2017-03-23'
-excerpt: 'Words under construction'
+excerpt: 'Snow-capped mountains and glacial lakes, a landscape photographer’s dream.'
 heroImage: 'new-zealand/south-island-18.jpg'
 imagePrefix: 'new-zealand/south-island'
 images: '1,2|3,4,6,5|7,8,9|10,11,12,13,14,15,16,17,18,19,20|21,22'
