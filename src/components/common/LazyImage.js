@@ -13,7 +13,7 @@ const loadImage = (src, setImage, setFadeIn) => {
   image.src = src;
 };
 
-const LazyImage = ({ isVertical = false, relSrc }) => {
+const LazyImage = ({ isVertical = false, onClick, relSrc }) => {
   const [intersected, setIntersected] = useState(false);
   const [node, setNode] = useState(null);
   const [image, setImage] = useState(null);
@@ -47,10 +47,14 @@ const LazyImage = ({ isVertical = false, relSrc }) => {
   return (
     <div className={classes} ref={setNode}>
       {image && (
-        <img className={`fade-in${fadeIn ? ' start' : ''}`} src={imgSrc} inline="true" />
+        <img
+          className={`fade-in${fadeIn ? ' start' : ''}`}
+          src={imgSrc}
+          onClick={onClick}
+        />
       )}
       <noscript>
-        <img className="absolute top-0" src={imgSrc} inline="true" />
+        <img className="absolute top-0" src={imgSrc} />
       </noscript>
     </div>
   );

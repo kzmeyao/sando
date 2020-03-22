@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
+
 import './modal.css';
 
 const toggleBodyClass = () =>
-  document.getElementsByClassName('site')[0].classList.toggle('open-modal');
+  document.getElementsByTagName('body')[0].classList.toggle('open-modal');
 
 const Modal = ({ children, classNames, close }) => {
   useEffect(() => {
@@ -15,14 +17,15 @@ const Modal = ({ children, classNames, close }) => {
     setTimeout(() => setShow(true), 100);
   });
 
-  return (
+  return ReactDOM.createPortal(
     <div className={`modal ${classNames || ''} ${show ? 'show-modal' : ''}`}>
       <div className="modal-content">{children}</div>
       <button className="modal-close" onClick={close}>
         x
       </button>
-    </div>
+    </div>,
+    document.getElementById('modal-root')
   );
 };
 
-export default Modal;
+export { Modal };

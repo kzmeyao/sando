@@ -905,6 +905,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@brainhubeu/react-carousel@^1.13.12-alpha.0":
+  version "1.13.12-alpha.0"
+  resolved "https://registry.yarnpkg.com/@brainhubeu/react-carousel/-/react-carousel-1.13.12-alpha.0.tgz#1cc0cf6f82ee33eb9e50e7620849a766e3514750"
+  integrity sha512-X83CS5v461rZ0y3cdHp2RhfklDhT6xHwTKOy56HMSlo/tUSuJutbuw7W4hXMz2RV9PgW/9UZt30yPjiH/ArR4w==
+
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
