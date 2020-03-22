@@ -39,8 +39,8 @@ const FilterList = ({
           <li
             className={
               isSameFilterType && toFilterKey(filter) === currentFilter
-                ? 'font-bold leading-tight'
-                : 'leading-tight'
+                ? 'font-bold leading-tight pb-1'
+                : 'leading-tight pb-1'
             }
             key={filter}
           >
