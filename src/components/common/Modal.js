@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
+import { Icon } from './Icon';
 import './modal.css';
 
 const toggleBodyClass = () =>
@@ -21,7 +22,7 @@ const Modal = ({ children, classNames, close }) => {
     <div className={`modal ${classNames || ''} ${show ? 'show-modal' : ''}`}>
       <div className="modal-content">{children}</div>
       <button className="modal-close" onClick={close}>
-        x
+        <Icon name="close" />
       </button>
     </div>,
     document.getElementById('modal-root')
