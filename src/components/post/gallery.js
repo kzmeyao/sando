@@ -5,16 +5,24 @@ import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
 
 const IMG_PATH = 'https://res.cloudinary.com/sando/image/upload/';
 const TRANSFORM_PATH = 't_scale_80/';
-const IMAGE_LONG_EDGE = 1200;
-const IMAGE_SHORT_EDGE = 801;
+const IMAGE_LONG_EDGE = 1080;
+const IMAGE_SHORT_EDGE = 721;
+const HACKY_IMAGE_CLASS = 'photosw';
+
+const getThumbBoundsFn = index => {
+  const thumbnail = document.querySelectorAll(`.${HACKY_IMAGE_CLASS}`)[index];
+  const pageYScroll = window.pageYOffset ?? document.documentElement.scrollTop;
+  const rect = thumbnail.getBoundingClientRect();
+  return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+};
 
 const Gallery = ({ imagePrefix, images }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [index, setIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleOpen = index => {
     setIsOpen(true);
-    setIndex(index);
+    setCurrentIndex(index);
   };
 
   const handleClose = () => {
@@ -61,7 +69,10 @@ const Gallery = ({ imagePrefix, images }) => {
           const { msrc, src, vpad } = image;
           if (vpad) {
             return (
-              <div key={src} className={`w-1/2 p${vpad}-1 inline-block`}>
+              <div
+                key={src}
+                className={`w-1/2 p${vpad}-1 inline-block ${HACKY_IMAGE_CLASS}`}
+              >
                 <LazyImage
                   isVertical={true}
                   src={msrc}
@@ -72,7 +83,7 @@ const Gallery = ({ imagePrefix, images }) => {
           }
 
           return (
-            <div key={src} className="w-full pb-2">
+            <div key={src} className={`w-full pb-2 ${HACKY_IMAGE_CLASS}`}>
               <LazyImage src={msrc} onClick={() => handleOpen(index)} />
             </div>
           );
@@ -80,9 +91,10 @@ const Gallery = ({ imagePrefix, images }) => {
       </div>
       <PhotoSwipeWrapper
         isOpen={isOpen}
-        index={index}
+        index={currentIndex}
         items={items}
         onClose={handleClose}
+        getThumbBoundsFn={getThumbBoundsFn}
       />
     </>
   );

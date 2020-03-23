@@ -5,13 +5,23 @@ import '../../../node_modules/photoswipe/dist/default-skin/default-skin.css';
 import PhotoSwipe from '../../../node_modules/photoswipe/dist/photoswipe.js';
 import PhotoSwipeUI_Default from '../../../node_modules/photoswipe/dist/photoswipe-ui-default.js';
 
-const PhotoSwipeWrapper = ({ index, items, isOpen, onClose }) => {
+const PhotoSwipeWrapper = ({
+  index,
+  items,
+  isOpen,
+  onClose,
+  getThumbBoundsFn
+}) => {
   let pswpElement = useRef(null);
 
   const options = {
     index: index ?? 0,
     closeOnScroll: false,
-    history: false
+    history: false,
+    getThumbBoundsFn,
+    fullscreenEl: false,
+    zoomEl: false,
+    shareEl: false
   };
 
   useEffect(() => {
