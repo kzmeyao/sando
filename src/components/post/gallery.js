@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 import LazyImage from '../common/LazyImage';
 import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
 
-const imgPath = 'https://res.cloudinary.com/sando/image/upload/';
+const IMG_PATH = 'https://res.cloudinary.com/sando/image/upload/';
+const TRANSFORM_PATH = 't_scale_80/';
+const IMAGE_LONG_EDGE = 1200;
+const IMAGE_SHORT_EDGE = 801;
 
 const Gallery = ({ imagePrefix, images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
-  const imageRows = images.split(',');
 
   const handleOpen = index => {
     setIsOpen(true);
@@ -19,51 +21,59 @@ const Gallery = ({ imagePrefix, images }) => {
     setIsOpen(false);
   };
 
-  let items = imageRows.reduce((acc, current) => {
+  const items = images.split(',').reduce((acc, current) => {
     if (current.includes('|')) {
-      return [...acc, ...current.split('|')];
+      const [firstImg, secondImg] = current.split('|');
+      return [
+        ...acc,
+        {
+          src: `${IMG_PATH}${imagePrefix}-${firstImg}`,
+          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${firstImg}`,
+          w: IMAGE_SHORT_EDGE,
+          h: IMAGE_LONG_EDGE,
+          vpad: 'r'
+        },
+        {
+          src: `${IMG_PATH}${imagePrefix}-${secondImg}`,
+          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${secondImg}`,
+          w: IMAGE_SHORT_EDGE,
+          h: IMAGE_LONG_EDGE,
+          vpad: 'l'
+        }
+      ];
     } else {
-      return [...acc, current];
+      return [
+        ...acc,
+        {
+          src: `${IMG_PATH}${imagePrefix}-${current}`,
+          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${current}`,
+          w: IMAGE_LONG_EDGE,
+          h: IMAGE_SHORT_EDGE
+        }
+      ];
     }
   }, []);
-  items = items.map(item => ({
-    src: `${imgPath}${imagePrefix}-${item}`,
-    w: 840,
-    h: 541
-  }));
 
   return (
     <>
       <div>
-        {imageRows.map(row => {
-          if (row.includes('|')) {
-            const [firstImg, secondImg] = row.split('|');
+        {items.map((image, index) => {
+          const { msrc, src, vpad } = image;
+          if (vpad) {
             return (
-              <div key={row} className="flex pb-2">
-                <div className="w-1/2 pr-1">
-                  <LazyImage
-                    isVertical={true}
-                    relSrc={`${imagePrefix}-${firstImg}`}
-                    onClick={() => handleOpen(0)}
-                  />
-                </div>
-                <div className="w-1/2 pl-1">
-                  <LazyImage
-                    isVertical={true}
-                    relSrc={`${imagePrefix}-${secondImg}`}
-                    onClick={() => handleOpen(0)}
-                  />
-                </div>
+              <div key={src} className={`w-1/2 p${vpad}-1 inline-block`}>
+                <LazyImage
+                  isVertical={true}
+                  src={msrc}
+                  onClick={() => handleOpen(index)}
+                />
               </div>
             );
           }
 
           return (
-            <div key={row} className="flex pb-2">
-              <LazyImage
-                relSrc={`${imagePrefix}-${row}`}
-                onClick={() => handleOpen(0)}
-              />
+            <div key={src} className="w-full pb-2">
+              <LazyImage src={msrc} onClick={() => handleOpen(index)} />
             </div>
           );
         })}

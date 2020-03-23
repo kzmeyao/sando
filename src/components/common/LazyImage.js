@@ -13,13 +13,13 @@ const loadImage = (src, setImage, setFadeIn) => {
   image.src = src;
 };
 
-const LazyImage = ({ isVertical = false, onClick, relSrc }) => {
+const LazyImage = ({ isVertical = false, onClick, relSrc, src }) => {
   const [intersected, setIntersected] = useState(false);
   const [node, setNode] = useState(null);
   const [image, setImage] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
   const observer = useRef(null);
-  const imgSrc = `${imgPath}${relSrc}`;
+  const imgSrc = src ?? `${imgPath}${relSrc}`;
 
   useEffect(() => {
     if (node) {
@@ -48,7 +48,9 @@ const LazyImage = ({ isVertical = false, onClick, relSrc }) => {
     <div className={classes} ref={setNode}>
       {image && (
         <img
-          className={`fade-in${fadeIn ? ' start' : ''}`}
+          className={`fade-in${fadeIn ? ' start' : ''}${
+            onClick ? ' cursor-pointer' : ''
+          }`}
           src={imgSrc}
           onClick={onClick}
         />

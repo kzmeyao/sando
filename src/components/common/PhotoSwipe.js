@@ -5,11 +5,11 @@ import '../../../node_modules/photoswipe/dist/default-skin/default-skin.css';
 import PhotoSwipe from '../../../node_modules/photoswipe/dist/photoswipe.js';
 import PhotoSwipeUI_Default from '../../../node_modules/photoswipe/dist/photoswipe-ui-default.js';
 
-const PhotoSwipeWrapper = props => {
+const PhotoSwipeWrapper = ({ index, items, isOpen, onClose }) => {
   let pswpElement = useRef(null);
 
   const options = {
-    index: props.index || 0,
+    index: index ?? 0,
     closeOnScroll: false,
     history: false
   };
@@ -18,27 +18,27 @@ const PhotoSwipeWrapper = props => {
     const photoSwipe = new PhotoSwipe(
       pswpElement,
       PhotoSwipeUI_Default,
-      props.items,
+      items,
       options
     );
 
     if (photoSwipe) {
-      if (props.isOpen) {
+      if (isOpen) {
         photoSwipe.init();
 
         photoSwipe.listen('destroy', () => {
-          props.onClose();
+          onClose();
         });
 
         photoSwipe.listen('close', () => {
-          props.onClose();
+          onClose();
         });
       }
-      if (!props.isOpen) {
-        props.onClose();
+      if (!isOpen) {
+        onClose();
       }
     }
-  }, [props, options]);
+  }, [index, items, isOpen, options]);
 
   return (
     <div
