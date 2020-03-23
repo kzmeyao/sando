@@ -1,11 +1,36 @@
 import React, { useState } from 'react';
 
 import LazyImage from '../common/LazyImage';
-import { Modal } from '../common/Modal';
+import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
+
+const imgPath = 'https://res.cloudinary.com/sando/image/upload/';
 
 const Gallery = ({ imagePrefix, images }) => {
-  const [showModal, toggleModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
   const imageRows = images.split(',');
+
+  const handleOpen = index => {
+    setIsOpen(true);
+    setIndex(index);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
+  let items = imageRows.reduce((acc, current) => {
+    if (current.includes('|')) {
+      return [...acc, ...current.split('|')];
+    } else {
+      return [...acc, current];
+    }
+  }, []);
+  items = items.map(item => ({
+    src: `${imgPath}${imagePrefix}-${item}`,
+    w: 840,
+    h: 541
+  }));
 
   return (
     <>
@@ -19,14 +44,14 @@ const Gallery = ({ imagePrefix, images }) => {
                   <LazyImage
                     isVertical={true}
                     relSrc={`${imagePrefix}-${firstImg}`}
-                    onClick={() => toggleModal(true)}
+                    onClick={() => handleOpen(0)}
                   />
                 </div>
                 <div className="w-1/2 pl-1">
                   <LazyImage
                     isVertical={true}
                     relSrc={`${imagePrefix}-${secondImg}`}
-                    onClick={() => toggleModal(true)}
+                    onClick={() => handleOpen(0)}
                   />
                 </div>
               </div>
@@ -37,19 +62,20 @@ const Gallery = ({ imagePrefix, images }) => {
             <div key={row} className="flex pb-2">
               <LazyImage
                 relSrc={`${imagePrefix}-${row}`}
-                onClick={() => toggleModal(true)}
+                onClick={() => handleOpen(0)}
               />
             </div>
           );
         })}
       </div>
-      {/* {showModal && (
-        <Modal classNames="filter-modal" close={() => toggleModal(false)}>
-          hi
-        </Modal>
-      )} */}
+      <PhotoSwipeWrapper
+        isOpen={isOpen}
+        index={index}
+        items={items}
+        onClose={handleClose}
+      />
     </>
   );
 };
 
-export default Gallery;
+export { Gallery };

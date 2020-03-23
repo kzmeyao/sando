@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Gallery from '../components/post/gallery';
+import { Gallery } from '../components/post/Gallery';
 import { PostHeader } from '../components/header';
 import PostMetadata from '../components/post/post-metadata';
 import PostText from '../components/post/post-text';

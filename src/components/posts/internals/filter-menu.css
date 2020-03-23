@@ -3,15 +3,6 @@
   font-size: 120%;
 }
 
-.filter-modal button.modal-close {
-  all: unset;
-  cursor: pointer;
-  padding: 1em;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .filter-modal .modal-content {
   align-items: center;
   display: flex;

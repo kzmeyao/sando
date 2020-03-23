@@ -12,3 +12,12 @@
   transition: opacity 0.25s;
   visibility: visible;
 }
+
+.modal button.modal-close {
+  all: unset;
+  cursor: pointer;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
