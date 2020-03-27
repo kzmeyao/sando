@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useRef, useState } from 'react';
 
-const imgPath = 'https://res.cloudinary.com/sando/image/upload/';
+import { IMAGE_PATH } from '../../constants';
 
 const loadImage = (src, setImage, setFadeIn) => {
   const image = new Image();
@@ -19,7 +19,7 @@ const LazyImage = ({ isVertical = false, onClick, relSrc, src }) => {
   const [image, setImage] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
   const observer = useRef(null);
-  const imgSrc = src ?? `${imgPath}${relSrc}`;
+  const imgSrc = src ?? `${IMAGE_PATH}${relSrc}`;
 
   useEffect(() => {
     if (node) {

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 import LazyImage from '../common/LazyImage';
 import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
+import { IMAGE_PATH } from '../../constants';
 
-const IMG_PATH = 'https://res.cloudinary.com/sando/image/upload/';
-const TRANSFORM_PATH = 't_scale_80/';
-const IMAGE_LONG_EDGE = 1080;
-const IMAGE_SHORT_EDGE = 721;
+const TRANSFORM_PATH = 't_scale_80';
+const IMAGE_LONG_EDGE = 1080 * 0.8;
+const IMAGE_SHORT_EDGE = 721 * 0.8;
 const HACKY_IMAGE_CLASS = 'photosw';
 
 const getThumbBoundsFn = index => {
@@ -35,15 +35,15 @@ const Gallery = ({ imagePrefix, images }) => {
       return [
         ...acc,
         {
-          src: `${IMG_PATH}${imagePrefix}-${firstImg}`,
-          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${firstImg}`,
+          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${firstImg}`,
+          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${firstImg}`,
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
           vpad: 'r'
         },
         {
-          src: `${IMG_PATH}${imagePrefix}-${secondImg}`,
-          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${secondImg}`,
+          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${secondImg}`,
+          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${secondImg}`,
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
           vpad: 'l'
@@ -53,8 +53,8 @@ const Gallery = ({ imagePrefix, images }) => {
       return [
         ...acc,
         {
-          src: `${IMG_PATH}${imagePrefix}-${current}`,
-          msrc: `${IMG_PATH}${TRANSFORM_PATH}${imagePrefix}-${current}`,
+          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${current}`,
+          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${current}`,
           w: IMAGE_LONG_EDGE,
           h: IMAGE_SHORT_EDGE
         }
@@ -62,6 +62,7 @@ const Gallery = ({ imagePrefix, images }) => {
     }
   }, []);
 
+  console.log(items);
   return (
     <>
       <div>

@@ -5,6 +5,31 @@ import '../../../node_modules/photoswipe/dist/default-skin/default-skin.css';
 import PhotoSwipe from '../../../node_modules/photoswipe/dist/photoswipe.js';
 import PhotoSwipeUI_Default from '../../../node_modules/photoswipe/dist/photoswipe-ui-default.js';
 
+const getDoubleTapZoom = (isMouseClick, item) => {
+  // isMouseClick          - true if mouse, false if double-tap
+  // item                  - slide object that is zoomed, usually current
+  // item.initialZoomLevel - initial scale ratio of image
+  //                         e.g. if viewport is 700px and image is 1400px,
+  //                              initialZoomLevel will be 0.5
+
+  if (isMouseClick) {
+    // is mouse click on image or zoom icon
+
+    // zoom to original
+    return 1;
+
+    // e.g. for 1400px image:
+    // 0.5 - zooms to 700px
+    // 2   - zooms to 2800px
+  } else {
+    // is double-tap
+
+    // zoom to original if initial zoom is less than 0.7x,
+    // otherwise to 1.5x, to make sure that double-tap gesture always zooms image
+    return item.initialZoomLevel < 0.7 ? 1 : 1.5;
+  }
+};
+
 const PhotoSwipeWrapper = ({
   index,
   items,
@@ -21,7 +46,9 @@ const PhotoSwipeWrapper = ({
     getThumbBoundsFn,
     fullscreenEl: false,
     zoomEl: false,
-    shareEl: false
+    shareEl: false,
+    maxSpreadZoom: 1,
+    getDoubleTapZoom
   };
 
   useEffect(() => {
@@ -73,18 +100,6 @@ const PhotoSwipeWrapper = ({
             <button
               className="pswp__button pswp__button--close"
               title="Close (Esc)"
-            />
-            <button
-              className="pswp__button pswp__button--share"
-              title="Share"
-            />
-            <button
-              className="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-            />
-            <button
-              className="pswp__button pswp__button--zoom"
-              title="Zoom in/out"
             />
             <div className="pswp__preloader">
               <div className="pswp__preloader__icn">
