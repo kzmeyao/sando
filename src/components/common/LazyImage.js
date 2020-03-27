@@ -1,4 +1,5 @@
 import React, { memo, useEffect, useRef, useState } from 'react';
+import classnames from 'classnames';
 
 import { IMAGE_PATH } from '../../constants';
 
@@ -48,9 +49,10 @@ const LazyImage = ({ isVertical = false, onClick, relSrc, src }) => {
     <div className={classes} ref={setNode}>
       {image && (
         <img
-          className={`fade-in${fadeIn ? ' start' : ''}${
-            onClick ? ' cursor-pointer' : ''
-          }`}
+          className={classnames('fade-in', {
+            start: fadeIn,
+            'cursor-pointer': onClick
+          })}
           src={imgSrc}
           onClick={onClick}
         />
