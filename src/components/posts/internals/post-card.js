@@ -7,7 +7,7 @@ const PostCard = ({ post }) => {
   return (
     <div className="group">
       <Link className="no-underline text-grey-darkest" to={`${path}`}>
-        <LazyImage relSrc={`w_600/${heroImage}`} />
+        <LazyImage relSrc={`/w_600/gallery/${heroImage}`} />
         <div className="group-hover:underline text-xxs pt-3">
           {regionHierarchy.toUpperCase()}
         </div>

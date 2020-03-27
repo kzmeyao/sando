@@ -1,6 +1,7 @@
 import React, { memo, useEffect, useRef, useState } from 'react';
+import classnames from 'classnames';
 
-const imgPath = 'https://res.cloudinary.com/sando/image/upload/';
+import { IMAGE_PATH } from '../../constants';
 
 const loadImage = (src, setImage, setFadeIn) => {
   const image = new Image();
@@ -13,13 +14,13 @@ const loadImage = (src, setImage, setFadeIn) => {
   image.src = src;
 };
 
-const LazyImage = ({ isVertical = false, onClick, relSrc }) => {
+const LazyImage = ({ isVertical = false, onClick, relSrc, src }) => {
   const [intersected, setIntersected] = useState(false);
   const [node, setNode] = useState(null);
   const [image, setImage] = useState(null);
   const [fadeIn, setFadeIn] = useState(false);
   const observer = useRef(null);
-  const imgSrc = `${imgPath}${relSrc}`;
+  const imgSrc = src ?? `${IMAGE_PATH}${relSrc}`;
 
   useEffect(() => {
     if (node) {
@@ -48,7 +49,10 @@ const LazyImage = ({ isVertical = false, onClick, relSrc }) => {
     <div className={classes} ref={setNode}>
       {image && (
         <img
-          className={`fade-in${fadeIn ? ' start' : ''}`}
+          className={classnames('fade-in', {
+            start: fadeIn,
+            'cursor-pointer': onClick
+          })}
           src={imgSrc}
           onClick={onClick}
         />
