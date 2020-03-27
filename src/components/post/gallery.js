@@ -16,6 +16,12 @@ const getThumbBoundsFn = index => {
   return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
 };
 
+const getImageUrl = (imagePrefix, fileName, transform) => {
+  return [IMAGE_PATH, transform, 'gallery', `${imagePrefix}-${fileName}`].join(
+    '/'
+  );
+};
+
 const Gallery = ({ imagePrefix, images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,15 +41,15 @@ const Gallery = ({ imagePrefix, images }) => {
       return [
         ...acc,
         {
-          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${firstImg}`,
-          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${firstImg}`,
+          src: getImageUrl(imagePrefix, firstImg),
+          msrc: getImageUrl(imagePrefix, firstImg, TRANSFORM_PATH),
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
           vpad: 'r'
         },
         {
-          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${secondImg}`,
-          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${secondImg}`,
+          src: getImageUrl(imagePrefix, secondImg),
+          msrc: getImageUrl(imagePrefix, secondImg, TRANSFORM_PATH),
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
           vpad: 'l'
@@ -53,8 +59,8 @@ const Gallery = ({ imagePrefix, images }) => {
       return [
         ...acc,
         {
-          src: `${IMAGE_PATH}/gallery/${imagePrefix}-${current}`,
-          msrc: `${IMAGE_PATH}/${TRANSFORM_PATH}/gallery/${imagePrefix}-${current}`,
+          src: getImageUrl(imagePrefix, current),
+          msrc: getImageUrl(imagePrefix, current, TRANSFORM_PATH),
           w: IMAGE_LONG_EDGE,
           h: IMAGE_SHORT_EDGE
         }
