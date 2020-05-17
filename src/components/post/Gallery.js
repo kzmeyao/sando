@@ -17,9 +17,9 @@ const getThumbBoundsFn = index => {
 };
 
 const getImageUrl = (imagePrefix, fileName, transform) => {
-  return [IMAGE_PATH, transform, 'gallery', `${imagePrefix}-${fileName}`].join(
-    '/'
-  );
+  return [IMAGE_PATH, transform, 'gallery', `${imagePrefix}-${fileName}`]
+    .filter(Boolean)
+    .join('/');
 };
 
 const Gallery = ({ imagePrefix, images }) => {
@@ -68,7 +68,6 @@ const Gallery = ({ imagePrefix, images }) => {
     }
   }, []);
 
-  console.log(items);
   return (
     <>
       <div>
