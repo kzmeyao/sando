@@ -142,3 +142,7 @@ footer {
 .fade-in.start {
   opacity: 1;
 }
+
+.pswp__img.pswp__img--placeholder {
+  display: block !important;
+}
