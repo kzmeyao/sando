@@ -29,7 +29,7 @@ const PostHeader = ({ title, subtitle }) => (
 );
 
 const Navigation = () => (
-  <nav className="clearfix pb-12 lg:mb-12">
+  <nav className="flow-root pb-12 lg:mb-12">
     <Link className={`${navLinkClass} float-left`} to="/">
       HOME
     </Link>

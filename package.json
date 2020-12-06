@@ -39,6 +39,6 @@
     "cross-env": "^7.0.2",
     "gatsby-plugin-postcss": "^2.3.11",
     "npm-check-updates": "^8.0.1",
-    "tailwindcss": "^1.7.6"
+    "tailwindcss": "^2.0.1"
   }
 }
