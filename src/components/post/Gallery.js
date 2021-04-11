@@ -9,7 +9,7 @@ const IMAGE_LONG_EDGE = 1080 * 0.8;
 const IMAGE_SHORT_EDGE = 721 * 0.8;
 const HACKY_IMAGE_CLASS = 'photosw';
 
-const getThumbBoundsFn = index => {
+const getThumbBoundsFn = (index) => {
   const thumbnail = document.querySelectorAll(`.${HACKY_IMAGE_CLASS}`)[index];
   const pageYScroll = window.pageYOffset ?? document.documentElement.scrollTop;
   const rect = thumbnail.getBoundingClientRect();
@@ -26,7 +26,7 @@ const Gallery = ({ imagePrefix, images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleOpen = index => {
+  const handleOpen = (index) => {
     setIsOpen(true);
     setCurrentIndex(index);
   };
@@ -45,15 +45,15 @@ const Gallery = ({ imagePrefix, images }) => {
           msrc: getImageUrl(imagePrefix, firstImg, TRANSFORM_PATH),
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
-          vpad: 'r'
+          vpad: 'r',
         },
         {
           src: getImageUrl(imagePrefix, secondImg),
           msrc: getImageUrl(imagePrefix, secondImg, TRANSFORM_PATH),
           w: IMAGE_SHORT_EDGE,
           h: IMAGE_LONG_EDGE,
-          vpad: 'l'
-        }
+          vpad: 'l',
+        },
       ];
     } else {
       return [
@@ -62,39 +62,37 @@ const Gallery = ({ imagePrefix, images }) => {
           src: getImageUrl(imagePrefix, current),
           msrc: getImageUrl(imagePrefix, current, TRANSFORM_PATH),
           w: IMAGE_LONG_EDGE,
-          h: IMAGE_SHORT_EDGE
-        }
+          h: IMAGE_SHORT_EDGE,
+        },
       ];
     }
   }, []);
 
   return (
     <>
-      <div>
-        {items.map((image, index) => {
-          const { msrc, src, vpad } = image;
-          if (vpad) {
-            return (
-              <div
-                key={src}
-                className={`w-1/2 p${vpad}-1 inline-block ${HACKY_IMAGE_CLASS}`}
-              >
-                <LazyImage
-                  isVertical={true}
-                  src={msrc}
-                  onClick={() => handleOpen(index)}
-                />
-              </div>
-            );
-          }
-
+      {items.map((image, index) => {
+        const { msrc, src, vpad } = image;
+        if (vpad) {
           return (
-            <div key={src} className={`w-full pb-2 ${HACKY_IMAGE_CLASS}`}>
-              <LazyImage src={msrc} onClick={() => handleOpen(index)} />
+            <div
+              key={src}
+              className={`w-1/2 p${vpad}-1 inline-block ${HACKY_IMAGE_CLASS}`}
+            >
+              <LazyImage
+                isVertical={true}
+                src={msrc}
+                onClick={() => handleOpen(index)}
+              />
             </div>
           );
-        })}
-      </div>
+        }
+
+        return (
+          <div key={src} className={`w-full pb-2 ${HACKY_IMAGE_CLASS}`}>
+            <LazyImage src={msrc} onClick={() => handleOpen(index)} />
+          </div>
+        );
+      })}
       <PhotoSwipeWrapper
         isOpen={isOpen}
         index={currentIndex}
