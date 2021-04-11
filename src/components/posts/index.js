@@ -1,5 +1,4 @@
 import React from 'react';
-import Filters from './internals/filters';
 import FilterMenu from './internals/filter-menu';
 import FilteredPosts from './internals/filtered-posts';
 import { FilterType } from 'constants/types';
@@ -23,11 +22,12 @@ class Posts extends React.Component {
     this.state = {
       currentFilter: filter,
       currentFilterType: filterType,
-      filters
+      filters,
     };
   }
+
   filterPosts(filter, filterType) {
-    return this.props.posts.filter(post => {
+    return this.props.posts.filter((post) => {
       if (filterType === FilterType.COUNTRIES) {
         return post.country.toLowerCase().replace(/[^a-z]+/g, '') === filter;
       }
@@ -37,30 +37,20 @@ class Posts extends React.Component {
       return [];
     });
   }
+
   render() {
     const { currentFilter, currentFilterType, filters } = this.state;
     const filteredPosts = this.filterPosts(currentFilter, currentFilterType);
 
     return (
-      <div className="lg:flex">
-        <div className="lg:hidden">
-          <FilterMenu
-            currentFilter={currentFilter}
-            currentFilterType={currentFilterType}
-            filters={filters}
-          />
-        </div>
-        <div className="hidden lg:block lg:w-1/6">
-          <Filters
-            currentFilter={currentFilter}
-            currentFilterType={currentFilterType}
-            filters={filters}
-          />
-        </div>
-        <div className="lg:w-5/6">
-          <FilteredPosts posts={filteredPosts} />
-        </div>
-      </div>
+      <>
+        <FilterMenu
+          currentFilter={currentFilter}
+          currentFilterType={currentFilterType}
+          filters={filters}
+        />
+        <FilteredPosts posts={filteredPosts} />
+      </>
     );
   }
 }

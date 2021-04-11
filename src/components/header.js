@@ -8,7 +8,7 @@ const navLinkClass = 'no-underline text-xs text-grey-darkest hover:underline';
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
-    <div className="content">
+    <div className="main-container">
       <Navigation />
       <div className={subtitleClass}>&nbsp;</div>
       <Link className="no-underline inline-block" to="/">
@@ -20,7 +20,7 @@ const HomeHeader = ({ title }) => (
 
 const PostHeader = ({ title, subtitle }) => (
   <header className={headerClass}>
-    <div className="content text-left">
+    <div className="main-container text-left">
       <Navigation />
       <div className={subtitleClass}>{subtitle.toUpperCase()}</div>
       <h1 className={headingClass}>{title}</h1>
