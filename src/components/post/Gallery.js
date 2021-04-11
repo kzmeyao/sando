@@ -76,7 +76,7 @@ const Gallery = ({ imagePrefix, images }) => {
           return (
             <div
               key={src}
-              className={`w-1/2 p${vpad}-1 inline-block ${HACKY_IMAGE_CLASS}`}
+              className={`w-1/2 p${vpad}-1 pb-2 inline-block ${HACKY_IMAGE_CLASS}`}
             >
               <LazyImage
                 isVertical={true}
