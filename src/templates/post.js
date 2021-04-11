@@ -17,23 +17,21 @@ export default function Template({ data }) {
     photoGear,
     place,
     recommendations,
-    regionHierarchy
+    regionHierarchy,
   } = post.frontmatter;
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <Helmet title={`${place} | sando`} />
       <div className="flex flex-wrap pt-4">
-        <div className="md:w-1/2 lg:w-2/5 md:pr-8">
+        {/* <div className="md:w-1/2 lg:w-2/5 md:pr-8">
           <PostText html={post.html} />
           <PostMetadata
             date={date}
             photoGear={photoGear}
             recommendations={recommendations}
           />
-        </div>
-        <div className="md:w-1/2 lg:w-3/5 w-full">
-          <Gallery imagePrefix={imagePrefix} images={images} />
-        </div>
+        </div> */}
+        <Gallery imagePrefix={imagePrefix} images={images} />
       </div>
     </Layout>
   );
