@@ -93,16 +93,6 @@ footer {
   padding: 1.5em 2em;
 }
 
-.post-text blockquote {
-  background-color: #e1dbd6;
-  margin: 0 0 1.5em;
-  padding: 1.5em;
-}
-
-.post-text blockquote p {
-  padding: 0;
-}
-
 .post-text p {
   margin: auto;
   max-width: 660px;
