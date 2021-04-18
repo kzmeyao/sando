@@ -78,7 +78,7 @@ const PostText = ({ post }) => {
   });
 
   const final = html.replace(
-    /<figure data-src=\'([\d])\'>/g,
+    /<figure data-src=\'([\d]+)\'>/g,
     (_match, capture) => constructFigure(images2[capture], imagePrefix)
   );
 
