@@ -51,7 +51,7 @@ const LazyImage = ({ isVertical = false, onClick, relSrc, src }) => {
         <img
           className={classnames('fade-in', {
             start: fadeIn,
-            'cursor-pointer': onClick
+            'cursor-pointer': onClick,
           })}
           src={imgSrc}
           onClick={onClick}

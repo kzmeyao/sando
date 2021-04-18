@@ -23,7 +23,7 @@ export default function Template({ data }) {
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <Helmet title={`${place} | sando`} />
       <div className="pt-4">
-        <PostText html={post.html} />
+        <PostText post={post} />
         {/* <div className="md:w-1/2 lg:w-2/5 md:pr-8">
           
           <PostMetadata
@@ -32,7 +32,7 @@ export default function Template({ data }) {
             recommendations={recommendations}
           />
         </div> */}
-        <Gallery imagePrefix={imagePrefix} images={images} />
+        {/* <Gallery imagePrefix={imagePrefix} images={images} /> */}
       </div>
     </Layout>
   );
@@ -48,7 +48,11 @@ export const pageQuery = graphql`
         excerpt
         heroImage
         imagePrefix
-        images
+        images2 {
+          file
+          alt
+          caption
+        }
         path
         photoGear
         place

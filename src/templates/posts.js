@@ -7,7 +7,9 @@ import SEO from '../components/seo';
 import Posts from '../components/posts';
 
 export default function Template({ pageContext, data }) {
-  const posts = data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter);
+  const posts = data.allMarkdownRemark.edges.map(
+    (edge) => edge.node.frontmatter
+  );
   return (
     <Layout header={<HomeHeader title="sando" />}>
       <SEO title="Home" keywords={['sando']} />
@@ -30,7 +32,11 @@ export const pageQuery = graphql`
             excerpt
             heroImage
             imagePrefix
-            images
+            images2 {
+              file
+              alt
+              caption
+            }
             path
             photoGear
             place
