@@ -40,10 +40,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: ['cardo:400,700', 'lato:400,400i,700'],
-        display: 'swap',
+        google: {
+          families: ['Cardo:400,700', 'Lato:400', 'Newsreader:400,400i,700'],
+        },
+        // typekit: {
+        //   id: process.env.ADOBE_FONTS_ID,
+        // },
       },
     },
     {

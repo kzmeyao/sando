@@ -22,9 +22,10 @@ export default function Template({ data }) {
   return (
     <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
       <Helmet title={`${place} | sando`} />
-      <div className="flex flex-wrap pt-4">
+      <div className="pt-4">
+        <PostText html={post.html} />
         {/* <div className="md:w-1/2 lg:w-2/5 md:pr-8">
-          <PostText html={post.html} />
+          
           <PostMetadata
             date={date}
             photoGear={photoGear}

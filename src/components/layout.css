@@ -62,7 +62,7 @@
   */
 
 html {
-  font-family: Lato, serif;
+  font-family: 'Newsreader', serif;
 }
 
 body {
@@ -104,7 +104,8 @@ footer {
 }
 
 .post-text p {
-  line-height: 1.5;
+  margin: auto;
+  max-width: 660px;
   padding-bottom: 1.5em;
 }
 

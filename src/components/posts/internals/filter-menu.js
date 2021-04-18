@@ -6,13 +6,13 @@ import { fromFilterKey } from 'utils';
 
 import './filter-menu.css';
 
-const FilterMenu = props => {
+const FilterMenu = (props) => {
   const { currentFilter, filters } = props;
   const [showModal, toggleModal] = useState(false);
 
   return (
     <>
-      <div className="mt-5 mb-2 text-center md:text-left">
+      <div className="mt-5 mb-2 text-center md:text-left font-sans">
         <span
           className="cursor-pointer underline"
           onClick={() => toggleModal(true)}
