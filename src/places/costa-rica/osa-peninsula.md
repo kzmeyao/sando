@@ -10,7 +10,7 @@ images2:
     caption: To reach our cabin, we had to cross this suspension bridge.
   - file: '3'
     alt: Monkey climbing a bamboo
-    caption: Capuchin monkeys were a common sight around our cabin.
+    caption: Capuchin monkeys were a common sight around our cabin. Quite the noisy bunch.
   - file: '4'
     alt: Macaw parents with their young
     caption: Got lucky and spotted a pair of macaws feeding their young. The slightly ruffled one on the bottom right is the needy kid.
