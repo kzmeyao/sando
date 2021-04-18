@@ -109,6 +109,16 @@ footer {
   padding-bottom: 1.5em;
 }
 
+.post-text figure + p {
+  border-width: 1px 0 0 0;
+  border-color: #e1dbd6;
+  padding-top: 1rem;
+}
+
+.post-text figcaption {
+  max-width: 660px;
+}
+
 .filtered-posts li:nth-child(even) {
   padding-left: 1.25rem;
 }

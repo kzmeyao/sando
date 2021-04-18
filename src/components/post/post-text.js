@@ -12,29 +12,37 @@ const constructFigure = ({ file, alt, caption }, imagePrefix) => {
   const files = file.split('|');
   const alts = alt.split('|');
   const isVertical = files.length > 1;
-  const containerClass = classNames({
-    'inline-block w-1/2': isVertical,
-    'w-full': !isVertical,
-  });
+
   const imageClass = classNames('lazy relative w-full bg-grey-light', {
     'aspect-ratio-2-3': isVertical,
     'aspect-ratio-3-2': !isVertical,
   });
-  const images = files.map(
-    (file, i) => `
-    <div class="${containerClass}">
+
+  const images = files.map((file, i) => {
+    const containerClass = classNames({
+      'pr-2': isVertical && i % 2 === 0,
+      'pl-2': isVertical && i % 2 === 1,
+      'inline-block w-1/2': isVertical,
+      'w-full pb-2': !isVertical,
+    });
+
+    return `<div class="${containerClass}">
       <div 
         class="${imageClass}" 
         data-src="${getImageUrl(imagePrefix, file, 't_scale_80')}" 
         data-alt="${alts[i]}" 
       ></div>
-    </div>`
-  );
+    </div>`;
+  });
 
   return `
-    <figure>
+    <figure class="mb-2">
       ${images.map((i) => i.trim()).join('')}
-      ${caption ? `<figcaption>${caption}</figcaption>` : ''}
+      ${
+        caption
+          ? `<figcaption class="m-auto text-center text-base mb-6">${caption}</figcaption>`
+          : ''
+      }
     </figure>
   `;
 };
