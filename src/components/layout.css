@@ -102,7 +102,7 @@ footer {
 .post-text figure + p {
   border-width: 1px 0 0 0;
   border-color: #e1dbd6;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .post-text figcaption {
