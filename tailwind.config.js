@@ -27,6 +27,7 @@ module.exports = {
       'grey-lighter': '#f1f5f8',
       'grey-lightest': '#f8fafc',
       white: '#ffffff',
+      sando: '#ffe477',
     },
     screens: {
       sm: '576px',

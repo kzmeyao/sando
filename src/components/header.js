@@ -4,7 +4,7 @@ import React from 'react';
 const headerClass = 'bg-white text-center md:text-left';
 const headingClass = 'font-heading font-semibold text-3xl text-black';
 const subtitleClass = 'font-sans text-xs text-black';
-const navLinkClass = 'no-underline text-xs text-grey-darkest hover:underline';
+const navLinkClass = 'no-underline text-xs text-grey-darkest hover:bg-sando';
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
