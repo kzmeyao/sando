@@ -51,28 +51,28 @@ regionHierarchy: 'Puerto Jimenez, Costa Rica'
 
 > I learned English from nature books. The first time I stepped into a public library after moving to the United States, I fell in love with the nature section. The photographs of lush jungles and exotic animals overwhelmed me and I found myself spellbound by evolution and biodiversity. Therefore, I have always wanted to visit Costa Rica, a country that harbors a staggering 5% of the world’s biodiversity. After researching for the trip and happening upon a remote destination called the Osa Peninsula, I just had to pack my bags and visit _"the most biologically intense place on Earth"_.
 
-<figure data-src='0'>
+<figure data-index='0'>
 
 The Osa peninsula is known for being home to an abundance of wildlife, and for being home to Corcovado National Park, the crown jewel of Costa Rican parks. While I would have loved to visit the park, we opted for a more relaxing experience for this trip. We stayed at an ecolodge in the peninsula, Bosque del Cabo, which offered fantastic food and unique accommodation in the form of a three-walled cabin. Best of all, Bosque del Cabo maintains several hiking trails of varying lengths and difficulty that lead to secluded beaches and scenic waterfalls.
 
-<figure data-src='1'>
-<figure data-src='2'>
-<figure data-src='3'>
-<figure data-src='4'>
+<figure data-index='1'>
+<figure data-index='2'>
+<figure data-index='3'>
+<figure data-index='4'>
 
 It was amazing to encounter animals we've only ever really seen in books or on television. From witnessing the occasional blue morpho butterflies fluttering overhead, to a pair of scarlet macaws feeding their young. The Osa peninsula had much to offer in terms of wildlife and fauna. I was practically living the _Planet Earth_ documentary.
 
-<figure data-src='5'>
-<figure data-src='6'>
-<figure data-src='7'>
-<figure data-src='8'>
-<figure data-src='9'>
+<figure data-index='5'>
+<figure data-index='6'>
+<figure data-index='7'>
+<figure data-index='8'>
+<figure data-index='9'>
 
 Aside from the visuals, the sounds were quite stimulating as well. I can still vividly recall the first night in our open cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was chaotic but oddly calming, and I loved every single minute of it.
 
-<figure data-src='10'>
-<figure data-src='11'>
-<figure data-src='12'>
-<figure data-src='13'>
+<figure data-index='10'>
+<figure data-index='11'>
+<figure data-index='12'>
+<figure data-index='13'>
 
 Although our stay at the lodge was only for a couple of days, I am glad that I was able to bring my childhood dreams of trekking through the rainforest to life. Additionally, on our final day at the lodge, I was finally able to get a photo of an elusive green and black poison dart frog I've crossed paths with near our cabin. Talk about leaving on a high note.

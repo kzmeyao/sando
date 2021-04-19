@@ -35,7 +35,7 @@ const PhotoSwipeWrapper = ({
   items,
   isOpen,
   onClose,
-  getThumbBoundsFn
+  getThumbBoundsFn,
 }) => {
   let pswpElement = useRef(null);
 
@@ -48,7 +48,7 @@ const PhotoSwipeWrapper = ({
     zoomEl: false,
     shareEl: false,
     maxSpreadZoom: 1,
-    getDoubleTapZoom
+    getDoubleTapZoom,
   };
 
   useEffect(() => {
@@ -71,11 +71,8 @@ const PhotoSwipeWrapper = ({
           onClose();
         });
       }
-      if (!isOpen) {
-        onClose();
-      }
     }
-  }, [index, items, isOpen, options]);
+  }, [isOpen, options]);
 
   return (
     <div
@@ -83,7 +80,7 @@ const PhotoSwipeWrapper = ({
       tabIndex="-1"
       role="dialog"
       aria-hidden="true"
-      ref={node => {
+      ref={(node) => {
         pswpElement = node;
       }}
     >
