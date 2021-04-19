@@ -20,7 +20,7 @@ images2:
     caption: Got lucky and spotted a pair of macaws feeding their young.
   - file: '3|5'
     alt: Nymph bug|Katydid on tree
-    caption: This is bug heaven.
+    caption: It is also bug heaven. A leafhopper nymph with fireworks coming out of its butt and a kaydid blending in with the tree.
   - file: '10'
     alt: A large longhorn beetle
     caption: <em>Callipogon lemoinei</em>, this fellow was more than 3 inches long.
@@ -29,14 +29,16 @@ images2:
     caption: 'Guess which one was the tougher shot? (Hint: the one with the more legs)'
   - file: '9'
     alt: Small waterfall
+    caption: A nice slice of paradise.
+  - file: '13'
+    alt: Overgrown vines
+    caption: A castle of vines.
+  - file: '16|14'
+    alt: River flowing through the forest|Waterfall in the forest
+    caption: One of the trails we took followed a river upstream to a really scenic waterfall. There was also a small pool if you wanted to take a dip.
   - file: '12'
     alt: Beach views
     caption: Tired of the forest? Hit the beach.
-  - file: '13'
-    alt: Overgrown vines
-    caption: A castle of vines
-  - file: '16|14'
-    alt: River flowing through the forest|Waterfall in the forest
   - file: '17'
     alt: Golden hour at the beach
     caption: A beach to ourselves during golden hour.
@@ -67,12 +69,15 @@ It was amazing to encounter animals we've only ever really seen in books or on t
 <figure data-index='7'>
 <figure data-index='8'>
 <figure data-index='9'>
-
-Aside from the visuals, the sounds were quite stimulating as well. I can still vividly recall the first night in our open cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was chaotic but oddly calming, and I loved every single minute of it.
-
 <figure data-index='10'>
+
+While the rainforest was the main event, the beaches were no slouches. We spent a lot of time strolling with sand between our toes. Best of all, there was barely anyone around.
+
 <figure data-index='11'>
 <figure data-index='12'>
+
+Aside from the constant visual stimulation, the sounds were a large part of the experience as well. Even after the sun set, nature could be on full blast. I can still vividly recall the first night in our cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was chaotic but oddly calming, and I loved every single minute of it.
+
 <figure data-index='13'>
 
 Although our stay at the lodge was only for a couple of days, I am glad that I was able to bring my childhood dreams of trekking through the rainforest to life. Additionally, on our final day at the lodge, I was finally able to get a photo of an elusive green and black poison dart frog I've crossed paths with near our cabin. Talk about leaving on a high note.
