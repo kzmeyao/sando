@@ -112,7 +112,7 @@ const PostText = ({ post }) => {
     });
   }, []);
 
-  const items = images2.reduce((acc, current) => {
+  const items = (images2 ?? []).reduce((acc, current) => {
     const { file } = current;
     const files = file.split('|');
     const isVertical = files.length > 1;
