@@ -7,7 +7,7 @@ imagePrefix: 'costa-rica/osa/osa'
 images2:
   - file: '2'
     alt: Suspension bridge in the rainforest
-    caption: To reach our cabin, we had to cross this suspension bridge.
+    caption: The suspension bridge separating our cabin from the main lodge.
   - file: '4'
     alt: Small stream running through the forest
   - file: '6'
@@ -62,7 +62,7 @@ The Osa peninsula is known for being home to an abundance of wildlife, and for b
 <figure data-index='3'>
 <figure data-index='4'>
 
-It was amazing to encounter animals we've only ever really seen in books or on television. From witnessing the occasional blue morpho butterflies fluttering overhead, to a pair of scarlet macaws feeding their young. The Osa peninsula had much to offer in terms of wildlife and fauna. I was practically living the _Planet Earth_ documentary.
+From witnessing blue morpho butterflies fluttering in a forest clearing to a pair of scarlet macaws feeding their young, we encountered animals we've only ever really seen in books or on television. The Osa peninsula had much to offer in terms of wildlife and fauna. I was practically living the _Planet Earth_ documentary.
 
 <figure data-index='5'>
 <figure data-index='6'>
@@ -76,7 +76,7 @@ While the rainforest was the main event, the beaches were no slouches. We spent 
 <figure data-index='11'>
 <figure data-index='12'>
 
-Aside from the constant visual stimulation, the sounds were a large part of the experience as well. Even after the sun set, nature could be on full blast. I can still vividly recall the first night in our cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was chaotic but oddly calming, and I loved every single minute of it.
+Aside from the constant visual stimulation, the sounds were a large part of the experience as well. Even after the sun set, nature could be on full blast. I can still vividly recall the first night in our cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was cacophonous but oddly calming, and I loved every single minute of it.
 
 <figure data-index='13'>
 
