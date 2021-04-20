@@ -76,7 +76,7 @@ While the rainforest was the main event, the beaches were no slouches. We spent 
 <figure data-index='11'>
 <figure data-index='12'>
 
-Aside from the constant visual stimulation, the sounds were a large part of the experience as well. Even after the sun set, nature could be on full blast. I can still vividly recall the first night in our cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was cacophonous but oddly calming, and I loved every single minute of it.
+Aside from the constant visual stimulation, the sounds were a large part of the experience as well. Even after the sun set, nature could be heard on full blast. I can still vividly recall the first night in our cabin. A storm had hit that night - supposedly the largest one the locals have seen in more than ten years. With no regard for the heavy rain or thunder, the forest came alive. A ragtag band of birds, frogs, insects and monkeys came together and clashed against the furious sounds of the storm. It was cacophonous but oddly calming, and I loved every single minute of it.
 
 <figure data-index='13'>
 
