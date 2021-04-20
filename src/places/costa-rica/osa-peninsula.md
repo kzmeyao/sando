@@ -51,7 +51,7 @@ place: 'Osa Peninsula'
 regionHierarchy: 'Puerto Jimenez, Costa Rica'
 ---
 
-> I learned English from nature books. The first time I stepped into a public library after moving to the United States, I fell in love with the nature section. The photographs of lush jungles and exotic animals overwhelmed me and I found myself spellbound by evolution and biodiversity. Therefore, I have always wanted to visit Costa Rica, a country that harbors a staggering 5% of the world’s biodiversity. After researching for the trip and happening upon a remote destination called the Osa Peninsula, I just had to pack my bags and visit _"the most biologically intense place on Earth"_.
+I learned English from nature books. The first time I stepped into a public library after moving to the United States, I fell in love with the nature section. The photographs of lush jungles and exotic animals overwhelmed me and I found myself spellbound by evolution and biodiversity. Therefore, I have always wanted to visit Costa Rica, a country that harbors a staggering 5% of the world’s biodiversity. After researching for the trip and happening upon a remote destination called the Osa Peninsula, I just had to pack my bags and visit _"the most biologically intense place on Earth"_.
 
 <figure data-index='0'>
 
