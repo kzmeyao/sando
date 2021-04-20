@@ -39,12 +39,18 @@ const constructFigure = ({ file, alt, caption }, imagePrefix) => {
       'w-full pb-2': !isVertical,
     });
 
+    const imageUrl = getImageUrl(imagePrefix, file, TRANSFORM_PATH);
+
     return `<div class="${containerClass}">
       <div 
         class="${imageClass}"
-        data-src="${getImageUrl(imagePrefix, file, TRANSFORM_PATH)}" 
+        data-src="${imageUrl}" 
         data-alt="${alts[i]}" 
-      ></div>
+      >
+        <noscript>
+          <img class="absolute top-0" src="${imageUrl}" />
+        </noscript>
+      </div>
     </div>`;
   });
 
