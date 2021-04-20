@@ -19,13 +19,13 @@ const About = () => (
     <br />
     <h2 className={headingClass}>About the author:</h2>
     <p className={pClass}>
-      Hi there! My name is Kevin Yao. I'm a software developer by trade, but I'm
+      Hello, my name is Kevin Yao. I'm a software developer by trade, but I'm
       also a serial creator. My curiosity often leads me down rabbitholes and I
       end up spending a lot of time immersing myself in the subject and creating
-      something out of it. Although these creative projects tend to change
+      something out of it. Although these mini projects tend to change
       frequently, one constant creative outlet for me has been photography.
-      Hence, I created `sando` to document and showcase these journeys. I
-      sincerely hope you enjoy your visit.
+      Hence, I created `sando` to document and showcase these journeys. I hope
+      you enjoy your visit.
     </p>
   </>
 );
