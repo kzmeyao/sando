@@ -24,14 +24,11 @@ export default function Template({ data }) {
       <Helmet title={`${place} | sando`} />
       <div className="pt-4">
         <PostText post={post} />
-        {/* <div className="md:w-1/2 lg:w-2/5 md:pr-8">
-          
-          <PostMetadata
-            date={date}
-            photoGear={photoGear}
-            recommendations={recommendations}
-          />
-        </div> */}
+        <PostMetadata
+          date={date}
+          photoGear={photoGear}
+          recommendations={recommendations}
+        />
         {/* <Gallery imagePrefix={imagePrefix} images={images} /> */}
       </div>
     </Layout>

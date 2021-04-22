@@ -24,10 +24,11 @@ module.exports = {
       'grey-dark': '#777777',
       grey: '#999999',
       'grey-light': '#cccccc',
-      'grey-lighter': '#f1f5f8',
-      'grey-lightest': '#f8fafc',
+      'grey-lighter': '#e1dbd6',
+      'grey-lightest': '#f1f5f8',
       white: '#ffffff',
       sando: '#ffe477',
+      tan: '#ece7e2',
     },
     screens: {
       sm: '576px',
