@@ -10,7 +10,7 @@ const PostMetadata = ({ date, photoGear, recommendations }) => {
   };
 
   return (
-    <div className="border-t border-b border-solid border-grey-lighter my-8 pb-6 bg-tan">
+    <div className="border-t border-b border-solid border-grey-lighter my-8 pb-6 px-2 bg-tan">
       <dl className="text-center text-grey-darkest">
         {recommendations && (
           <>
