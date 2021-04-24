@@ -133,10 +133,10 @@ const PostText = ({ post }) => {
     ];
   }, []);
 
-  const final = html.replace(
-    /<figure data-index=\'([\d]+)\'>/g,
-    (_match, index) => constructFigure(images2[index], imagePrefix)
-  );
+  let final = html;
+  images2.forEach((image) => {
+    final = final.replace('<figure>', constructFigure(image, imagePrefix));
+  });
 
   return (
     <>

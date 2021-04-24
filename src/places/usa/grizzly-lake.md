@@ -41,29 +41,29 @@ regionHierarchy: 'Trinity Alps Wilderness, California, USA'
 
 For those of us familiar with the Californian wilderness, we often associate granite mountains and pristine lakes with Yosemite, Tahoe, or other such scenic areas in proximity to the Sierra Nevadas. In the oft-overlooked Trinity Alps Wilderness, however, a brilliant glacial lake called Grizzly Lake impresses all visitors. It is just as charming as its eastern counterparts.
 
-<figure data-index='0'>
+<figure>
 
 This was my first backpacking trip ever. We arrived at the China Gulch trailhead right before sunset. While I lamented the fact that we had to hike in the dark, it ended up being a blessing in disguise. Since the trail was front-loaded by a very steep hill, the cooler conditions made it much more manageable. Also, with just our headlamps, we couldn't actually see anything except for the trail in front of us, so the incline seemed much shorter than it actually was. Setting up camp in the dark was a pain though.
 
-<figure data-index='1'>
+<figure>
 
 On the second day, as we hiked deeper into the mountains, the vegetation became quite lush. The sounds of a stream turned into a rushing river that ran parallel to the trail for a while. There were also some waterfalls along the way, giving us a preview of the glacial waters that was lying in wait for us.
 
-<figure data-index='2'>
-<figure data-index='3'>
+<figure>
+<figure>
 
 Nearly four hours later, we reached the end of the trail and was finally able to give ourselves a much needed rest. But it was not over yet. The most challenging section of the trip was just up ahead- a final mile-long scramble of granite rocks immediately under the lake. Even without our gear, we took frequent breaks and inched up the scramble like little ants, sometimes resorting to climbing on all-fours to obtain better balance and grip.
 
-<figure data-index='4'>
+<figure>
 
 Once we got to the top, however, all of our fatigue quickly dissipated as we were treated to the very unique-looking Grizzly Fall gushing out of a wall of granite. And behind that wall, Grizzly Lake revealed itself like a desert mirage.
 
-<figure data-index='5'>
-<figure data-index='6'>
+<figure>
+<figure>
 
 It felt like paradise after the trial we just put ourselves through. The lake water was three shades of blue, pristine, and best of all, we had it all to ourselves. Although we were only able to stay there for a couple of hours before sunset, we felt that the exceptional reward was well-worth the grueling scramble.
 
-<figure data-index='7'>
-<figure data-index='8'>
+<figure>
+<figure>
 
 After spending the night back down at our camp, we kept our heads down and trekked the gruesome path back to our car. The trailhead sign greeted us once again and we slowly merged ourselves back into the land of computers, smartphones and In-N-Out.

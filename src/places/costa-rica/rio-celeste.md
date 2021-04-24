@@ -44,21 +44,21 @@ regionHierarchy: 'Parque Nacional Volcan Tenorio, Costa Rica'
 
 The ground was muddy from the sporadic rain. I carefully planned my steps to avoid the puddles. Although my clothes were already drenched and heavy from the rain water, my mind felt as light as ever from just having witnessed an incredible scene. The greens of the forest and the blues of the water came together harmoniously to form the perfect palette. No wonder the locals say _“when God finished painting the sky, he washed his brushes in the Rio Celeste”_.
 
-<figure data-index='0'>
+<figure>
 
 Tucked in the Tenerio Volcanic National Park, the Rio Celeste is a distinctively turquoise colored river. It gets its appearance from a physical phenomenon called _Mie scattering_ rather than a chemical one. It is such a wonderful shade of blue that before seeing the real deal, I initially thought online photos of the river must have been photoshopped.
 
-<figure data-index='1'>
-<figure data-index='2'>
+<figure>
+<figure>
 
 Although the river is the namesake star here, many people also come to see the waterfall near the start of the trail. It was a sight to behold. As we approached the fall, the verdant foliage formed a tunnel around the staircase descending to the base, making it quite the dramatic entrance.
 
-<figure data-index='3'>
-<figure data-index='4'>
-<figure data-index='5'>
-<figure data-index='6'>
-<figure data-index='7'>
-<figure data-index='8'>
-<figure data-index='9'>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
 
 This gem of a place was a little out of the way, but was definitely worth the slight off-roading. I hope the magic lives on for years to come.
