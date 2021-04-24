@@ -28,10 +28,10 @@ images2:
     caption: River crossing. Looked janky, but was quite sturdy.
   - file: '10|11'
     alt: Muddy trail|A clearing among the trees
-    caption: The sporadic rain got our shoes very muddy and we had to take "cover" multiple times, but I definitely welcomed the atmospheric fog.
+    caption: Rain came in and out and got our shoes very muddy. We had to take cover multiple times, but I definitely welcomed the atmospheric fog.
   - file: '12'
     alt: Spiky plant growing on a branch
-    caption: Lots of interesting epiphytic plants.
+    caption: Lots of interesting epiphytic plants and mosses.
   - file: '13|2'
     alt: Moss-covered branch|A fern unfurling
     caption: I have never seen so much green in my life.
