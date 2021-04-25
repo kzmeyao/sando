@@ -134,7 +134,7 @@ const PostText = ({ post }) => {
   }, []);
 
   let final = html;
-  images2.forEach((image) => {
+  images2?.forEach((image) => {
     final = final.replace('<figure>', constructFigure(image, imagePrefix));
   });
 
