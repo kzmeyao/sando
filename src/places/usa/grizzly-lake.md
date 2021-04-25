@@ -4,7 +4,6 @@ date: '2015-07-28'
 excerpt: 'My first backpacking experience at a true Californian hidden gem.'
 heroImage: 'usa/grizzly-lake/grizzly-lake-7.jpg'
 imagePrefix: 'usa/grizzly-lake/grizzly-lake'
-images: '1,2,3|4,5,6,7,8,9|10'
 images2:
   - file: '1'
     alt: Dry grass basking in light
