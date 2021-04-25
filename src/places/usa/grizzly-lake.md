@@ -1,7 +1,7 @@
 ---
 country: 'USA'
 date: '2015-07-28'
-excerpt: 'My first backpacking trip and the only way to experience a true Californian hidden gem.'
+excerpt: 'My first backpacking experience at a true Californian hidden gem.'
 heroImage: 'usa/grizzly-lake/grizzly-lake-7.jpg'
 imagePrefix: 'usa/grizzly-lake/grizzly-lake'
 images: '1,2,3|4,5,6,7,8,9|10'
