@@ -4,7 +4,6 @@ date: '2016-11-19'
 excerpt: 'A desert oasis formed by red walls and blue waters, brought to you by the social media generation.'
 heroImage: 'usa/havasupai/havasu-5.jpg'
 imagePrefix: 'usa/havasupai/havasu'
-images: '1,2|4,3,5,6|7,8,9,10,11|12,13,14,15|17,16,18,20,19|21'
 images2:
   - file: '1'
     alt: Overlook of a desert canyon
@@ -54,7 +53,7 @@ images2:
     alt: Double rainbow|A trail carved through the canyon
     caption: Saw a double rainbow!
 path: '/places/havasupai-arizona'
-photoGear: 'Pentax K1 (24-70|31|100mm), Sony RX1'
+photoGear: 'Pentax K1 (DFA 24-70, FA 31, DFA 100mm), Sony RX1'
 place: 'Havasupai'
 regionHierarchy: 'Havasupai, Arizona, USA'
 ---
