@@ -46,13 +46,13 @@ images2:
     caption: Waiting for a subway to arrive. Use your imagination a bit and the walls will come alive.
   - file: '18'
     alt: Rain sweeping across the desert
-    caption: Rain continued to come in and out as we made our way back. It has always felt strange to see rain and sun together.
+    caption: Rain continued to come in and out as we made our way back.
   - file: '20'
     alt: Horses on the trail
     caption: Maybe we can hitch a ride back up this final stretch.
   - file: '19|21'
     alt: Double rainbow|A trail carved through the canyon
-    caption: Saw a double rainbow! The afternoon sun brought some awesome lighting.
+    caption: Saw a double rainbow!
 path: '/places/havasupai-arizona'
 photoGear: 'Pentax K1 (24-70|31|100mm), Sony RX1'
 place: 'Havasupai'
@@ -97,4 +97,4 @@ On the last day of our trip, we quickly stopped by Navajo Falls and 50-foot Fall
 <figure>
 <figure>
 
-The rain also blessed us with two double-rainbow sightings. As with all uphill hikes, our pace slowed to a crawl, but eventually we were able to make our way back to the hilltop parking lot. Feeling both sore and relieved, I completed my third backpacking trip, and I'm beginning to really enjoy this kind of thing.
+Near the end of the hike, we had to go up some steep switchbacks. As with all uphill hikes, our pace slowed to a crawl, but with ample breaks, we eventually were able to make our way back to the hilltop parking lot. Feeling both sore and relieved, I completed my third backpacking trip, and I'm beginning to really enjoy this kind of thing.
