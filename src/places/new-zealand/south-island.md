@@ -4,7 +4,61 @@ date: '2017-03-23'
 excerpt: 'Snow-capped mountains and glacial lakes, a landscape photographer’s dream.'
 heroImage: 'new-zealand/south-island/south-18.jpg'
 imagePrefix: 'new-zealand/south-island/south'
-images: '1,2|3,4,6,5|7,8,9|10,11,12,13,14,15,16,17,18,19,20|21,22'
+images2:
+  - file: '1'
+    alt: Boats on a river
+    caption: The Oi river flows through the town of Arashiyama.
+  - file: '2|3'
+    alt: Busy tourist-filled street|Close-up of dango in front of a river
+    caption: The main shopping street of Arashiyama is packed with souvenior shops and food vendors. We got some dango to take down to eat in front of the river.
+  - file: '4'
+    alt: A path through a bamboo grove
+    caption: The famous bamboo grove of Arashiyama. Get here early in the morning to avoid the crowds.
+  - file: '6'
+    alt: Buddhist temple
+    caption: Tenryuji temple features a nice clean garden.
+  - file: '5|7'
+    alt: Overlook of Kyoto
+    caption: A good view of Kyoto from on top of Iwatayama Monkey Park.
+  - file: '8'
+    alt: A monkey sitting in a tree
+    caption: It's not a monkey park without monkeys and Iwatayama had plenty.
+  - file: '9|10'
+    alt: Large tree on temple grounds
+    caption: Chion-in temple. There was some kind of night light show that was going on while we were there. I was impressed by these massive trees.
+  - file: '11'
+    alt: A golden temple in a pond
+    caption: Kinkakuji, the golden pavilion, is on everyone's list of places to visit in Kyoto. What is not pictured here is the swarm of tourists behind the camera.
+  - file: '12'
+    alt: A phoenix statue|A heron looking into the pond
+    caption: Birds of the golden pavilion. One real, one fake.
+  - file: '13'
+    alt: Traditional style inn
+    caption: Ryokans are a popular choice of accommodation in Kyoto. I love the look of this one.
+  - file: '14'
+    alt: Bowl of sashimi
+    caption: Fancy bowl of sashimi prepared by our ryokan's in-house chef.
+  - file: '15'
+    alt: Tunnel of torii gates
+    caption: Fushimi inari shrine features multiple tunnels formed by torii gates. It was difficult to find a stretch without any tourists in sight.
+  - file: '16'
+    alt: Temple entrance with a pagoda in the back
+    caption: Entrance to Kiyomizudera
+  - file: '17'
+    alt: People catching water from spouts|Wooden structure of temple
+    caption: There are lots of interesting architectural features to marvel at Kiyomizudera.
+  - file: '18'
+    alt: Pagoda|Cherry blossoms
+    caption: We were lucky to have caught some cherry blossoms blooming at the temple. It provided some nice color juxtaposition against the red/orange temple backdrop.
+  - file: '19'
+    alt: Cross-section of a cream puff
+    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
+  - file: '20|21'
+    alt: Cross-section of a cream puff
+    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
+  - file: '22'
+    alt: Cross-section of a cream puff
+    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
 path: '/places/new-zealand-south-island'
 photoGear: 'Pentax K1 (15-30|77|100mm), Sony RX1'
 place: 'South Island'
@@ -13,6 +67,25 @@ regionHierarchy: 'New Zealand'
 ---
 
 > "Did you visit Hobbiton?" That's the single most-asked question I received after visiting New Zealand. Sorry to disappoint, but the answer is no. The sweeping views of snow-capped mountains and blue lakes piqued my interest more than manmade movie sets, so we ended up spending more time exploring South Island and its rich diverse natural landscapes. Hobbits will have to wait for another time.
+
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
+<figure>
 
 Traveling to an English-speaking country always puts my mind at ease. When you're thousands of miles from home, having one fewer thing to worry about is always a plus. Thinking about driving on the left side of the road though, gave me quite a bit of stress. Stress that turned out to be completely unfounded. After landing at Queenstown airport and picking up our car, it took a mere ten minutes to adjust to driving on the left. The only thing that occasionally tripped me up was mixing up the windshield wipers and the turn signal - that always gave me a jump.
 
