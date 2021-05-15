@@ -6,59 +6,58 @@ heroImage: 'new-zealand/south-island/south-18.jpg'
 imagePrefix: 'new-zealand/south-island/south'
 images2:
   - file: '1'
-    alt: Boats on a river
-    caption: The Oi river flows through the town of Arashiyama.
+    alt: Overlook of a city next to a lake
+    caption: Queenstown from above with a good view of the "Remarkables" mountain range behind.
   - file: '2|3'
-    alt: Busy tourist-filled street|Close-up of dango in front of a river
-    caption: The main shopping street of Arashiyama is packed with souvenior shops and food vendors. We got some dango to take down to eat in front of the river.
+    alt: People relaxing lake-side|Neat row of buildings next to the water
+    caption: A resort town for all seasons. When the weather is warm, people flock to the beaches of Lake Wakatipu.
   - file: '4'
-    alt: A path through a bamboo grove
-    caption: The famous bamboo grove of Arashiyama. Get here early in the morning to avoid the crowds.
+    alt: A pier lit by a single light
+    caption: Pier at Glenorchy, too bad the mountains were enveloped by thick fog.
   - file: '6'
-    alt: Buddhist temple
-    caption: Tenryuji temple features a nice clean garden.
+    alt: Snow-covered mountain peak
+    caption: Milford Sound, famous for dramatic peaks rising straight out of the water.
   - file: '5|7'
-    alt: Overlook of Kyoto
-    caption: A good view of Kyoto from on top of Iwatayama Monkey Park.
+    alt: Waterfall during golden hour|Waterfall during sunset
+    caption: We took a boat cruise that went around the fjord. It was a great way to get up-close and personal with the waterfalls in the area.
   - file: '8'
-    alt: A monkey sitting in a tree
-    caption: It's not a monkey park without monkeys and Iwatayama had plenty.
+    alt: Mountain peaks reflecting off of the water
   - file: '9|10'
-    alt: Large tree on temple grounds
-    caption: Chion-in temple. There was some kind of night light show that was going on while we were there. I was impressed by these massive trees.
+    alt: Suspension bridge over a river|Ferns
+    caption:
   - file: '11'
-    alt: A golden temple in a pond
-    caption: Kinkakuji, the golden pavilion, is on everyone's list of places to visit in Kyoto. What is not pictured here is the swarm of tourists behind the camera.
+    alt: A waterfall with a river in front
+    caption:
   - file: '12'
-    alt: A phoenix statue|A heron looking into the pond
-    caption: Birds of the golden pavilion. One real, one fake.
+    alt: A large and empty river bank with a waterfall in the distance
+    caption:
   - file: '13'
-    alt: Traditional style inn
-    caption: Ryokans are a popular choice of accommodation in Kyoto. I love the look of this one.
+    alt: A lone tree next to the lake
+    caption:
   - file: '14'
-    alt: Bowl of sashimi
-    caption: Fancy bowl of sashimi prepared by our ryokan's in-house chef.
+    alt: A row of trees with stars and auroral light behind
+    caption:
   - file: '15'
-    alt: Tunnel of torii gates
-    caption: Fushimi inari shrine features multiple tunnels formed by torii gates. It was difficult to find a stretch without any tourists in sight.
+    alt: A road leading to a glacier-covered mountain range
+    caption:
   - file: '16'
-    alt: Temple entrance with a pagoda in the back
-    caption: Entrance to Kiyomizudera
+    alt: A suspension bridge in the mountains
+    caption:
   - file: '17'
-    alt: People catching water from spouts|Wooden structure of temple
-    caption: There are lots of interesting architectural features to marvel at Kiyomizudera.
+    alt: A body of water formed by glaciers
+    caption:
   - file: '18'
-    alt: Pagoda|Cherry blossoms
-    caption: We were lucky to have caught some cherry blossoms blooming at the temple. It provided some nice color juxtaposition against the red/orange temple backdrop.
+    alt: A mountain peak lit by the sun with a river in front
+    caption:
   - file: '19'
-    alt: Cross-section of a cream puff
-    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
+    alt: A mountain peak lit during sunset
+    caption:
   - file: '20|21'
-    alt: Cross-section of a cream puff
-    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
+    alt: Stars above a mountain range|The Milky Way
+    caption:
   - file: '22'
-    alt: Cross-section of a cream puff
-    caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
+    alt: A road next to a lake with glacial peaks in the back
+    caption:
 path: '/places/new-zealand-south-island'
 photoGear: 'Pentax K1 (15-30|77|100mm), Sony RX1'
 place: 'South Island'
