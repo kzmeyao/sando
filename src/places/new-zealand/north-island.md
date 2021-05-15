@@ -4,7 +4,6 @@ date: '2017-03-29'
 excerpt: 'More people, more sheep. Kick back and relax with white sand beaches and turquoise waves.'
 heroImage: 'new-zealand/north-island/north-9.jpg'
 imagePrefix: 'new-zealand/north-island/north'
-images: '1,2,3,4,5,6|7,8,9,10,11,12,13,14,15'
 images2:
   - file: '1'
     alt: Water on the beach reflecting clouds
