@@ -93,6 +93,12 @@ footer {
   padding: 1.5em 2em;
 }
 
+@media screen and (max-width: 40em) {
+  .main-container {
+    padding: 1.5em 1em;
+  }
+}
+
 .post-text p {
   margin: auto;
   max-width: 660px;
