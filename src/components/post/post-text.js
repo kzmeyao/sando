@@ -95,15 +95,17 @@ const PostText = ({ post }) => {
         if (entry.isIntersecting) {
           const container = entry.target;
           const image = new Image();
-          container.className = 'w-full bg-grey-light';
           image.src = container.dataset.src;
           image.alt = container.dataset.alt;
           image.className = 'fade-in cursor-pointer';
-          container.prepend(image);
 
-          setTimeout(() => {
-            image.classList.add('start');
-          }, 100);
+          image.onload = () => {
+            container.className = 'w-full bg-grey-light';
+            container.prepend(image);
+            setTimeout(() => {
+              image.classList.add('start');
+            }, 100);
+          };
 
           io.unobserve(container);
         }
