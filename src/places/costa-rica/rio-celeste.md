@@ -6,7 +6,7 @@ heroImage: 'costa-rica/rio-celeste/celeste-4.jpg'
 imagePrefix: 'costa-rica/rio-celeste/celeste'
 images: '3,4,5,6|9,7,8,10|11,12,13|2,14'
 path: '/places/rio-celeste-costa-rica'
-photoGear: 'Pentax K5IIs (FA 31mm, DFA 100mm, Sigma 10-20mm), Sony RX1'
+photoGear: 'Pentax K5IIs (FA 31, DFA 100, Sigma 10-20), Sony RX1'
 images2:
   - file: '3'
     alt: Forest path leading into the park

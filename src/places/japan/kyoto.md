@@ -54,7 +54,7 @@ images2:
     alt: Cross-section of a cream puff
     caption: The street leading up to Kiyomizudera was full of vendors, including Yatsuhashi cream puffs.
 path: '/places/kyoto-japan'
-photoGear: 'Sony RX1, Pentax K5IIs (100mm)'
+photoGear: 'Sony RX1, Pentax K5IIs (DFA 100)'
 place: 'Kyoto'
 recommendations: 'Arabica (in Arashiyama), Arashiyama, Fushimi Inari-taisha, Kamo River, Kinkaku-ji, Kiyomizu-dera, Omen Udon, Steak Otsuka'
 regionHierarchy: 'Kyoto Prefecture, Japan'

@@ -53,7 +53,7 @@ images2:
     alt: Double rainbow|A trail carved through the canyon
     caption: Saw a double rainbow!
 path: '/places/havasupai-arizona'
-photoGear: 'Pentax K1 (DFA 24-70, FA 31, DFA 100mm), Sony RX1'
+photoGear: 'Pentax K1 (DFA 24-70, FA 31, DFA 100), Sony RX1'
 place: 'Havasupai'
 regionHierarchy: 'Havasupai, Arizona, USA'
 ---
