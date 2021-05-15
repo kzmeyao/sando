@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import { Gallery } from '../components/post/Gallery';
 import { PostHeader } from '../components/header';
 import PostMetadata from '../components/post/post-metadata';
 import PostText from '../components/post/post-text';
@@ -12,15 +11,20 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const {
     date,
-    imagePrefix,
-    images,
     photoGear,
     place,
     recommendations,
     regionHierarchy,
   } = post.frontmatter;
   return (
-    <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
+    <Layout
+      header={
+        <PostHeader
+          title={place}
+          subtitle={`${regionHierarchy} (${date.split('-')[0]})`}
+        />
+      }
+    >
       <Helmet title={`${place} | sando`} />
       <div className="pt-4">
         <PostText post={post} />
@@ -29,7 +33,6 @@ export default function Template({ data }) {
           photoGear={photoGear}
           recommendations={recommendations}
         />
-        {/* <Gallery imagePrefix={imagePrefix} images={images} /> */}
       </div>
     </Layout>
   );
