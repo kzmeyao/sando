@@ -68,7 +68,8 @@ const constructFigure = ({ file, alt, caption }, imagePrefix) => {
 };
 
 const PostText = ({ post }) => {
-  const { pid } = qs.parse(window.location.hash);
+  const { pid } =
+    typeof window !== 'undefined' ? qs.parse(window.location.hash) : {};
 
   const [state, setState] = useState({
     isOpen: !!pid,
