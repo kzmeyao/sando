@@ -48,7 +48,7 @@ images2:
     alt: Heavily-trafficked road with vendors on both sides
     caption: Back on the main street, still as busy as ever.
 path: '/places/arashiyama-japan'
-photoGear: 'Pentax K1 (31|77mm)'
+photoGear: 'Pentax K1 (FA 31, FA 77)'
 place: 'Arashiyama'
 recommendations: 'Arabica, Gio-ji, Jojakko-ji'
 regionHierarchy: 'Kyoto, Kyoto Prefecture, Japan'
