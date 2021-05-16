@@ -6,47 +6,47 @@ heroImage: 'japan/arashiyama/arashi-13.jpg'
 imagePrefix: 'japan/arashiyama/arashi'
 images2:
   - file: '1'
-    alt: A road leading to the entrance of a park
-    caption: Entrance to Kanazawa Castle.
+    alt: A mountain with fall foliage fronted by a river
+    caption: The scenic Oi River.
   - file: '2'
-    alt: Castle grounds with empty benches
-    caption: The castle grounds were vast and almost completely void of people.
+    alt: A cup of coffee
+    caption: The weather was especially fitting for a warm brew. Stop by the river-side Arabica for some coffee.
   - file: '3'
-    alt: A castle and a cafe with fall foliage around.
-    caption: The main structure. There's also a newly constructed cafe on the right side. The surrounding foliage screamed fall.
+    alt: Fall foliage
+    caption: Close-up of the painted hills.
   - file: '4'
-    alt: Maple trees showing fall foliage and an empty bench
-    caption: We went looking for some nice fall foliage.
+    alt: Maple trees in a temple branching upward
+    caption: Gio-ji, a Buddhist temple that featured maple trees and moss.
   - file: '5'
-    alt: A stream flowing next to a garden path
-    caption: Tranquil sounds coming from the stream.
+    alt: Stone bowls filled with moss and ferns
+    caption: These bowls were so aesthetic, made me wish I had some.
   - file: '6'
-    alt: A branch of maple leaves next to a stream
-    caption: A stream, maple leaves, and some moss. Perfect!
+    alt: A tiny stream traversing clumps of moss
+    caption: Pillow-like moss.
   - file: '7|8'
-    alt: A large tree supported by wooden columns
-    caption: This tree was huge. It reminds me of a neatly manicured bonsai.
+    alt: Clumps of moss with fallen maple leaves|A stone path with maple tree branches overhead
+    caption: Moss and maple, a great combo during fall.
   - file: '9|11'
-    alt: Maple trees with fall foliage with a path weaving through|A bridge with maple trees around
-    caption: Deeper in the park, there were maple trees everywhere with varying shades of yellow, orange  and red. It also started to rain harder as we got farther in.
+    alt: A lantern propped up by a stone pillar with moss sitting on top|A small stone pagoda amidst red maple leaves
+    caption: The structures complement nature so well in Jojakko-ji.
   - file: '10'
-    alt: A couple strolling through a garden path
-    caption: The red leaves provided a nice pop of contrast amidst the greens.
+    alt: A wooden building with moss-covered roof
+    caption: Really digged this thatch roof.
   - file: '12'
-    alt: Moss-covered tree roots
-    caption: I'm particularly fond of moss.
+    alt: Maple leaves from underneath
+    caption: A sea of leaves.
   - file: '13'
-    alt: Red-leafed maple looming over a lake|Trees tented with suspenders
-    caption: The curious tent-like things in the second picture is called <em>yukitsuri</em>, a Japanese technique for supporting branches from heavy snow.
+    alt: Two maple branches touching with a wooden temple building in the background
+    caption: The branches here reminded me of <em>The Creation of Adam</em> painting.
   - file: '14|15'
-    alt: Castle viewed through maple tree leaves
-    caption: Kanazawa Castle is literally next-door.
+    alt: A man rowing a boat under a red maple tree|Two boats on a river
+    caption: Maybe we should've paid to ride on a boat.
   - file: '16'
-    alt: An alleyway with traditional Japanese houses
-    caption: A neat little alleyway.
+    alt: Multiple boats ferrying passengers on a river cutting through the mountain
+    caption: A waterway trafficking tourists.
   - file: '17'
-    alt: Rain falling over a city during sunrise
-    caption: The next morning. We were treated to a little show outside of our hotel window. It's always interesting to see rain in sunlight.
+    alt: Heavily-trafficked road with vendors on both sides
+    caption: Back on the main street, still as busy as ever.
 path: '/places/arashiyama-japan'
 photoGear: 'Pentax K1 (31|77mm)'
 place: 'Arashiyama'
@@ -57,12 +57,11 @@ regionHierarchy: 'Kyoto, Kyoto Prefecture, Japan'
 We’ve been here before. With so many places to see in the world, it’s rare for us to revisit an international location. But Japan tends to do that to you. For a place like Arashiyama, we learned that as the seasons change, so too, does the scenery. The last time we were here, we missed the cherry blossom blooms in spring by just one or two weeks. Although our stay there was still highly enjoyable, we felt as if we missed out on a quintessential Arashiyama experience. So this time, we carefully planned our trip to catch the fall colors at its peak, and we succeeded.
 
 <figure>
-
-Arashiyama in autumn felt like a theme park for showcasing the best of the changing season. And the attractions to this theme park were meticulously designed Buddhist
-temples, each offering a different flavor of autumn in exchange for a small entrance fee.
-
 <figure>
 <figure>
+
+Arashiyama in autumn felt like a theme park for showcasing the best of the changing season. And the attractions to this theme park were meticulously designed Buddhist temples, each offering a different flavor of autumn in exchange for a small entrance fee.
+
 <figure>
 <figure>
 <figure>
