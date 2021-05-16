@@ -1,5 +1,6 @@
 import classNames from 'classnames';
-import React, { useEffect, useReducer, useState } from 'react';
+import qs from 'query-string';
+import React, { useEffect, useState } from 'react';
 import { IMAGE_PATH } from '../../constants';
 import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
 
@@ -67,9 +68,11 @@ const constructFigure = ({ file, alt, caption }, imagePrefix) => {
 };
 
 const PostText = ({ post }) => {
+  const { pid } = qs.parse(window.location.hash);
+
   const [state, setState] = useState({
-    isOpen: false,
-    currentIndex: 0,
+    isOpen: !!pid,
+    currentIndex: parseInt(pid) ?? 0,
   });
 
   const { frontmatter, html } = post;

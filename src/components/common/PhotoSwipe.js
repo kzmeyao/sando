@@ -42,7 +42,6 @@ const PhotoSwipeWrapper = ({
   const options = {
     index: index ?? 0,
     closeOnScroll: false,
-    history: false,
     getThumbBoundsFn,
     fullscreenEl: false,
     zoomEl: false,
