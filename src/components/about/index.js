@@ -2,7 +2,7 @@ import React from 'react';
 
 const headingClass =
   'font-heading font-semibold text-xl text-grey-darkest my-4';
-const pClass = 'leading-loose text-grey-darkest';
+const pClass = 'leading-loose text-grey-darkest mb-6';
 
 const About = () => (
   <>
@@ -16,7 +16,6 @@ const About = () => (
       creating this travel journal, and I can't think of a better name for it
       than to name it after the thing that started it all.
     </p>
-    <br />
     <h2 className={headingClass}>About the author:</h2>
     <p className={pClass}>
       Hello, my name is Kevin Yao. I'm a software developer by trade, but I'm
@@ -26,6 +25,15 @@ const About = () => (
       frequently, one constant creative outlet for me has been travel
       photography. Hence, I created <em>sando</em> to document and showcase
       these journeys. I hope you enjoy your visit.
+    </p>
+    <h2 className={headingClass}>Want more?</h2>
+    <p className={pClass}>
+      Some of my photos don't fit in this journal format. For those, you can
+      check out my{' '}
+      <a className="underline" href="https://www.instagram.com/kzmeyao/">
+        instagram
+      </a>
+      .
     </p>
   </>
 );
