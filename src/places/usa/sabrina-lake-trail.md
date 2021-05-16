@@ -1,74 +1,89 @@
 ---
 country: 'USA'
 date: '2018-08-02'
-excerpt: 'Words under construction.'
+excerpt: 'High elevation meadows, alpine lakes and granite peaks make this a Sierra Nevada classic.'
 heroImage: 'usa/sabrina-basin/sabrina-1.jpg'
 imagePrefix: 'usa/sabrina-basin/sabrina'
 images: '1,2,3,4,5|6,7,8,9|10,11|12,13,14,15|16,17|19,18'
 images2:
   - file: '1'
     alt: A lake in front of a mountain range
-    caption:
+    caption: Blue Lake. We arrived just as the sun was beginning to set.
   - file: '2'
     alt: Reflection of a mountain peak in a puddle
-    caption:
+    caption: Had plenty of time to get creative.
   - file: '3'
     alt: The top of a mountain lit up by the sunset
-    caption:
+    caption: And then the light quickly retreated.
   - file: '4'
     alt: A wide, shallow stream with vegetation growing out
-    caption:
+    caption: 'Our first river crossing. Not pictured: the row of rocks we used to hopped over.'
   - file: '5|6'
     alt: A stream in front of granite rocks|Flip flops next to a stream
-    caption:
+    caption: Dipping our feet in the crisp glacial waters, so refreshing.
   - file: '7'
     alt: Glacial lake in front of mountain peaks
-    caption:
+    caption: Moonlight Lake. There was still a bit of haze from a nearby forest fire.
   - file: '8'
     alt: A river flowing over granite rocks
-    caption:
-  - file: '9|10'
-    alt: Water falling over a granite cliff|Some trees growing out of granite with god rays in the back
-    caption:
-  - file: '11|12'
-    alt: A waterfall crashing onto granite rocks|A river running through an alpine meadow
-    caption:
+    caption: The water from Moonlight Lake forms a long cascade over granite steps and finally drains into the meadow below.
+  - file: '10|12'
+    alt: Some trees growing out of granite with god rays in the back|A river running through an alpine meadow
+    caption: High elevation meadows bring a lot of joy. Wish I could just set up a cabin here.
+  - file: '9|11'
+    alt: Water falling over a granite cliff|A waterfall crashing onto granite rocks
+    caption: Moonlight Falls. It's pretty easy to climb all over it, although you might get wet in the process.
   - file: '13'
     alt: A waterfall with a mountain peak lit by the sunset in the background
-    caption:
+    caption: A longer exposure during sunset. The temperature was dropping rapidly at this point.
   - file: '14'
     alt: A lake with a mountain range lit by the sunset in the background
-    caption:
+    caption: Back at the lake, preparing to settle in for the night.
   - file: '15|16'
     alt: Silhouette of granite and trees against the sky|The Milky Way above some mountains
-    caption:
+    caption: Honestly, it was quite scary to take pictures at night.
   - file: '17|19'
     alt: Glacial lake waters feeding into a stream|Glacial lake in front of a large granite rock
-    caption:
+    caption: The morning light made the lake water even prettier. What a view to wake up to.
   - file: '18'
     alt: A small island of granite rocks in a glacial lake
-    caption:
+    caption: A rock island. Don't make the mistake of trying to swim there as my friend tried to do. The water is freezing and will literally take your breath.
 path: '/places/sabrina-lake-trail'
 photoGear: 'Pentax K1 (FA 31, FA 77)'
 place: 'Sabrina Lake Trail'
 regionHierarchy: 'Inyo National Forest, California, USA'
 ---
 
-Words under construction.
+The Sabrina Lake Trail is one of the more popular trails in Inyo National Forest, but given the vast playground that awaits visitors, it still manages to offer solitude and tranquility for those willing to backpack to the end. For this trip, we set our destination for Moonlight Falls and the accompanying Moonlight Lake, one of the few alpine lakes at the end of the trail. We were totally unprepared for the beauty that waited for us.
+
+<figure>
+
+There was rain and the sounds of a storm as we kicked off our hike. It wasn't the best of signs. To add to the uneasiness, a hiker we passed along the way also said that they got hailed on the other day. We were differently feeling apprehensive, but as we arrived at Blue Lake, the location for our first night's rest, a scenic sunset quickly put our unrest to an end. It looked like it was going to be alright.
+
+<figure>
+<figure>
+
+The weather turned out to be phenomenal the next day. It was the perfect temperature for backpacking and the high elevation views were spectacular.
+
+<figure>
+<figure>
+
+After a couple hours of lugging our gear into the mountain, we arrived at Moonlight Lake, our final destination. As the lake was fed by a glacier, the water took on a turquoise hue. I will never get sick of this color for a lake. The vicinity around the lake was like a playground. Surrounded by multiple high mountain peaks, there were other alpine lakes and meadows all around. We dropped off all of our stuff and had a wonderful time exploring.
 
 <figure>
 <figure>
 <figure>
 <figure>
+
+The water from Moonlight Lake fed into Moonlight Falls, the subject that inspired us to take this trip in the first place. And it did not disappoint. The waterfall itself split into multiple offshoots, some of which we were able to easily walk under. It was quite refreshing after the long day.
+
 <figure>
 <figure>
 <figure>
+
+On the final day, we crossed the stream that fed into Moonlight Falls and spent some time on an adjacent side of the lake. The water there was deeper and took on a greener tone. After multiple attempts to fish on this trip, we finally had success after switching the bait to local grasshoppers. I guess the fish preferred the more natural stuff.
+
 <figure>
 <figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
+
+This trip turned out to be my favorite backpacking trip so far. The views were rewarding and it was just the right amount of difficulty to make it feel like it wasn't just spoon-fed to us. What a great way to unplug for a long weekend.
