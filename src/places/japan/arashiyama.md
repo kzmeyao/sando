@@ -43,7 +43,7 @@ images2:
     caption: Maybe we should've paid to ride on a boat.
   - file: '16'
     alt: Multiple boats ferrying passengers on a river cutting through the mountain
-    caption: A waterway trafficking tourists.
+    caption: A waterway for the tourists to enjoy the foliage.
   - file: '17'
     alt: Heavily-trafficked road with vendors on both sides
     caption: Back on the main street, still as busy as ever.
