@@ -73,7 +73,7 @@ const PostText = ({ post }) => {
 
   const [state, setState] = useState({
     isOpen: !!pid,
-    currentIndex: parseInt(pid) ?? 0,
+    currentIndex: parseInt(pid) || 0,
   });
 
   const { frontmatter, html } = post;
