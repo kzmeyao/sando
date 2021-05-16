@@ -47,7 +47,7 @@ images2:
     caption: The morning light made the lake water even prettier. What a view to wake up to.
   - file: '18'
     alt: A small island of granite rocks in a glacial lake
-    caption: A rock island. Don't make the mistake of trying to swim there as my friend tried to do. The water is freezing and will literally take your breath.
+    caption: A rock island. Don't make the mistake of trying to swim there as my friend tried to do. As nice as the water looks, it is freezing cold.
 path: '/places/sabrina-lake-trail'
 photoGear: 'Pentax K1 (FA 31, FA 77)'
 place: 'Sabrina Lake Trail'
