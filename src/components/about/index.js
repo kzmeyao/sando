@@ -23,9 +23,9 @@ const About = () => (
       also a serial creator. My curiosity often leads me down rabbitholes and I
       end up spending a lot of time immersing myself in the subject and creating
       something out of it. Although these mini projects tend to change
-      frequently, one constant creative outlet for me has been photography.
-      Hence, I created <em>sando</em> to document and showcase these journeys. I
-      hope you enjoy your visit.
+      frequently, one constant creative outlet for me has been travel
+      photography. Hence, I created <em>sando</em> to document and showcase
+      these journeys. I hope you enjoy your visit.
     </p>
   </>
 );
