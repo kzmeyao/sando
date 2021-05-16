@@ -17,7 +17,7 @@ images2:
     caption: The main structure. There's also a newly constructed cafe on the right side. The surrounding foliage screamed fall.
   - file: '4'
     alt: Maple trees showing fall foliage and an empty bench
-    caption: We went looking for some nice fall foliage. Japanese maples in Japan, how fitting.
+    caption: We went looking for some nice fall foliage.
   - file: '5'
     alt: A stream flowing next to a garden path
     caption: Tranquil sounds coming from the stream.
@@ -76,7 +76,7 @@ images2:
     alt: Two seafood bowls with rice
     caption: The <em>Kaisen-don</em>, or seafood bowl.
 path: '/places/kanazawa-japan'
-photoGear: 'Pentax K1 (31|77mm), Sony RX1'
+photoGear: 'Pentax K1 (FA 31, FA 77), Sony RX1'
 place: 'Kanazawa'
 recommendations: 'Higashi Chaya District, Kanazawa Castle, Kenroku-en, Omicho Market'
 regionHierarchy: 'Ishikawa Prefecture, Japan'
@@ -95,7 +95,7 @@ The first stop for us was Kanazawa Castle. The castle park grounds were quite sp
 <figure>
 <figure>
 
-Once we reached one end of the castle grounds, we made our way to the adjacent Kenroku-en, one of Japan's "three great gardens". With that distinction attached to this garden, we had high expectations- and it did not disappoint. This was definitely the highlight of the trip. There were many different points of interest within the garden, but you'll find beauty everywhere you look because of how meticulously the landscape has been arranged. Also, as we were there during autumn, the massive swaths of yellow, orange, and red leaves added much vibrancy to the scenery. Even though scattered showers did strike during our visit, it painted a serene rainy day vibe that we would not have gotten otherwise. With the admission fee being so cheap, we ended up visiting again the next morning, in hopes of a sunnier backdrop.
+Once we reached one end of the castle grounds, we made our way to the adjacent Kenroku-en, one of Japan's "three great gardens". With that distinction attached to this garden, we had high expectations- and it did not disappoint. This was definitely the highlight of the trip. There were many different points of interest within the garden, but you'll find beauty everywhere you look because of how meticulously the landscape has been arranged. Also, as we were there during autumn, the massive swaths of yellow, orange, and red leaves added much vibrancy to the scenery.
 
 <figure>
 <figure>
@@ -106,11 +106,14 @@ Once we reached one end of the castle grounds, we made our way to the adjacent K
 <figure>
 <figure>
 
-Due to the weather, another location we visited twice during this short trip was the Higashi Chaya District. The main attraction is a wide street with traditional wooden houses (Machiya) on both sides. You may see this style of architecture kept alive in other parts of Japan, but it's rare to be able to see an entire street filled with these structures. Although most of these buildings have now converted to cater to the tourist crowd in the form of cafes and souvenir shops selling gold-themed crafts (something Kanazawa is known for), the outward appearance of this street is still able to evoke a unique atmosphere that brings visitors to a time when samurai and geisha still roamed this entertainment district.
+The second location we visited during this short trip was the Higashi Chaya District. The main attraction is a wide street with traditional wooden houses (Machiya) on both sides. You may see this style of architecture kept alive in other parts of Japan, but it's rare to be able to see an entire street filled with these structures. Although most of these buildings have now converted to cater to the tourist crowd in the form of cafes and souvenir shops selling gold-themed crafts (something Kanazawa is known for), the outward appearance of this street is still able to evoke a unique atmosphere that brings visitors to a time when samurai and geisha still roamed this entertainment district.
 
 <figure>
 <figure>
 <figure>
+
+Guess what? With the admission fee of Kenroku-en being so cheap, we ended up visiting again the next morning, in hopes of a sunnier backdrop this time.
+
 <figure>
 <figure>
 <figure>
