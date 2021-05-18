@@ -14,7 +14,7 @@ images2:
     caption: Had plenty of time to get creative.
   - file: '3'
     alt: The top of a mountain lit up by the sunset
-    caption: And then the light quickly retreated.
+    caption: The clouds slowly retreated. Then the light followed suit.
   - file: '4'
     alt: A wide, shallow stream with vegetation growing out
     caption: 'Our first river crossing. Not pictured: the row of rocks we used to hopped over.'
@@ -54,11 +54,11 @@ place: 'Sabrina Lake Trail'
 regionHierarchy: 'Inyo National Forest, California, USA'
 ---
 
-The Sabrina Lake Trail is one of the more popular trails in Inyo National Forest, but given the vast playground that awaits visitors, it still manages to offer solitude and tranquility for those willing to backpack to the end. For this trip, we set our destination for Moonlight Falls and the accompanying Moonlight Lake, one of the few alpine lakes at the end of the trail. We were totally unprepared for the beauty that waited for us.
+The Sabrina Lake Trail is one of the more popular trails in Inyo National Forest, but given the vast playground that awaits visitors, it still manages to offer solitude and tranquility for those willing to hike to the end. For this trip, we set our destination for Moonlight Falls and the accompanying Moonlight Lake, one of the few alpine lakes at the end of the trail. We were totally unprepared for the beauty that waited for us.
 
 <figure>
 
-There was rain and the sounds of a storm as we kicked off our hike. It wasn't the best of signs. To add to the uneasiness, a hiker we passed along the way also said that they got hailed on the other day. We were differently feeling apprehensive, but as we arrived at Blue Lake, the location for our first night's rest, a scenic sunset quickly put our unrest to an end. It looked like it was going to be alright.
+There was rain and the sounds of a storm as we kicked off our hike. It wasn't the best of signs. To add to the unease, a hiker we passed along the way also said that they slepted through a storm and got hailed on the other day. That interaction definitely made us feel apprehensive, but as we arrived at Blue Lake, the location for our first night's rest, a scenic sunset quickly put our unrest to an end. It felt like everything was going to be alright.
 
 <figure>
 <figure>
@@ -68,10 +68,13 @@ The weather turned out to be phenomenal the next day. It was the perfect tempera
 <figure>
 <figure>
 
-After a couple hours of lugging our gear into the mountain, we arrived at Moonlight Lake, our final destination. As the lake was fed by a glacier, the water took on a turquoise hue. I will never get sick of this color for a lake. The vicinity around the lake was like a playground. Surrounded by multiple high mountain peaks, there were other alpine lakes and meadows all around. We dropped off all of our stuff and had a wonderful time exploring.
+After a couple hours of lugging our gear into the mountain with plenty of breaks to rest our shoulders, we arrived at Moonlight Lake, our final destination. As the lake was fed by a nearby glacier, the water took on a turquoise hue. I will never get sick of this color for a lake.
 
 <figure>
 <figure>
+
+The vicinity around the lake was like a playground. Surrounded by multiple high mountain peaks, there were other alpine lakes and meadows all around. We dropped off all of our stuff and had a wonderful time exploring.
+
 <figure>
 <figure>
 
@@ -81,7 +84,7 @@ The water from Moonlight Lake fed into Moonlight Falls, the subject that inspire
 <figure>
 <figure>
 
-On the final day, we crossed the stream that fed into Moonlight Falls and spent some time on an adjacent side of the lake. The water there was deeper and took on a greener tone. After multiple attempts to fish on this trip, we finally had success after switching the bait to local grasshoppers. I guess the fish preferred the more natural stuff.
+On the final day, we spent some time on an adjacent side of Moonlight Lake. The water near the shore there was deeper and took on a greener tone, though that didn't stop us from spotting trouts near the edge. After multiple attempts to fish on this trip, we finally had success after switching the bait to local grasshoppers. I guess the fish preferred the more natural stuff.
 
 <figure>
 <figure>
