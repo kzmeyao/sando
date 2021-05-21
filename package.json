@@ -7,7 +7,6 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
-    "gatsby-cli": "^3.5.0",
     "gatsby-plugin-catch-links": "^3.2.0",
     "gatsby-plugin-google-analytics": "^3.2.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
