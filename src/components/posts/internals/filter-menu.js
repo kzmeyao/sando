@@ -12,7 +12,7 @@ const FilterMenu = (props) => {
 
   return (
     <>
-      <div className="mt-5 mb-2 text-center md:text-left font-sans">
+      <div className="mt-4 mb-2 text-center md:text-left font-sans">
         <span
           className="cursor-pointer underline"
           onClick={() => toggleModal(true)}
