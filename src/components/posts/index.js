@@ -34,7 +34,7 @@ class Posts extends React.Component {
             .toLowerCase()
             .split(' ')
             .join('-')
-            .replace(/[^a-z\-]+/g, '') === filter
+            .replace(/[^a-z-]+/g, '') === filter
         );
       }
       if (filterType === FilterType.YEARS) {

@@ -24,13 +24,13 @@ const PostMetadata = ({ date, photoGear, recommendations }) => {
         <dd>{photoGear}</dd>
         <dt className={dtClass}>Share</dt>
         <dd>
-          <div onClick={copyToClipboard}>
+          <button onClick={copyToClipboard} onKeyPress={copyToClipboard}>
             {copied ? (
               'Copied!'
             ) : (
               <span className="cursor-pointer underline">Copy URL</span>
             )}
-          </div>
+          </button>
         </dd>
       </dl>
     </div>

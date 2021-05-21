@@ -11,7 +11,7 @@ export const toFilterKey = (filter) =>
         .toLowerCase()
         .split(' ')
         .join('-')
-        .replace(/[^a-z\-]+/g, '');
+        .replace(/[^a-z-]+/g, '');
 
 export const fromFilterKey = (key, filters) => {
   const actualFilters = isYearFilter(key)

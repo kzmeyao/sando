@@ -96,6 +96,7 @@ const PhotoSwipeWrapper = ({
             <button
               className="pswp__button pswp__button--close"
               title="Close (Esc)"
+              aria-label="Close"
             />
             <div className="pswp__preloader">
               <div className="pswp__preloader__icn">
@@ -111,10 +112,12 @@ const PhotoSwipeWrapper = ({
           <button
             className="pswp__button pswp__button--arrow--left"
             title="Previous (arrow left)"
+            aria-label="Previous"
           />
           <button
             className="pswp__button pswp__button--arrow--right"
             title="Next (arrow right)"
+            aria-label="Next"
           />
           <div className="pswp__caption">
             <div className="pswp__caption__center" />
