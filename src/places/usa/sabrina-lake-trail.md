@@ -4,8 +4,7 @@ date: '2018-08-02'
 excerpt: 'High elevation meadows, alpine lakes and granite peaks make this a Sierra Nevada classic.'
 heroImage: 'usa/sabrina-basin/sabrina-1.jpg'
 imagePrefix: 'usa/sabrina-basin/sabrina'
-images: '1,2,3,4,5|6,7,8,9|10,11|12,13,14,15|16,17|19,18'
-images2:
+images:
   - file: '1'
     alt: A lake in front of a mountain range
     caption: Blue Lake. We arrived just as the sun was beginning to set.

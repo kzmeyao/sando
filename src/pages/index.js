@@ -22,7 +22,6 @@ const IndexPage = () => (
                 excerpt
                 heroImage
                 imagePrefix
-                images
                 path
                 photoGear
                 place
@@ -34,9 +33,9 @@ const IndexPage = () => (
         }
       }
     `}
-    render={data => {
+    render={(data) => {
       const posts = data.allMarkdownRemark.edges.map(
-        edge => edge.node.frontmatter
+        (edge) => edge.node.frontmatter
       );
       return (
         <Layout header={<HomeHeader title="sando" />}>

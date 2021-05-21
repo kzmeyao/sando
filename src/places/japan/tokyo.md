@@ -4,7 +4,7 @@ date: '2016-03-26'
 excerpt: 'Crossing off the top of my bucket list with a visit to the land of the vending machines.'
 heroImage: 'japan/tokyo/tokyo-15.jpg'
 imagePrefix: 'japan/tokyo/tokyo'
-images2:
+images:
   - file: '1'
     alt: A temple surrounded by people
     caption: Sensoji's main hall in Asakusa. This is Tokyo's oldest Buddhist temple.

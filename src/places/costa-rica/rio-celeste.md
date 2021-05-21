@@ -4,10 +4,9 @@ date: '2014-12-19'
 excerpt: 'The locals say: "when God finished painting the sky, he washed his brushes in the Rio Celeste".'
 heroImage: 'costa-rica/rio-celeste/celeste-4.jpg'
 imagePrefix: 'costa-rica/rio-celeste/celeste'
-images: '3,4,5,6|9,7,8,10|11,12,13|2,14'
 path: '/places/rio-celeste-costa-rica'
 photoGear: 'Pentax K5IIs (FA 31, DFA 100, Sigma 10-20), Sony RX1'
-images2:
+images:
   - file: '3'
     alt: Forest path leading into the park
     caption: The trailhead. So lush!

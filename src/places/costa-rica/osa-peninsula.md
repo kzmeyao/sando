@@ -4,7 +4,7 @@ date: '2014-12-12'
 excerpt: 'I learned English from nature books, so I just had to visit the most biologically intense place on Earth.'
 heroImage: 'costa-rica/osa/osa-2.jpg'
 imagePrefix: 'costa-rica/osa/osa'
-images2:
+images:
   - file: '2'
     alt: Suspension bridge in the rainforest
     caption: The suspension bridge separating our cabin from the main lodge.

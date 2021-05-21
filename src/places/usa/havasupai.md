@@ -4,7 +4,7 @@ date: '2016-11-19'
 excerpt: 'A desert oasis formed by red walls and blue waters, brought to you by the social media generation.'
 heroImage: 'usa/havasupai/havasu-5.jpg'
 imagePrefix: 'usa/havasupai/havasu'
-images2:
+images:
   - file: '1'
     alt: Overlook of a desert canyon
     caption: View from Hualapai Hilltop.

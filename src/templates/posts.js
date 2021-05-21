@@ -32,7 +32,7 @@ export const pageQuery = graphql`
             excerpt
             heroImage
             imagePrefix
-            images2 {
+            images {
               file
               alt
               caption

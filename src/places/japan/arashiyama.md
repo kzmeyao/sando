@@ -4,7 +4,7 @@ date: '2017-11-21'
 excerpt: 'Autumn is a special season in some places. Autumn in Arashiyama is something else.'
 heroImage: 'japan/arashiyama/arashi-13.jpg'
 imagePrefix: 'japan/arashiyama/arashi'
-images2:
+images:
   - file: '1'
     alt: A mountain with fall foliage fronted by a river
     caption: The scenic Oi River.

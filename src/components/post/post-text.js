@@ -77,7 +77,7 @@ const PostText = ({ post }) => {
   });
 
   const { frontmatter, html } = post;
-  const { images2, imagePrefix } = frontmatter;
+  const { images, imagePrefix } = frontmatter;
 
   const handleOpen = (index) => {
     setState({
@@ -124,7 +124,7 @@ const PostText = ({ post }) => {
     });
   }, []);
 
-  const items = (images2 ?? []).reduce((acc, current) => {
+  const items = (images ?? []).reduce((acc, current) => {
     const { file } = current;
     const files = file.split('|');
     const isVertical = files.length > 1;
@@ -140,7 +140,7 @@ const PostText = ({ post }) => {
   }, []);
 
   let final = html;
-  images2?.forEach((image) => {
+  images?.forEach((image) => {
     final = final.replace('<figure>', constructFigure(image, imagePrefix));
   });
 

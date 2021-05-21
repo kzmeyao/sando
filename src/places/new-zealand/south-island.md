@@ -4,7 +4,7 @@ date: '2017-03-23'
 excerpt: 'Snow-capped mountains and glacial lakes, a landscape photographer’s dream.'
 heroImage: 'new-zealand/south-island/south-18.jpg'
 imagePrefix: 'new-zealand/south-island/south'
-images2:
+images:
   - file: '1'
     alt: Overlook of a city next to a lake
     caption: Queenstown from above with a good view of the Remarkables mountain range behind.

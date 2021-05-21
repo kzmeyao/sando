@@ -4,7 +4,7 @@ date: '2016-03-29'
 excerpt: "Deeply rooted in culture and tradition, Japan's former capital comforts the soul."
 heroImage: 'japan/kyoto/kyoto-10.jpg'
 imagePrefix: 'japan/kyoto/kyoto'
-images2:
+images:
   - file: '1'
     alt: Boats on a river
     caption: The Oi river flows through the town of Arashiyama.

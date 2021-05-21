@@ -4,7 +4,7 @@ date: '2017-11-19'
 excerpt: 'Dubbed "Little Kyoto", Kanazawa offers classical Japanese sights without the crowds.'
 heroImage: 'japan/kanazawa/kanazawa-11.jpg'
 imagePrefix: 'japan/kanazawa/kanazawa'
-images2:
+images:
   - file: '1'
     alt: A road leading to the entrance of a park
     caption: Entrance to Kanazawa Castle.
