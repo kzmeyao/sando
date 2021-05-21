@@ -13,12 +13,12 @@ const FilterMenu = (props) => {
   return (
     <>
       <div className="mt-4 mb-2 text-center md:text-left font-sans">
-        <span
-          className="cursor-pointer underline"
+        <button
+          className="cursor-pointer underline hover:bg-sando"
           onClick={() => toggleModal(true)}
         >
           FILTER
-        </span>
+        </button>
         {currentFilter ? `: ${fromFilterKey(currentFilter, filters)}` : ''}
       </div>
       {showModal && (
