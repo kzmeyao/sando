@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import { Gallery } from '../components/post/Gallery';
 import { PostHeader } from '../components/header';
 import PostMetadata from '../components/post/post-metadata';
 import PostText from '../components/post/post-text';
@@ -12,26 +11,28 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const {
     date,
-    imagePrefix,
-    images,
     photoGear,
     place,
     recommendations,
     regionHierarchy,
   } = post.frontmatter;
   return (
-    <Layout header={<PostHeader title={place} subtitle={regionHierarchy} />}>
+    <Layout
+      header={
+        <PostHeader
+          title={place}
+          subtitle={`${regionHierarchy} (${date.split('-')[0]})`}
+        />
+      }
+    >
       <Helmet title={`${place} | sando`} />
-      <div className="flex flex-wrap pt-4">
-        {/* <div className="md:w-1/2 lg:w-2/5 md:pr-8">
-          <PostText html={post.html} />
-          <PostMetadata
-            date={date}
-            photoGear={photoGear}
-            recommendations={recommendations}
-          />
-        </div> */}
-        <Gallery imagePrefix={imagePrefix} images={images} />
+      <div className="pt-4">
+        <PostText post={post} />
+        <PostMetadata
+          date={date}
+          photoGear={photoGear}
+          recommendations={recommendations}
+        />
       </div>
     </Layout>
   );
@@ -47,7 +48,11 @@ export const pageQuery = graphql`
         excerpt
         heroImage
         imagePrefix
-        images
+        images {
+          file
+          alt
+          caption
+        }
         path
         photoGear
         place

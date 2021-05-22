@@ -10,8 +10,8 @@ const PostMetadata = ({ date, photoGear, recommendations }) => {
   };
 
   return (
-    <div className="border-t border-solid border-grey-light md:sticky top-0">
-      <dl className="text-sm text-grey-darkest mb-8">
+    <div className="border-t border-b border-solid border-grey-lighter my-8 pb-6 px-3 bg-tan">
+      <dl className="text-center text-grey-darkest">
         {recommendations && (
           <>
             <dt className={dtClass}>Recommendations</dt>
@@ -24,13 +24,13 @@ const PostMetadata = ({ date, photoGear, recommendations }) => {
         <dd>{photoGear}</dd>
         <dt className={dtClass}>Share</dt>
         <dd>
-          <div onClick={copyToClipboard}>
+          <button onClick={copyToClipboard} onKeyPress={copyToClipboard}>
             {copied ? (
               'Copied!'
             ) : (
               <span className="cursor-pointer underline">Copy URL</span>
             )}
-          </div>
+          </button>
         </dd>
       </dl>
     </div>

@@ -2,10 +2,16 @@ import { FilterType } from 'constants/types';
 
 // TODO: refactor filters
 
-const isYearFilter = filter => /^\d+$/.test(filter);
+const isYearFilter = (filter) => /^\d+$/.test(filter);
 
-export const toFilterKey = filter =>
-  isYearFilter(filter) ? filter : filter.toLowerCase().replace(/[^a-z]+/g, '');
+export const toFilterKey = (filter) =>
+  isYearFilter(filter)
+    ? filter
+    : filter
+        .toLowerCase()
+        .split(' ')
+        .join('-')
+        .replace(/[^a-z-]+/g, '');
 
 export const fromFilterKey = (key, filters) => {
   const actualFilters = isYearFilter(key)

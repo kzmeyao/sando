@@ -62,7 +62,7 @@
   */
 
 html {
-  font-family: Lato, serif;
+  font-family: 'Newsreader', serif;
 }
 
 body {
@@ -93,19 +93,26 @@ footer {
   padding: 1.5em 2em;
 }
 
-.post-text blockquote {
-  background-color: #e1dbd6;
-  margin: 0 0 1.5em;
-  padding: 1.5em;
-}
-
-.post-text blockquote p {
-  padding: 0;
+@media screen and (max-width: 36em) {
+  .main-container {
+    padding: 1.5em 1.25em;
+  }
 }
 
 .post-text p {
-  line-height: 1.5;
+  margin: auto;
+  max-width: 660px;
   padding-bottom: 1.5em;
+}
+
+.post-text figure + p {
+  border-width: 1px 0 0 0;
+  border-color: #e1dbd6;
+  padding-top: 1.5rem;
+}
+
+.post-text figcaption {
+  max-width: 660px;
 }
 
 .filtered-posts li:nth-child(even) {

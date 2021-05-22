@@ -3,8 +3,8 @@ import React from 'react';
 
 const headerClass = 'bg-white text-center md:text-left';
 const headingClass = 'font-heading font-semibold text-3xl text-black';
-const subtitleClass = 'text-xs text-black';
-const navLinkClass = 'no-underline text-xs text-grey-darkest hover:underline';
+const subtitleClass = 'font-sans text-xs text-black';
+const navLinkClass = 'no-underline text-xs text-grey-darkest hover:bg-sando';
 
 const HomeHeader = ({ title }) => (
   <header className={headerClass}>
@@ -29,7 +29,7 @@ const PostHeader = ({ title, subtitle }) => (
 );
 
 const Navigation = () => (
-  <nav className="flow-root pb-12 lg:mb-12">
+  <nav className="flow-root font-sans pb-12 lg:mb-12">
     <Link className={`${navLinkClass} float-left`} to="/">
       HOME
     </Link>

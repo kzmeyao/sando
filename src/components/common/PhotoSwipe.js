@@ -35,20 +35,19 @@ const PhotoSwipeWrapper = ({
   items,
   isOpen,
   onClose,
-  getThumbBoundsFn
+  getThumbBoundsFn,
 }) => {
   let pswpElement = useRef(null);
 
   const options = {
     index: index ?? 0,
     closeOnScroll: false,
-    history: false,
     getThumbBoundsFn,
     fullscreenEl: false,
     zoomEl: false,
     shareEl: false,
     maxSpreadZoom: 1,
-    getDoubleTapZoom
+    getDoubleTapZoom,
   };
 
   useEffect(() => {
@@ -71,11 +70,8 @@ const PhotoSwipeWrapper = ({
           onClose();
         });
       }
-      if (!isOpen) {
-        onClose();
-      }
     }
-  }, [index, items, isOpen, options]);
+  }, [isOpen, options]);
 
   return (
     <div
@@ -83,7 +79,7 @@ const PhotoSwipeWrapper = ({
       tabIndex="-1"
       role="dialog"
       aria-hidden="true"
-      ref={node => {
+      ref={(node) => {
         pswpElement = node;
       }}
     >
@@ -100,6 +96,7 @@ const PhotoSwipeWrapper = ({
             <button
               className="pswp__button pswp__button--close"
               title="Close (Esc)"
+              aria-label="Close"
             />
             <div className="pswp__preloader">
               <div className="pswp__preloader__icn">
@@ -115,10 +112,12 @@ const PhotoSwipeWrapper = ({
           <button
             className="pswp__button pswp__button--arrow--left"
             title="Previous (arrow left)"
+            aria-label="Previous"
           />
           <button
             className="pswp__button pswp__button--arrow--right"
             title="Next (arrow right)"
+            aria-label="Next"
           />
           <div className="pswp__caption">
             <div className="pswp__caption__center" />

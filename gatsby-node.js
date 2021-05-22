@@ -22,7 +22,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
@@ -31,36 +31,42 @@ exports.createPages = ({ actions, graphql }) => {
     const years = new Set();
     const countries = new Set();
 
-    posts.forEach(edge => {
+    posts.forEach((edge) => {
       const { country, date, path } = edge.node.frontmatter;
-      countries.add(country.toLowerCase().replace(/[^a-z]+/g, ''));
+      countries.add(
+        country
+          .toLowerCase()
+          .split(' ')
+          .join('-')
+          .replace(/[^a-z\-]+/g, '')
+      );
       years.add(date.split('-')[0]);
       createPage({
         path,
         component: blogPostTemplate,
-        context: {} // additional data can be passed via context
+        context: {}, // additional data can be passed via context
       });
     });
 
-    [...years].forEach(year => {
+    [...years].forEach((year) => {
       createPage({
         path: `/years/${year}/`,
         component: postsTemplate,
         context: {
           filterType: 'YEARS',
-          filter: year
-        }
+          filter: year,
+        },
       });
     });
 
-    [...countries].forEach(country => {
+    [...countries].forEach((country) => {
       createPage({
         path: `/countries/${country}/`,
         component: postsTemplate,
         context: {
           filterType: 'COUNTRIES',
-          filter: country
-        }
+          filter: country,
+        },
       });
     });
   });

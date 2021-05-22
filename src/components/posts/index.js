@@ -29,7 +29,13 @@ class Posts extends React.Component {
   filterPosts(filter, filterType) {
     return this.props.posts.filter((post) => {
       if (filterType === FilterType.COUNTRIES) {
-        return post.country.toLowerCase().replace(/[^a-z]+/g, '') === filter;
+        return (
+          post.country
+            .toLowerCase()
+            .split(' ')
+            .join('-')
+            .replace(/[^a-z-]+/g, '') === filter
+        );
       }
       if (filterType === FilterType.YEARS) {
         return post.date.split('-')[0] === filter.toString();

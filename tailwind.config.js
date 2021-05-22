@@ -24,9 +24,11 @@ module.exports = {
       'grey-dark': '#777777',
       grey: '#999999',
       'grey-light': '#cccccc',
-      'grey-lighter': '#f1f5f8',
-      'grey-lightest': '#f8fafc',
+      'grey-lighter': '#e1dbd6',
+      'grey-lightest': '#f1f5f8',
       white: '#ffffff',
+      sando: '#ffe477',
+      tan: '#ece7e2',
     },
     screens: {
       sm: '576px',
@@ -51,7 +53,7 @@ module.exports = {
         'sans-serif',
       ],
       serif: [
-        'Constantia',
+        'Newsreader',
         'Lucida Bright',
         'Lucidabright',
         'Lucida Serif',
@@ -80,8 +82,8 @@ module.exports = {
       lg: '1.125rem', // 18px
       xl: '1.25rem', // 20px
       '2xl': '1.5rem', // 24px
-      '3xl': '1.875rem', // 30px
-      '4xl': '2.25rem', // 36px
+      '3xl': '2rem', // 32px
+      '4xl': '2.5rem', // 40px
       '5xl': '3rem', // 48px
     },
     fontWeight: {

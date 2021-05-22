@@ -4,7 +4,7 @@ import { toFilterKey } from 'utils';
 import { FilterType } from 'constants/types';
 
 const Filters = ({ currentFilter, currentFilterType, filters, onSelect }) => (
-  <div className="pt-5">
+  <div className="font-sans pt-5">
     <FilterList
       currentFilter={currentFilter}
       currentFilterType={currentFilterType}
@@ -27,7 +27,7 @@ const FilterList = ({
   currentFilterType,
   filters,
   filterType,
-  onSelect
+  onSelect,
 }) => {
   const isSameFilterType = currentFilterType === filterType;
 
@@ -35,7 +35,7 @@ const FilterList = ({
     <>
       <h3 className="pb-3 text-grey-dark text-s">{filterType}</h3>
       <ul className="mb-8">
-        {filters.map(filter => (
+        {filters.map((filter) => (
           <li
             className={
               isSameFilterType && toFilterKey(filter) === currentFilter
