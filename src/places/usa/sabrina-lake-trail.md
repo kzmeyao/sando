@@ -53,11 +53,11 @@ place: 'Sabrina Lake Trail'
 regionHierarchy: 'Inyo National Forest, California, USA'
 ---
 
-The Sabrina Lake Trail is one of the more popular trails in Inyo National Forest, but given the vast playground that awaits visitors, it still manages to offer solitude and tranquility for those willing to hike to the end. For this trip, we set our destination for Moonlight Falls and the accompanying Moonlight Lake, one of the few alpine lakes at the end of the trail. We were totally unprepared for the beauty that waited for us.
+The Sabrina Lake Trail is one of the more popular trails in Inyo National Forest, but given the vast playground that awaits visitors, it still manages to offer solitude and tranquility for those willing to hike to the end. For this trip, we set our destination for Moonlight Falls and the accompanying Moonlight Lake, one of the few alpine lakes at the end of the trail. We were totally unprepared for the beauty that awaited us.
 
 <figure>
 
-There was rain and the sounds of a storm as we kicked off our hike. It wasn't the best of signs. To make matters worse, a hiker we passed along the way also said that they slepted through a storm and got hailed on the other day. That interaction definitely made us feel uneasy, but as we arrived at Blue Lake, the location for our first night's rest, a scenic sunset quickly put our unrest to an end. It felt like everything was going to be alright.
+There was rain and the sounds of a storm as we kicked off our hike- not the best of sign. To make matters worse, a hiker we passed along the way also said that they slept through a storm and got hailed on the other day. That interaction definitely made us feel uneasy, but as we arrived at Blue Lake, the location for our first night's rest, a scenic sunset quickly put our unrest to an end. Everything was going to be alright.
 
 <figure>
 <figure>
