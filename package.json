@@ -27,9 +27,9 @@
   },
   "scripts": {
     "build": "npx gatsby build",
-    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground npx gatsby develop",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "start": "npm run develop",
-    "serve": "npx gatsby serve",
+    "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
