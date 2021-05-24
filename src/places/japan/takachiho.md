@@ -1,7 +1,7 @@
 ---
 country: 'Japan'
 date: '2019-04-16'
-excerpt: 'Words under construction.'
+excerpt: 'Natural sceneries mixed with spiritual significance, this town made for a perfect day trip.'
 heroImage: 'japan/takachiho/takachiho-15.jpg'
 imagePrefix: 'japan/takachiho/takachiho'
 images:
@@ -34,7 +34,7 @@ images:
     caption: Oddly-shaped rocks.
   - file: '14|13'
     alt: Maple tree|A decorated large rock
-    caption: This rock is called Kihachi-no-Chikaraishi. It is really large and legend has it, a demon threw it to showcase its strength.
+    caption: This gigantic rock is called Kihachi-no-Chikaraishi. Legend has it, a demon threw it to showcase its strength.
   - file: '15'
     alt: A torii gate at the mouth of a cave with rock stacks all around
     caption: Amanoiwato shrine. A place of power.
@@ -42,7 +42,7 @@ images:
     alt: A torii gate with a small shrine behind it and rock stacks all around|A torii gate in the cave with plants dangling from the top of the cave
     caption: Some creative angles.
 path: '/places/takachiho-japan'
-photoGear: 'Pentax K1 (FA 31, FA 77)'
+photoGear: 'Pentax K1 (DFA 31), Sony A7R III (Loxia 21, Pentax DFA 77)'
 place: 'Takachiho'
 recommendations: 'Amanoiwato Shrine, Takachiho Gorge'
 regionHierarchy: 'Takachiho, Miyazaki Prefecture, Japan'
