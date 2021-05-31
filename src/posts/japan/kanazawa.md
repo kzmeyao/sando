@@ -74,7 +74,7 @@ images:
   - file: '24'
     alt: Two seafood bowls with rice
     caption: The <em>Kaisen-don</em>, or seafood bowl.
-path: '/places/kanazawa-japan'
+path: '/posts/2017-kanazawa-japan'
 photoGear: 'Pentax K1 (FA 31, FA 77), Sony RX1'
 place: 'Kanazawa'
 recommendations: 'Higashi Chaya District, Kanazawa Castle, Kenroku-en, Omicho Market'

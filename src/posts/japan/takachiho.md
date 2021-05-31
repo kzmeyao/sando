@@ -41,7 +41,7 @@ images:
   - file: '16|17'
     alt: A torii gate with a small shrine behind it and rock stacks all around|A torii gate in the cave with plants dangling from the top of the cave
     caption: Some creative angles.
-path: '/places/takachiho-japan'
+path: '/posts/2019-takachiho-japan'
 photoGear: 'Pentax K1 (DFA 31), Sony A7R III (Loxia 21, Pentax DFA 77)'
 place: 'Takachiho'
 recommendations: 'Amanoiwato Shrine, Takachiho Gorge'

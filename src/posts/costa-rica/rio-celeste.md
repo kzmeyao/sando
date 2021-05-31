@@ -4,7 +4,7 @@ date: '2014-12-19'
 excerpt: 'The locals say: "when God finished painting the sky, he washed his brushes in the Rio Celeste".'
 heroImage: 'costa-rica/rio-celeste/celeste-4.jpg'
 imagePrefix: 'costa-rica/rio-celeste/celeste'
-path: '/places/rio-celeste-costa-rica'
+path: '/posts/2014-rio-celeste-costa-rica'
 photoGear: 'Pentax K5IIs (FA 31, DFA 100, Sigma 10-20), Sony RX1'
 images:
   - file: '3'

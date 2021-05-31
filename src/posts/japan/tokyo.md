@@ -59,7 +59,7 @@ images:
   - file: '20'
     alt: Tuna onigiri held in one hand
     caption: My go-to combination at a convenience store consists of a tuna mayo onigiri (pictured), the egg salad sando (namesake of this site), and a random eye-catching drink from the fridge section.
-path: '/places/tokyo-japan'
+path: '/posts/2016-tokyo-japan'
 photoGear: 'Sony RX1, Pentax K5IIs (Sigma 10-20)'
 place: 'Tokyo'
 recommendations: 'Ichiran Ramen, Itoya, Ivorish (for French toast), Marugo (for katsu), Muji (Flagship in Ginza), Omotesando, Shibuya Crossing, Shinjuku Gyoen'

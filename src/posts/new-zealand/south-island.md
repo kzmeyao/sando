@@ -59,7 +59,7 @@ images:
   - file: '22'
     alt: A road next to a lake with glacial peaks in the back
     caption: The road back out.
-path: '/places/new-zealand-south-island'
+path: '/posts/2017-south-island-new-zealand'
 photoGear: 'Pentax K1 (DFA 15-30, FA 77, DFA 100), Sony RX1'
 place: 'South Island'
 recommendations: 'Aoraki/Mount National Park, Bespoke Kitchen, Fergburger, Fjordland National Park, Patagonia Chocolates, Queenstown'

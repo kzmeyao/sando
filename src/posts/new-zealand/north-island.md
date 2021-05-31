@@ -43,7 +43,7 @@ images:
   - file: '15'
     alt: Overlook of a city with a tower in the center
     caption: View from Mount Eden.
-path: '/places/new-zealand-north-island'
+path: '/posts/2017-north-island-new-zealand'
 photoGear: 'Pentax K1 (DFA 15-30, FA 77, DFA 100), Sony RX1'
 place: 'North Island'
 recommendations: 'Auckland, Cathedral Cove, Hahei Beach, Japan Mart, Nelson Street Cycleway (a.k.a. the pink bridge), Roma Coffee Roasters, Waipu Caves'

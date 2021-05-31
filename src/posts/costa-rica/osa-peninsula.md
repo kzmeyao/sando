@@ -45,7 +45,7 @@ images:
   - file: '15|18'
     alt: Tiger beetle|Poison dart frog
     caption: A tiger beetle (unknown sp.) and a poison dart frog (<em>Dendrobatus auratus</em>). Two of my favorite animals found on the same path to our cabin.
-path: '/places/osa-peninsula-costa-rica'
+path: '/posts/2014-osa-peninsula-costa-rica'
 photoGear: 'Pentax K5IIs (FA 31, DFA 100), Sony RX1'
 place: 'Osa Peninsula'
 regionHierarchy: 'Puerto Jimenez, Costa Rica'

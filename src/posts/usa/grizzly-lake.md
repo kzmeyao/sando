@@ -32,7 +32,7 @@ images:
   - file: '10|11'
     alt: Turquoise-blue lake waters|Yellow wildflowers
     caption: It was like another world there sitting next to the lake.
-path: '/places/grizzly-lake-california'
+path: '/posts/2015-grizzly-lake-california'
 photoGear: 'Pentax K5IIs (FA 31, DFA 100, Sigma 10-20), Sony RX1'
 place: 'Grizzly Lake'
 regionHierarchy: 'Trinity Alps Wilderness, California, USA'

@@ -47,7 +47,7 @@ images:
   - file: '17'
     alt: Heavily-trafficked road with vendors on both sides
     caption: Back on the main street, still as busy as ever.
-path: '/places/arashiyama-japan'
+path: '/posts/2017-arashiyama-japan'
 photoGear: 'Pentax K1 (FA 31, FA 77)'
 place: 'Arashiyama'
 recommendations: 'Arabica, Gio-ji, Jojakko-ji'

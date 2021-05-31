@@ -47,7 +47,7 @@ images:
   - file: '18'
     alt: A small island of granite rocks in a glacial lake
     caption: A rock island. Don't make the mistake of trying to swim there as my friend tried to do. As nice as the water looks, it is freezing cold.
-path: '/places/sabrina-lake-trail'
+path: '/posts/2018-sabrina-lake-trail'
 photoGear: 'Pentax K1 (FA 31, FA 77)'
 place: 'Sabrina Lake Trail'
 regionHierarchy: 'Inyo National Forest, California, USA'
