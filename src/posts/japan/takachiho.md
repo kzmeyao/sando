@@ -42,10 +42,10 @@ images:
     alt: A torii gate with a small shrine behind it and rock stacks all around|A torii gate in the cave with plants dangling from the top of the cave
     caption: Some creative angles.
 path: '/posts/2019-takachiho-japan'
-photoGear: 'Pentax K1 (DFA 31), Sony A7R III (Loxia 21, Pentax DFA 77)'
+photoGear: 'Pentax K1 (FA 31), Sony A7R III (Loxia 21, Pentax FA 77)'
 place: 'Takachiho'
 recommendations: 'Amanoiwato Shrine, Takachiho Gorge'
-regionHierarchy: 'Takachiho, Miyazaki Prefecture, Japan'
+regionHierarchy: 'Miyazaki Prefecture, Japan'
 ---
 
 Tales of deities and demons weave into the history of the small town of Takachiho, and their stories are magnified by the spectacular scenery of the region. Driving from the Mt. Aso region, we took a rental car through the quaint countryside and winding mountain roads to reach this lush paradise, and it ended up being one of my favorite day trips to date.

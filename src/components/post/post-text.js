@@ -5,8 +5,8 @@ import { IMAGE_PATH } from '../../constants';
 import { PhotoSwipeWrapper } from '../common/PhotoSwipe';
 
 const TRANSFORM_PATH = 't_scale_80';
-const IMAGE_LONG_EDGE = 1080 * 0.8;
-const IMAGE_SHORT_EDGE = 721 * 0.8;
+const IMAGE_LONG_EDGE = 1200 * 0.8;
+const IMAGE_SHORT_EDGE = 800 * 0.8;
 const PHOTOSWIPE_CLASS = 'photosw';
 
 const getImageUrl = (imagePrefix, fileName, transform) => {
