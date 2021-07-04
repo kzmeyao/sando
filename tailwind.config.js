@@ -360,4 +360,5 @@ module.exports = {
     zIndex: false,
   },
   plugins: [],
+  purge: ['./src/**/*.js', './src/**/*.ts', './src/**/*.tsx'],
 };
