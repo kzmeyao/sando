@@ -50,7 +50,7 @@ Tucked in the Tenerio Volcanic National Park, the Rio Celeste is a distinctively
 <figure>
 <figure>
 
-Although the river is the namesake star here, many people also come to see the waterfall near the start of the trail. It was a sight to behold. As we approached the fall, the verdant foliage formed a tunnel around the staircase descending to the base, making it quite the dramatic entrance.
+Although the river is the namesake star here, many people also come to see the waterfall near the start of the trail. As we approached the fall, the verdant foliage formed a tunnel around the staircase descending to the base, making it quite the dramatic entrance.
 
 <figure>
 <figure>
@@ -60,4 +60,4 @@ Although the river is the namesake star here, many people also come to see the w
 <figure>
 <figure>
 
-This gem of a place was a little out of the way, but was definitely worth the slight off-roading. I hope the magic lives on for years to come.
+This gem of a place was a little out of the way, but was definitely worth the slight off-roading. Visiting magical places like this always makes me wonder just what else is out there for me to explore as it continues to fuel my love for travel.
