@@ -49,7 +49,7 @@ images:
     caption: On the drive back, we stopped by the side of the road to admire the lush mountains.
   - file: '23'
     alt: A large waterfall
-    caption: Oko-no-taki with its 88 meters drop.
+    caption: Oko-no-taki with its 88 meter drop.
   - file: '22'
     alt: Close-up of the waterfall
     caption: A closer look.
@@ -60,7 +60,7 @@ recommendations: ''
 regionHierarchy: 'Kagoshima Prefecture, Japan'
 ---
 
-Japan is made up of thousands (yes, _thousands_) of small islands, and off the southern tip of the Kyushu mainland, one such island named Yakushima has quite the reputation. It is an UNESCO World Heritage Site and also the wettest place in Japan, which have led to a local saying that it "rains 35 days a month". Famous for its pristine forests with ancient Japanese cedars and hikes through mountainous terrain, the island draws its fair share of nature lovers and people looking to get away from the mainland. Since we were already exploring Kyushu, we decided to tack on a visit to Yakushima via a two-hour ferry ride to see what the fuss was all about.
+Japan is made up of thousands (yes, _thousands_) of small islands, and off the southern tip of the Kyushu mainland, one such island named Yakushima has quite the reputation. It is an UNESCO World Heritage Site and also the wettest place in Japan, which has led to a local saying that it "rains 35 days a month". Famous for its pristine forests with ancient Japanese cedars and hikes through mountainous terrain, the island draws its fair share of nature lovers and people looking to get away from the mainland. Since we were already exploring Kyushu, we decided to tack on a visit to Yakushima via a two-hour ferry ride to see what the fuss was all about.
 
 <figure>
 
@@ -92,4 +92,4 @@ One other notable place we visited was Oko-no-taki, the tallest waterfall on the
 <figure>
 <figure>
 
-Throughout this trip, we stayed at _Shiki no Yado_, a minshuku on the southern part of the island. Given the high humidity, being able to just lie down in the center of a room lined with tatami mat was pure bliss. It was also the best way for us to recharge every night. Not that we needed it though. Even with our packed itinerary, our time spent on Yakushima was strangely rejuvenating. It was definitely one of the more relaxing destinations we've visited. As I reflect back on this trip, I'd like to think that the tranquil energy of this island continue to carry on within me as a sense of calmness engulfs my mind.
+Throughout this trip, we stayed at _Shiki no Yado_, a minshuku on the southern part of the island. Given the high humidity, being able to just lie down in the center of a room lined with tatami mat was pure bliss. It was also the best way for us to recharge every night. Not that we needed it though. Even with our packed itinerary, our time spent on Yakushima was strangely rejuvenating. It was definitely one of the more relaxing destinations we've visited. As I reflect back upon this trip, I feel enveloped by a sense of calmness, as if the tranquil energy of this island continues to live within me.
