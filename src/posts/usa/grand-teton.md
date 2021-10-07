@@ -65,9 +65,6 @@ images:
   - file: '26'
     alt: ''
     caption: ''
-  - file: '27'
-    alt: ''
-    caption: ''
   - file: '28'
     alt: ''
     caption: ''
@@ -80,7 +77,6 @@ regionHierarchy: 'Wyoming, USA'
 
 Words under construction.
 
-<figure>
 <figure>
 <figure>
 <figure>
