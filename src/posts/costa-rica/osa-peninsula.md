@@ -51,7 +51,7 @@ place: 'Osa Peninsula'
 regionHierarchy: 'Puerto Jimenez, Costa Rica'
 ---
 
-I learned English from nature books. The first time I stepped into a public library after moving to the United States, I fell in love with the nature section. The photographs of lush jungles and exotic animals overwhelmed me and I found myself spellbound by evolution and biodiversity. Therefore, I have always wanted to visit Costa Rica, a country that harbors a staggering 5% of the world’s biodiversity. After researching for the trip and happening upon a remote destination called the Osa Peninsula, I just had to pack my bags and visit _"the most biologically intense place on Earth"_.
+I learned English from nature books. The first time I stepped into a public library after moving to the United States, I fell in love with the nature section. The photographs of lush jungles and exotic animals overwhelmed me and I found myself spellbound by evolution and biodiversity. Therefore, I have always wanted to visit Costa Rica, a country that harbors a staggering 5% of the world’s biodiversity. After researching this country and happening upon a remote destination called the Osa Peninsula, I just had to pack my bags and visit _"the most biologically intense place on Earth"_.
 
 <figure>
 
@@ -62,7 +62,7 @@ The Osa peninsula is known for being home to an abundance of wildlife, and for b
 <figure>
 <figure>
 
-From witnessing blue morpho butterflies fluttering in a forest clearing to a pair of scarlet macaws feeding their young, we encountered animals we've only ever really seen in books or on television. The Osa peninsula had much to offer in terms of wildlife and fauna. I was practically living the _Planet Earth_ documentary.
+From witnessing blue morpho butterflies fluttering in a forest clearing to a pair of scarlet macaws feeding their young, we encountered animals we've only ever really seen in books or on television. The peninsula had much to offer in terms of wildlife and fauna. I wasn't just experiencing my childhood library dreams anymore, I was living the _Planet Earth_ documentary.
 
 <figure>
 <figure>
@@ -80,4 +80,4 @@ Aside from the constant visual stimulation, the sounds were a large part of the 
 
 <figure>
 
-Although our stay at the lodge was only for a couple of days, I am glad that I was able to bring my childhood dreams of trekking through the rainforest to life. Additionally, on our final day at the lodge, I was finally able to get a photo of an elusive green and black poison dart frog I've crossed paths with near our cabin. Talk about leaving on a high note.
+Although our stay at the lodge was only for a couple of days, I am glad that I was able to bring my childhood dreams of trekking through the rainforest to life. Additionally, on our final day at the lodge, I was finally able to snap a photo of an elusive green and black poison dart frog I've crossed paths with near our cabin. Talk about leaving on a high note.
