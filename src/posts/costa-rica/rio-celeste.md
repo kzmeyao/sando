@@ -45,7 +45,7 @@ The ground was muddy from the sporadic rain. I carefully planned my steps to avo
 
 <figure>
 
-Tucked in the Tenerio Volcanic National Park, the Rio Celeste is a distinctively turquoise colored river. It gets its appearance from a physical phenomenon called _Mie scattering_ rather than a chemical one. It is such a wonderful shade of blue that before seeing the real deal, I initially thought online photos of the river must have been photoshopped.
+Tucked in the Tenerio Volcanic National Park of Costa Rica, the Rio Celeste is a distinctively turquoise colored river. It gets its appearance from a physical phenomenon called _Mie scattering_ rather than a chemical one. It is such a wonderful shade of blue that before seeing the real deal, I initially thought online photos of the river must have been photoshopped.
 
 <figure>
 <figure>
