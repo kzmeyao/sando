@@ -9,12 +9,13 @@ const About = () => (
     <h2 className={headingClass}>About the website:</h2>
     <p className={pClass}>
       On my first trip to Japan, I ended up joining the cult of the humble egg
-      salad sando after just one bite. For the uninitiated, <em>sando</em> is
-      short for sandwich, and the egg salad sando is the perfect sandwich. Its
-      simplicity, taste, and value just can't be beat. It's probably not even a
-      stretch to say that this bite cemented my love for travel. So here I am,
-      creating this travel journal, and I can't think of a better name for it
-      than to name it after the thing that started it all.
+      salad <em>sando</em> after just one bite. For the uninitiated,{' '}
+      <em>sando</em> is short for sandwich, and the egg salad sando is the
+      perfect sandwich. Its simplicity, taste, and value just can't be beat.
+      It's probably not even a stretch to say that this bite cemented my love
+      for travel. So here I am, creating this travel journal, and I can't think
+      of a better name for it than to name it after the thing that started it
+      all.
     </p>
     <h2 className={headingClass}>About the author:</h2>
     <p className={pClass}>
