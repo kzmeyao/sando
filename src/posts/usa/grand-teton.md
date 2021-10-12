@@ -13,7 +13,7 @@ images:
     caption: 'Jenny Lake marked the beginning of the Cascade Canyon trail.'
   - file: '2|4'
     alt: 'A deer walking onto the trail.|A waterfall framed by trees on both sides.'
-    caption: 'From deer on the trail and waterfalls like Hidden Falls along the trail, there were lots of surprises along the way.'
+    caption: 'From a close encounter with a deer on the trail to finding out that Hidden Falls is a lot bigger than I imagined, there were many pleasant surprises along the way.'
   - file: '5|6'
     alt: 'A mountain peak rising above the clouds.|Snow-covered mountain peaks with a river flowing in the foreground.'
     caption: 'Fog enveloped the mountains at the beginning of the hike, but as we got further into the canyon, the mountains came into full view.'
@@ -30,7 +30,7 @@ images:
     caption: 'Even though we were already so high up, we still felt dwarfed.'
   - file: '12'
     alt: 'A frozen lake and a group of hikers next to it.'
-    caption: 'At the height of summer, Lake Solitude was still frozen. What surprised me most was this group of hikers were all wearing shorts.'
+    caption: "Kicking off the start of the summer with a frozen lake. Can't say shorts are appropriate here."
   - file: '11|14'
     alt: 'Plates of ice floating on top of a lake.|A sharkfin-shaped mound of ice floating on choppy waters.'
     caption: 'The ice was starting to break up, revealing interesting patterns.'
@@ -45,13 +45,13 @@ images:
     caption: ''
   - file: '17|18'
     alt: 'A moose amidst the trees.|A closer zoom photo of a moose grazing.'
-    caption: 'Up close with a moose. Not super close though.'
+    caption: 'This is actually our second moose sighting (first one not pictured). It was a lot closer this time, but still far enough to admire the majestic creature from a safe distance.'
   - file: '19'
     alt: 'Mountain peaks lit up during the sunrise.'
     caption: 'Waking up for a sunrise is hard, but very rewarding.'
   - file: '20'
     alt: 'Mist rising up above a river caused by the morning sun.'
-    caption: ''
+    caption: 'Truly a golden hour right before sunrise. Taken near Schwabacher Landing.'
   - file: '21'
     alt: 'A modern building with large glass walls nestled in a meadow.'
     caption: 'Probably the most modern-looking visitor center in the national park system.'
@@ -77,7 +77,7 @@ recommendations: ''
 regionHierarchy: 'Wyoming, USA'
 ---
 
-I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before it. Although 15 hours is a really long time to spend in a car, even over the span of two days, it was worth seeing the Teton range jutting out in the horizon on the final leg of the drive. Like a metropolis skyline, the snow-covered peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains got bigger and bigger, and we knew that an exciting adventure was waiting for us.
+I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before it. Although 15 hours is a significant amount of time to spend in a car, it was worth seeing the Teton range jutting out in the horizon on the final leg of our drive. Like a metropolis skyline, the prominent peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains got bigger and bigger, and we knew that an exciting adventure was waiting for us.
 
 <figure>
 
@@ -87,6 +87,29 @@ Our main event for this trip was a hike along the Cascade Canyon trail to Lake S
 <figure>
 <figure>
 <figure>
+
+After a couple of miles, we get into the heart of the Cascade Canyon. Flanked by mountains on both sides, we felt as we were in our own little world.
+
+<figure>
+<figure>
+<figure>
+
+As we trekked higher, the landscape around us began to transition from a summer green to a winter brown. Patches of snow appeared along the side of the trail. With another couple of steps, more patches. This continued for another mile or so until finally, a full-blown snowfield greeted us. The ground was white as far as my eyes could see. Lake Solitude, our intended destination, was still frozen over.
+
+<figure>
+<figure>
+<figure>
+
+The wind was fierce at the lake. The sky constantly changed colors as clouds raced overhead. I feared for my camera and tripod setup falling over many times, but the hook attachment came in handy and I was able to weigh it down with my pack. Needless to say, I would've stayed a bit longer if not for the wind.
+
+<figure>
+<figure>
+<figure>
+
+At the end of the trail, our legs were starting to give out underneath us. We had the choice of hiking two more miles around Jenny Lake to get to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant fairytale ending we had hoped for, but we abided.
+
+Over the next two days spent in Grand Teton, we were able to let our legs recover and let our car do all the work. There were some fantastic lookout spots and areas of historical significance to visit.
+
 <figure>
 <figure>
 <figure>
@@ -95,12 +118,5 @@ Our main event for this trip was a hike along the Cascade Canyon trail to Lake S
 <figure>
 <figure>
 <figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
-<figure>
+
+This national park is definitely something special. It exudes a natural beauty that matches some of the best in this country. It makes me want to wake up at 4am for the sunrise and bear the mosquito bites for the sunset, because when the lighting hits, it's just pure magic. Not to mention, the Cascade Canyon trail was also one of the best hikes I've done in a while. After these couple of days on the road, I'm still a mountains over beaches guy.
