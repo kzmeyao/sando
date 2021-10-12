@@ -108,7 +108,7 @@ The wind was fierce at the lake. The sky constantly changed colors as clouds rac
 
 At the end of the trail, our legs were starting to give out underneath us. We had the choice of hiking two more miles around Jenny Lake to get to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant fairytale ending we had hoped for, but we abided.
 
-Over the next two days spent in Grand Teton, we were able to let our legs recover and let our car do all the work. There were some fantastic lookout spots and areas of historical significance to visit.
+Over the next two days we spent in Grand Teton, we were able to let our legs recover by letting our car do all the work. There were some fantastic lookout spots and areas of historical significance, all easily accessible with a car.
 
 <figure>
 <figure>
