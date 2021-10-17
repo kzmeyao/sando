@@ -22,12 +22,12 @@ images:
     caption: 'Glacier-fed water is always pretty.'
   - file: '8'
     alt: 'A series of cascades on the mountain-side.'
-    caption: 'Cascade Canyon is aptly named. We were surrounded by such cascades on all sides.'
+    caption: 'Cascade Canyon is aptly named. We were surrounded by such cascading waterfalls on all sides.'
   - file: '9'
     alt: 'Mountains the background with a meadow in the foreground.'
   - file: '10'
     alt: 'A trail leading into the mountains in the distance.'
-    caption: 'Even though we were already so high up, we still felt dwarfed.'
+    caption: 'Even though we were already so high up, we still felt dwarfed by the neverending mountain range.'
   - file: '12'
     alt: 'A frozen lake and a group of hikers next to it.'
     caption: "Kicking off the start of the summer with a frozen lake. Can't say shorts are appropriate attire here."
@@ -69,7 +69,7 @@ images:
     caption: 'Another day, another sunrise.'
   - file: '28'
     alt: 'A mountain range with clouds reflecting off of a river.'
-    caption: "Schwabacher Landing. Didn't get so lucky with the colors, but the clouds came out to play."
+    caption: "Schwabacher Landing. Wasn't so lucky with the colors, but the clouds came out to play."
 path: '/posts/2019-grand-teton-usa'
 photoGear: 'Pentax K1 (FA 31, FA 77), Sony A7R III (Loxia 21, Pentax FA 31, Pentax FA 77, Sony FE 70-200)'
 place: 'Grand Teton National Park'
@@ -77,7 +77,7 @@ recommendations: ''
 regionHierarchy: 'Wyoming, USA'
 ---
 
-I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before it. Although 15 hours is a significant amount of time to spend in a car, it was worth seeing the Teton range jutting out in the horizon on the final leg of our drive. Like a metropolis skyline, the prominent peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains grew bigger and bigger, and we knew that an exciting adventure was waiting for us.
+I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before. Although 15 hours is a significant amount of time to spend in a car, it was worth seeing the Teton range jutting out from the horizon on the final leg of our drive. Like a metropolis skyline, the prominent peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains grew bigger and bigger, and we knew that an exciting adventure was waiting for us.
 
 <figure>
 
@@ -88,25 +88,25 @@ Our main event in Grand Teton was a hike along the Cascade Canyon trail to Lake 
 <figure>
 <figure>
 
-After a couple of miles, we arrived at the heart of the Cascade Canyon. Flanked by mountains on both sides, we felt as we were in our own little world.
+After a couple of miles, we arrived at the heart of the Cascade Canyon. Flanked by mountains on both sides, we felt as if we were in our own little world.
 
 <figure>
 <figure>
 <figure>
 
-As we trekked higher, the landscape around us began to transition from a summer green to a winter brown. The further we walked, the more patches of snow we saw alongside the trail. This continued for another mile or so until finally, a full-blown snowfield greeted us. The ground was blindingly white as far as my eyes could see, and right in the center of it all was our intended destination, Lake Solitude. Frozen as if suspended in time, the lake seemed to have embraced its own name and decided to sit back and watch the rest of the world move on.
+As we neared the top, the landscape around us quickly transitioned from a summer green to a winter brown. The further we walked, the more patches of snow we saw alongside the trail. This continued until finally, a full-blown snowfield greeted us. The ground was blindingly white as far as my eyes could see, and right in the center of it all was our intended destination, Lake Solitude. As if suspended in time, the still-frozen lake seemed to have embraced its own name and decided to sit back and watch the rest of the world move on.
 
 <figure>
 <figure>
 <figure>
 
-The wind was fierce at the lake. The sky constantly changed colors as clouds raced overhead. I feared for my camera and tripod setup falling over the entire time, but the hook attachment on my tripod came in handy and I was able to successfully weigh it down with my pack. Needless to say, I would've stayed a bit longer if not for the wind. It was not the leisure photoshoot I expected.
+The wind was fierce at the lake. The sky constantly changed colors as clouds raced overhead. I feared for my camera and tripod setup falling over the entire time, but the hook attachment on my tripod came in handy and I was able to successfully weigh it down with my pack. Needless to say, I would've stayed a bit longer if not for the wind. It was not the leisurely photoshoot I expected.
 
 <figure>
 <figure>
 <figure>
 
-At the end of the trail, our legs were starting to give out from underneath us. We had the choice of hiking two more miles around Jenny Lake to get back to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant "we conquered the mountain" ending we had hoped for, but we abided.
+At the end of the trail, our legs were starting to give out from underneath us. We had the choice of hiking two more miles around Jenny Lake to get back to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant "we conquered the mountain" ending we had hoped for, but we reluctantly agreed to wait for the sake of our legs.
 
 <figure>
 
