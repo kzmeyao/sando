@@ -30,7 +30,7 @@ images:
     caption: 'Even though we were already so high up, we still felt dwarfed.'
   - file: '12'
     alt: 'A frozen lake and a group of hikers next to it.'
-    caption: "Kicking off the start of the summer with a frozen lake. Can't say shorts are appropriate here."
+    caption: "Kicking off the start of the summer with a frozen lake. Can't say shorts are appropriate attire here."
   - file: '11|14'
     alt: 'Plates of ice floating on top of a lake.|A sharkfin-shaped mound of ice floating on choppy waters.'
     caption: 'The ice was starting to break up, revealing interesting patterns.'
@@ -77,46 +77,47 @@ recommendations: ''
 regionHierarchy: 'Wyoming, USA'
 ---
 
-I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before it. Although 15 hours is a significant amount of time to spend in a car, it was worth seeing the Teton range jutting out in the horizon on the final leg of our drive. Like a metropolis skyline, the prominent peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains got bigger and bigger, and we knew that an exciting adventure was waiting for us.
+I prefer mountains to beaches, driving to flying. So when the idea of taking a roadtrip to Grand Teton National Park came up, I anticipated it like no other vacation before it. Although 15 hours is a significant amount of time to spend in a car, it was worth seeing the Teton range jutting out in the horizon on the final leg of our drive. Like a metropolis skyline, the prominent peaks towered over the surrounding landscape. All of our travel weariness dissipated as the mountains grew bigger and bigger, and we knew that an exciting adventure was waiting for us.
 
 <figure>
 
-Our main event for this trip was a hike along the Cascade Canyon trail to Lake Solitude. We initially planned for a longer roundtrip trail that didn't require us to double-back, but we were definitely glad that we did not end up doing that. At the end of this hike, our limbs were starting to give up.
-
-<figure>
-<figure>
-<figure>
-<figure>
-
-After a couple of miles, we get into the heart of the Cascade Canyon. Flanked by mountains on both sides, we felt as we were in our own little world.
-
-<figure>
-<figure>
-<figure>
-
-As we trekked higher, the landscape around us began to transition from a summer green to a winter brown. Patches of snow appeared along the side of the trail. With another couple of steps, more patches. This continued for another mile or so until finally, a full-blown snowfield greeted us. The ground was white as far as my eyes could see. Lake Solitude, our intended destination, was still frozen over.
-
-<figure>
-<figure>
-<figure>
-
-The wind was fierce at the lake. The sky constantly changed colors as clouds raced overhead. I feared for my camera and tripod setup falling over many times, but the hook attachment came in handy and I was able to weigh it down with my pack. Needless to say, I would've stayed a bit longer if not for the wind.
-
-<figure>
-<figure>
-<figure>
-
-At the end of the trail, our legs were starting to give out underneath us. We had the choice of hiking two more miles around Jenny Lake to get to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant fairytale ending we had hoped for, but we abided.
-
-Over the next two days we spent in Grand Teton, we were able to let our legs recover by letting our car do all the work. There were some fantastic lookout spots and areas of historical significance, all easily accessible with a car.
+Our main event in Grand Teton was a hike along the Cascade Canyon trail to Lake Solitude. We initially planned for a roundtrip trail that didn't require us to double-back, but we were definitely glad that we did not take the longer route as we were a tad out of shape.
 
 <figure>
 <figure>
 <figure>
 <figure>
+
+After a couple of miles, we arrived at the heart of the Cascade Canyon. Flanked by mountains on both sides, we felt as we were in our own little world.
+
+<figure>
+<figure>
+<figure>
+
+As we trekked higher, the landscape around us began to transition from a summer green to a winter brown. The further we walked, the more patches of snow we saw alongside the trail. This continued for another mile or so until finally, a full-blown snowfield greeted us. The ground was blindingly white as far as my eyes could see, and right in the center of it all was our intended destination, Lake Solitude. Frozen as if suspended in time, the lake seemed to have embraced its own name and decided to sit back and watch the rest of the world move on.
+
+<figure>
+<figure>
+<figure>
+
+The wind was fierce at the lake. The sky constantly changed colors as clouds raced overhead. I feared for my camera and tripod setup falling over the entire time, but the hook attachment on my tripod came in handy and I was able to successfully weigh it down with my pack. Needless to say, I would've stayed a bit longer if not for the wind. It was not the leisure photoshoot I expected.
+
+<figure>
+<figure>
+<figure>
+
+At the end of the trail, our legs were starting to give out from underneath us. We had the choice of hiking two more miles around Jenny Lake to get back to our car or to take a ferry directly across the lake. We opted for the latter. Not surprisingly, almost everyone else had the same idea and there was a huge line waiting for the ferry. It was not the triumphant "we conquered the mountain" ending we had hoped for, but we abided.
+
+<figure>
+
+Over the next two days that we spent in Grand Teton, we were able to let our legs recover by letting our car do all the work. There were some fantastic lookout spots and areas of historical significance, all easily accessible with a car.
+
+<figure>
+<figure>
+<figure>
 <figure>
 <figure>
 <figure>
 <figure>
 
-This national park is definitely something special. It exudes a natural beauty that matches some of the best in this country. It makes me want to wake up at 4am for the sunrise and bear the mosquito bites for the sunset, because when the lighting hits, it's just pure magic. Not to mention, the Cascade Canyon trail was also one of the best hikes I've done in a while. After these couple of days on the road, I'm still a mountains over beaches guy.
+This national park is definitely something special. It exudes a natural beauty that matches some of the best in this country. It makes me want to wake up at 4 am for the sunrise and bear the mosquito bites for the sunset. Not to mention, the Cascade Canyon trail was one of the best hikes I've done in a while. After these couple of days on the road, I'm still a driving-over-flying, mountains-over-beaches kind of guy.
