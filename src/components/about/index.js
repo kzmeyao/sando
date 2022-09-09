@@ -21,11 +21,11 @@ const About = () => (
     <p className={pClass}>
       Hello, my name is Kevin Yao. I'm a software developer by trade, but I'm
       also a serial creator. My curiosity often leads me down rabbitholes and I
-      end up spending a lot of time immersing myself in the subject and creating
-      something out of it. Although these mini projects tend to change
-      frequently, one constant creative outlet for me has been travel
-      photography. Hence, I created <em>sando</em> to document and showcase
-      these journeys. I hope you enjoy your visit.
+      end up immersing myself in the various subjects and creating something out
+      of it. Although the projects I dabble in tend to change frequently, one
+      constant creative outlet for me has been travel photography. Hence, I
+      created <em>sando</em> to document and showcase these journeys. I hope you
+      enjoy your visit.
     </p>
     <h2 className={headingClass}>Want more?</h2>
     <p className={pClass}>

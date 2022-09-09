@@ -1,7 +1,7 @@
 ---
 country: 'USA'
 date: '2019-07-08'
-excerpt: 'Words under construction'
+excerpt: 'I am a moutain-over-beaches kind of guy, and these mountains are impressive.'
 heroImage: 'usa/grand-teton/teton-28.jpg'
 imagePrefix: 'usa/grand-teton/teton'
 images:
