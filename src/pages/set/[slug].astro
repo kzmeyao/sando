@@ -1,0 +1,42 @@
+---
+import { GraphQLClient } from "graphql-request";
+import Main from "../../layouts/main.astro";
+import type { Set } from "../../types";
+
+export async function getStaticPaths() {
+  const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+  const { sets } = await client.request(`
+    query Sets {
+      sets {
+        slug
+      }
+    }
+  `);
+
+  return sets.map((set: Set) => ({
+    params: { slug: set.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+
+const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+
+const { set } = await client.request(
+  `query Set($slug: String!) {
+    set(where: {slug: $slug}) {
+      displayTitle
+      slug
+    }
+  }`,
+  { slug },
+);
+---
+
+<Main content={{ title: set.displayTitle }}>
+  <div class="grid place-items-center h-screen content-center text-center">
+    <h1 class="text-4xl font-bold mb-4">{set.displayTitle}</h1>
+    <p class="text-gray-500 mb-8">Slug: {set.slug}</p>
+    <a href="/" class="p-4 underline hover:text-blue-500">Back to Home</a>
+  </div>
+</Main>

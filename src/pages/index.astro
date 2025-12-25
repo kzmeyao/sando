@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import Button from "../components/Button.astro";
+import { GraphQLClient } from "graphql-request";
+
+import type { Set } from "../types";
+
+const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+
+const { sets }: { sets: Set[] } = await client.request(`
+  query Sets {
+    sets {
+      displayTitle
+      slug
+    }
+  }`);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro + TailwindCSS</title>
+	</head>
+
+	<body>
+		<div class="grid place-items-center h-screen content-center">
+			{
+				sets.map((set) => (
+					<a href={`/set/${set.slug}`}>
+						<Button key={set.slug}>{set.displayTitle}</Button>
+					</a>
+				))
+			}
+		</div>
+	</body>
+</html>
