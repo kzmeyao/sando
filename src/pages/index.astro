@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Button from "../components/Button.astro";
 import { GraphQLClient } from "graphql-request";
 
-import type { Set } from "../types";
+import type { Set } from "../generated/graphql";
 
 const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 

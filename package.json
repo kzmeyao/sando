@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen": "graphql-codegen --require dotenv/config"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -16,5 +17,10 @@
     "canvas-confetti": "^1.9.4",
     "graphql-request": "^7.4.0",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^6.1.0",
+    "@graphql-codegen/typescript": "^5.0.7",
+    "dotenv": "^17.2.3"
   }
 }
