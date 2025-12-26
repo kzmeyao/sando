@@ -9,7 +9,8 @@ const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 
 const { sets }: { sets: Set[] } = await client.request(`
   query Sets {
-    sets {
+    sets(orderBy: date_DESC) {
+      date
       displayTitle
       slug
     }
@@ -22,15 +23,17 @@ const { sets }: { sets: Set[] } = await client.request(`
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
+		<title>sando</title>
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
+		<div class="grid place-items-center h-screen content-center bg-stone-500">
 			{
 				sets.map((set) => (
 					<a href={`/set/${set.slug}`}>
-						<Button key={set.slug}>{set.displayTitle}</Button>
+						<Button key={set.slug}>
+							{set.date}&nbsp;{set.displayTitle}
+						</Button>
 					</a>
 				))
 			}
