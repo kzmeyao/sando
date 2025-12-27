@@ -26,7 +26,7 @@ const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 const { set } = await client.request(
   `query Set($slug: String!) {
     set(where: {slug: $slug}) {
-      date
+    date
       displayTitle
       images {
         imageCaption
@@ -81,64 +81,68 @@ const { set } = await client.request(
               )}
             </div>
           </div>
-          <nav class="flex-shrink-0 flex justify-center items-center gap-4 py-2 text-sm font-light">
-            {index > 0 ? (
-              <a
-                href={`#image-${index - 1}`}
-                class="text-neutral-600 hover:text-neutral-900 transition-colors"
-              >
-                &lt; PREV
-              </a>
-            ) : (
-              <span class="text-neutral-300">&lt; PREV</span>
-            )}
-            <span class="text-neutral-300">|</span>
-            <a
-              href="/"
-              class="text-neutral-600 hover:text-neutral-900 transition-colors"
-            >
-              HOME
-            </a>
-            <span class="text-neutral-300">|</span>
-            {index < set.images.length - 1 ? (
-              <a
-                href={`#image-${index + 1}`}
-                class="text-neutral-600 hover:text-neutral-900 transition-colors"
-              >
-                NEXT &gt;
-              </a>
-            ) : (
-              <span class="text-neutral-300">NEXT &gt;</span>
-            )}
-          </nav>
-          <div class="flex-shrink-0 flex justify-center gap-2 py-2">
-            {set.images.map(
-              (
-                thumb: {
-                  url: string;
-                  imageCaption: string;
-                  width: number;
-                  height: number;
-                },
-                thumbIndex: number,
-              ) => (
-                <a href={`#image-${thumbIndex}`}>
-                  <img
-                    src={transformHygraphImage(thumb.url, 96)}
-                    alt={thumb.imageCaption || ""}
-                    width={96}
-                    height={Math.round((96 * thumb.height) / thumb.width)}
-                    style={{ aspectRatio: `${thumb.width} / ${thumb.height}` }}
-                    class:list={[
-                      "h-12 w-auto object-contain cursor-pointer transition-opacity",
-                      thumb.url === image.url
-                        ? "opacity-100"
-                        : "opacity-50 hover:opacity-75",
-                    ]}
-                  />
+          <div class="flex flex-col items-center gap-2">
+            <nav class="flex-shrink-0 items-center text-sm font-light">
+              {index > 0 ? (
+                <a
+                  href={`#image-${index - 1}`}
+                  class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  &lt; PREV
                 </a>
-              ),
-            )}
+              ) : (
+                <span class="text-neutral-300">&lt; PREV</span>
+              )}
+              <span class="text-neutral-300">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <a
+                href="/"
+                class="text-neutral-600 hover:text-neutral-900 transition-colors"
+              >
+                HOME
+              </a>
+              <span class="text-neutral-300">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              {index < set.images.length - 1 ? (
+                <a
+                  href={`#image-${index + 1}`}
+                  class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  NEXT &gt;
+                </a>
+              ) : (
+                <span class="text-neutral-300">NEXT &gt;</span>
+              )}
+            </nav>
+            <div class="flex-shrink-0 gap-2">
+              {set.images.map(
+                (
+                  thumb: {
+                    url: string;
+                    imageCaption: string;
+                    width: number;
+                    height: number;
+                  },
+                  thumbIndex: number,
+                ) => (
+                  <a href={`#image-${thumbIndex}`}>
+                    <img
+                      src={transformHygraphImage(thumb.url, 96)}
+                      alt={thumb.imageCaption || ""}
+                      width={96}
+                      height={Math.round((96 * thumb.height) / thumb.width)}
+                      style={{
+                        aspectRatio: `${thumb.width} / ${thumb.height}`,
+                      }}
+                      class:list={[
+                        "h-12 w-auto object-contain cursor-pointer transition-opacity",
+                        thumb.url === image.url
+                          ? "opacity-100"
+                          : "opacity-50 hover:opacity-75",
+                      ]}
+                    />
+                  </a>
+                ),
+              )}
+            </div>
           </div>
         </figure>
       ),
