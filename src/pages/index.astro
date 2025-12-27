@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Header from "../components/Header.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 
@@ -18,6 +19,8 @@ const { sets }: { sets: Set[] } = await client.request(`
       slug
       images(first: 1) {
         url
+        width
+        height
       }
     }
   }`);
@@ -25,30 +28,32 @@ const { sets }: { sets: Set[] } = await client.request(`
 
 <Main content={{ title: "sando" }}>
 	<Header />
-	<div class="bg-stone-200 min-h-screen">
-		<ContentContainer>
-			<div
-				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 content-start items-start py-4 md:py-12"
-			>
-				{
-					sets.map((set) => (
-						<a href={`/set/${set.slug}`} class="block group">
-							<div class="aspect-[2/3] w-full overflow-hidden">
-								<img
-									src={set.images[0].url}
-									class="w-full h-full object-cover"
-								/>
-							</div>
-							<div class="mt-2 font-light text-neutral-700 text-right text-xs uppercase bg-stone-100 w-fit ml-auto group-hover:bg-white transition-colors">
-								<h2 class="leading-none">
-									{set.displayTitle} [{new Date(set.date).getFullYear()}]
-								</h2>
-								<span class="block">{set.locationTaxonomy}</span>
-							</div>
-						</a>
-					))
-				}
-			</div>
-		</ContentContainer>
-	</div>
+	<ContentContainer>
+		<div
+			class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 content-start items-start py-4 md:py-12"
+		>
+			{
+				sets.map((set) => (
+					<a href={`/set/${set.slug}`} class="block group">
+						<div class="aspect-[2/3] w-full overflow-hidden">
+							<Image
+								src={set.images[0].url}
+								alt={set.displayTitle}
+								width={800}
+								height={1200}
+								quality={85}
+								class="w-full h-full object-cover"
+							/>
+						</div>
+						<div class="mt-2 font-light text-neutral-700 text-right text-xs uppercase bg-stone-100 w-fit ml-auto group-hover:bg-white transition-colors">
+							<h2 class="leading-none">
+								{set.displayTitle} [{new Date(set.date).getFullYear()}]
+							</h2>
+							<span class="block">{set.locationTaxonomy}</span>
+						</div>
+					</a>
+				))
+			}
+		</div>
+	</ContentContainer>
 </Main>
