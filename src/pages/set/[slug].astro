@@ -26,6 +26,7 @@ const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 const { set } = await client.request(
   `query Set($slug: String!) {
     set(where: {slug: $slug}) {
+      date
       displayTitle
       images {
         imageCaption
@@ -65,7 +66,17 @@ const { set } = await client.request(
               />
               {image.imageCaption && (
                 <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif">
-                  {image.imageCaption}
+                  <h1 class="font-sans font-light mb-2 text-sm">
+                    <span class="uppercase">
+                      {set.displayTitle} [{new Date(set.date).getFullYear()}]
+                    </span>
+                  </h1>
+                  <p class="text-xs">
+                    {image.imageCaption}
+                    <span class="italic">
+                      ({index + 1} of {set.images.length})
+                    </span>
+                  </p>
                 </figcaption>
               )}
             </div>
