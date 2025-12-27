@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import Header from "../components/Header.astro";
 import ContentContainer from "../components/ContentContainer.astro";
 
@@ -7,6 +6,7 @@ import Main from "../layouts/main.astro";
 import { GraphQLClient } from "graphql-request";
 
 import type { Set } from "../generated/graphql";
+import { transformHygraphImage } from "../utils";
 
 const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 
@@ -19,8 +19,6 @@ const { sets }: { sets: Set[] } = await client.request(`
       slug
       images(first: 1) {
         url
-        width
-        height
       }
     }
   }`);
@@ -35,14 +33,13 @@ const { sets }: { sets: Set[] } = await client.request(`
 			{
 				sets.map((set) => (
 					<a href={`/set/${set.slug}`} class="block group">
-						<div class="aspect-[2/3] w-full overflow-hidden">
-							<Image
-								src={set.images[0].url}
+						<div class="aspect-[2/3] w-full overflow-hidden bg-stone-300/50">
+							<img
+								src={transformHygraphImage(set.images[0].url, 800, "crop")}
 								alt={set.displayTitle}
-								width={800}
-								height={1200}
-								quality={85}
-								class="w-full h-full object-cover"
+								loading="lazy"
+								class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
+								onload="this.classList.remove('opacity-0')"
 							/>
 						</div>
 						<div class="mt-2 font-light text-neutral-700 text-right text-xs uppercase bg-stone-100 w-fit ml-auto group-hover:bg-white transition-colors">

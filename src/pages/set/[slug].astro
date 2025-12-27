@@ -1,8 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import { GraphQLClient } from "graphql-request";
 import Main from "../../layouts/main.astro";
 import type { Set } from "../../generated/graphql";
+import { transformHygraphImage } from "../../utils";
 
 export async function getStaticPaths() {
   const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
@@ -57,7 +57,11 @@ const { set } = await client.request(
               <img
                 src={image.url}
                 alt={image.imageCaption || ""}
-                class="min-h-0 max-h-full max-w-full object-contain"
+                width={image.width}
+                height={image.height}
+                style={{ aspectRatio: `${image.width} / ${image.height}` }}
+                class="min-h-0 max-h-[85vh] max-w-full object-contain opacity-0 transition-opacity duration-700 mx-auto"
+                onload="this.classList.remove('opacity-0')"
               />
               {image.imageCaption && (
                 <figcaption class="flex-shrink-0 py-3 text-center text-sm text-neutral-600 font-serif">
@@ -108,17 +112,18 @@ const { set } = await client.request(
                 thumbIndex: number,
               ) => (
                 <a href={`#image-${thumbIndex}`}>
-                  <Image
-                    src={thumb.url}
+                  <img
+                    src={transformHygraphImage(thumb.url, 96)}
                     alt={thumb.imageCaption || ""}
+                    width={96}
+                    height={Math.round((96 * thumb.height) / thumb.width)}
+                    style={{ aspectRatio: `${thumb.width} / ${thumb.height}` }}
                     class:list={[
                       "h-12 w-auto object-contain cursor-pointer transition-opacity",
                       thumb.url === image.url
                         ? "opacity-100"
                         : "opacity-50 hover:opacity-75",
                     ]}
-                    width={Math.round((48 * thumb.width) / thumb.height)}
-                    height={48}
                   />
                 </a>
               ),
