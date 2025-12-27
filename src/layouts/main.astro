@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ContentContainer from "../components/ContentContainer.astro";
 const { content } = Astro.props;
 ---
 
@@ -19,4 +20,11 @@ const { content } = Astro.props;
 	<body class="bg-stone-200">
 		<slot />
 	</body>
+	<footer>
+		<ContentContainer>
+			<div class="text-right font-serif text-xs text-neutral-500">
+				<p>© Kevin Yao, {new Date().getFullYear()}</p>
+			</div>
+		</ContentContainer>
+	</footer>
 </html>

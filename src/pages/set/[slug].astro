@@ -52,7 +52,7 @@ const { set } = await client.request(
         index: number,
       ) => (
         <figure id={`image-${index}`} class="h-screen flex flex-col p-4">
-          <div class="flex-1 min-h-0 flex items-center justify-center">
+          <div class="flex-1 min-h-0 flex items-center justify-center md:py-4">
             <div class="min-h-0 max-h-full flex flex-col items-center">
               <img
                 src={image.url}
@@ -64,7 +64,7 @@ const { set } = await client.request(
                 onload="this.classList.remove('opacity-0')"
               />
               {image.imageCaption && (
-                <figcaption class="flex-shrink-0 py-3 text-center text-sm text-neutral-600 font-serif">
+                <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif">
                   {image.imageCaption}
                 </figcaption>
               )}
