@@ -78,14 +78,13 @@ const { set } = await client.request(
                     <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128">
                       <h1 class="font-sans font-light mb-4 text-sm">
                         <span class="uppercase">
-                          {set.displayTitle} [{new Date(set.date).getFullYear()}
-                          ]
+                          {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
                         </span>
                       </h1>
                       <p class="text-xs">
                         {image.imageCaption}
-                        <span class="italic ml-1">
-                          ({index + 1} of {set.images.length})
+                        <span class="italic ml-1 whitespace-nowrap">
+                          {`(${index + 1} of ${set.images.length})`}
                         </span>
                       </p>
                     </figcaption>
