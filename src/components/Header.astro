@@ -2,7 +2,9 @@
 import ContentContainer from "./ContentContainer.astro";
 ---
 
-<header class="bg-white pt-16 md:pt-20 pb-8 md:pb-10">
+<header
+  class="bg-white pt-16 md:pt-20 pb-8 md:pb-10 textured-header relative overflow-hidden"
+>
   <ContentContainer>
     <a
       href="/"
@@ -11,3 +13,22 @@ import ContentContainer from "./ContentContainer.astro";
     >
   </ContentContainer>
 </header>
+
+<style>
+  .textured-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.01) 2px,
+      transparent 2px
+    );
+    background-size: 100% 4px;
+    mask-image: linear-gradient(to bottom, transparent, black);
+  }
+</style>
