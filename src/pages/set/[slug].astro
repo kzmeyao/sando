@@ -76,12 +76,12 @@ const { set } = await client.request(
                   />
                   {image.imageCaption && (
                     <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128">
-                      <h1 class="font-sans font-light mb-4 text-sm">
+                      <h1 class="font-sans font-light mb-2 text-sm">
                         <span class="uppercase">
                           {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
                         </span>
                       </h1>
-                      <p class="text-xs">
+                      <p>
                         {image.imageCaption}
                         <span class="italic ml-1 whitespace-nowrap">
                           {`(${index + 1} of ${set.images.length})`}
@@ -133,7 +133,7 @@ const { set } = await client.request(
     </div>
 
     <div
-      class="flex-shrink-0 flex gap-2 overflow-x-auto py-2 w-full justify-start md:justify-center no-scrollbar"
+      class="flex-shrink-0 flex gap-2 overflow-x-auto py-2 w-full justify-center no-scrollbar"
     >
       {
         set.images.map(
