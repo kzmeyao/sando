@@ -17,3 +17,23 @@
   --font-sans: "Lato", "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --font-serif: "Newsreader", "Lucida Bright", "Lucidabright", "Lucida Serif", "Lucida", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
 }
+
+.textured {
+  position: relative;
+  overflow: hidden;
+}
+
+.textured::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.01) 1px,
+      transparent 1px);
+  background-size: 100% 2px;
+  /* mask-image: linear-gradient(to bottom, transparent, black); */
+}
