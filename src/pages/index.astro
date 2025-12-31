@@ -15,6 +15,9 @@ const { sets }: { sets: Set[] } = await client.request(`
     sets(orderBy: date_DESC) {
       date
       displayTitle
+	  leadingImage {
+		url
+	  }
       locationTaxonomy
       slug
       images(first: 1) {
@@ -35,7 +38,11 @@ const { sets }: { sets: Set[] } = await client.request(`
 					<a href={`/set/${set.slug}`} class="block group">
 						<div class="aspect-[2/3] w-full overflow-hidden bg-stone-300/50">
 							<img
-								src={transformHygraphImage(set.images[0].url, 800, "crop")}
+								src={transformHygraphImage(
+									set.leadingImage.url,
+									800,
+									"crop",
+								)}
 								alt={set.displayTitle}
 								loading="lazy"
 								class="w-full h-full object-cover opacity-0 transition-opacity duration-700"
@@ -44,7 +51,8 @@ const { sets }: { sets: Set[] } = await client.request(`
 						</div>
 						<div class="mt-2 font-light text-neutral-700 text-right text-xs uppercase bg-stone-100 w-fit ml-auto group-hover:bg-white transition-colors">
 							<h2 class="leading-none">
-								{set.displayTitle} [{new Date(set.date).getFullYear()}]
+								{set.displayTitle} [
+								{new Date(set.date).getFullYear()}]
 							</h2>
 							<span class="block">{set.locationTaxonomy}</span>
 						</div>

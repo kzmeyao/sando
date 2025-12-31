@@ -48,6 +48,7 @@ export type Asset = Entity & Node & {
   id: Scalars['ID']['output'];
   imageCaption?: Maybe<Scalars['String']['output']>;
   imagesSet: Array<Set>;
+  leadingImageSet: Array<Set>;
   /** System Locale field */
   locale: Locale;
   /** Get the other localizations for this document */
@@ -107,6 +108,20 @@ export type AssetHistoryArgs = {
 
 /** Asset system model */
 export type AssetImagesSetArgs = {
+  after?: InputMaybe<Scalars['String']['input']>;
+  before?: InputMaybe<Scalars['String']['input']>;
+  first?: InputMaybe<Scalars['Int']['input']>;
+  forceParentLocale?: InputMaybe<Scalars['Boolean']['input']>;
+  last?: InputMaybe<Scalars['Int']['input']>;
+  locales?: InputMaybe<Array<Locale>>;
+  orderBy?: InputMaybe<SetOrderByInput>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  where?: InputMaybe<SetWhereInput>;
+};
+
+
+/** Asset system model */
+export type AssetLeadingImageSetArgs = {
   after?: InputMaybe<Scalars['String']['input']>;
   before?: InputMaybe<Scalars['String']['input']>;
   first?: InputMaybe<Scalars['Int']['input']>;
@@ -192,6 +207,7 @@ export type AssetCreateInput = {
   fileName?: InputMaybe<Scalars['String']['input']>;
   imageCaption?: InputMaybe<Scalars['String']['input']>;
   imagesSet?: InputMaybe<SetCreateManyInlineInput>;
+  leadingImageSet?: InputMaybe<SetCreateManyInlineInput>;
   /** Inline mutations for managing document localizations excluding the default locale */
   localizations?: InputMaybe<AssetCreateLocalizationsInput>;
   updatedAt?: InputMaybe<Scalars['DateTime']['input']>;
@@ -311,6 +327,9 @@ export type AssetManyWhereInput = {
   imagesSet_every?: InputMaybe<SetWhereInput>;
   imagesSet_none?: InputMaybe<SetWhereInput>;
   imagesSet_some?: InputMaybe<SetWhereInput>;
+  leadingImageSet_every?: InputMaybe<SetWhereInput>;
+  leadingImageSet_none?: InputMaybe<SetWhereInput>;
+  leadingImageSet_some?: InputMaybe<SetWhereInput>;
   publishedAt?: InputMaybe<Scalars['DateTime']['input']>;
   /** All values greater than the given value. */
   publishedAt_gt?: InputMaybe<Scalars['DateTime']['input']>;
@@ -397,6 +416,7 @@ export type AssetUpdateInput = {
   fileName?: InputMaybe<Scalars['String']['input']>;
   imageCaption?: InputMaybe<Scalars['String']['input']>;
   imagesSet?: InputMaybe<SetUpdateManyInlineInput>;
+  leadingImageSet?: InputMaybe<SetUpdateManyInlineInput>;
   /** Manage document localizations */
   localizations?: InputMaybe<AssetUpdateLocalizationsInput>;
   /** Use this to define if its a reupload for the asset */
@@ -740,6 +760,9 @@ export type AssetWhereInput = {
   imagesSet_every?: InputMaybe<SetWhereInput>;
   imagesSet_none?: InputMaybe<SetWhereInput>;
   imagesSet_some?: InputMaybe<SetWhereInput>;
+  leadingImageSet_every?: InputMaybe<SetWhereInput>;
+  leadingImageSet_none?: InputMaybe<SetWhereInput>;
+  leadingImageSet_some?: InputMaybe<SetWhereInput>;
   mimeType?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   mimeType_contains?: InputMaybe<Scalars['String']['input']>;
@@ -2766,6 +2789,7 @@ export type Set = Entity & Node & {
   /** The unique identifier */
   id: Scalars['ID']['output'];
   images: Array<Asset>;
+  leadingImage: Asset;
   locationTaxonomy: Scalars['String']['output'];
   /** The time the document was published. Null on documents in draft stage. */
   publishedAt?: Maybe<Scalars['DateTime']['output']>;
@@ -2815,6 +2839,13 @@ export type SetImagesArgs = {
 };
 
 
+export type SetLeadingImageArgs = {
+  forceParentLocale?: InputMaybe<Scalars['Boolean']['input']>;
+  locales?: InputMaybe<Array<Locale>>;
+  where?: InputMaybe<AssetSingleRelationWhereInput>;
+};
+
+
 export type SetPublishedByArgs = {
   forceParentLocale?: InputMaybe<Scalars['Boolean']['input']>;
   locales?: InputMaybe<Array<Locale>>;
@@ -2860,6 +2891,7 @@ export type SetCreateInput = {
   date: Scalars['Date']['input'];
   displayTitle: Scalars['String']['input'];
   images: AssetCreateManyInlineInput;
+  leadingImage: AssetCreateOneInlineInput;
   locationTaxonomy: Scalars['String']['input'];
   slug?: InputMaybe<Scalars['String']['input']>;
   updatedAt?: InputMaybe<Scalars['DateTime']['input']>;
@@ -2973,6 +3005,7 @@ export type SetManyWhereInput = {
   images_every?: InputMaybe<AssetWhereInput>;
   images_none?: InputMaybe<AssetWhereInput>;
   images_some?: InputMaybe<AssetWhereInput>;
+  leadingImage?: InputMaybe<AssetWhereInput>;
   locationTaxonomy?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   locationTaxonomy_contains?: InputMaybe<Scalars['String']['input']>;
@@ -3071,6 +3104,7 @@ export type SetUpdateInput = {
   date?: InputMaybe<Scalars['Date']['input']>;
   displayTitle?: InputMaybe<Scalars['String']['input']>;
   images?: InputMaybe<AssetUpdateManyInlineInput>;
+  leadingImage?: InputMaybe<AssetUpdateOneInlineInput>;
   locationTaxonomy?: InputMaybe<Scalars['String']['input']>;
   slug?: InputMaybe<Scalars['String']['input']>;
 };
@@ -3232,6 +3266,7 @@ export type SetWhereInput = {
   images_every?: InputMaybe<AssetWhereInput>;
   images_none?: InputMaybe<AssetWhereInput>;
   images_some?: InputMaybe<AssetWhereInput>;
+  leadingImage?: InputMaybe<AssetWhereInput>;
   locationTaxonomy?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   locationTaxonomy_contains?: InputMaybe<Scalars['String']['input']>;
