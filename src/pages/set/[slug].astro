@@ -28,7 +28,7 @@ const { set } = await client.request(
     set(where: {slug: $slug}) {
     date
       displayTitle
-      images {
+      images(first: 20) {
         imageCaption
         url
         width
@@ -38,6 +38,8 @@ const { set } = await client.request(
   }`,
   { slug },
 );
+
+console.log(set.images.length);
 ---
 
 <Main content={{ title: set.displayTitle }}>
