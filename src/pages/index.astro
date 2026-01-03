@@ -12,7 +12,7 @@ const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
 
 const { sets }: { sets: Set[] } = await client.request(`
   query Sets {
-    sets(orderBy: date_DESC) {
+    sets(orderBy: date_DESC, first: 100) {
       date
       displayTitle
 	  leadingImage {
@@ -50,7 +50,7 @@ const { sets }: { sets: Set[] } = await client.request(`
 							/>
 						</div>
 						<div class="mt-2 font-light text-neutral-700 text-right text-xs uppercase bg-stone-100 w-fit ml-auto group-hover:bg-white transition-colors textured">
-							<h2 class="leading-none">
+							<h2 class="tracking-wide">
 								{`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
 							</h2>
 							<span class="block">{set.locationTaxonomy}</span>

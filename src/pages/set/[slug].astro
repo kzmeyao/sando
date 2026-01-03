@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
   const { sets } = await client.request(`
     query Sets {
-      sets {
+      sets(first: 100) {
         slug
       }
     }
@@ -71,11 +71,14 @@ const { set } = await client.request(
                     width={image.width}
                     height={image.height}
                     loading={index === 0 ? "eager" : "lazy"}
-                    style={{ aspectRatio: `${image.width} / ${image.height}` }}
-                    class="min-h-0 max-h-[85vh] max-w-full object-contain mx-auto"
+                    class={`min-h-0 max-h-[1200px] object-contain mx-auto ${
+                      image.height > image.width
+                        ? "aspect-[2/3]"
+                        : "aspect-[3/2]"
+                    }`}
                   />
                   {image.imageCaption && (
-                    <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128">
+                    <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
                       <h1 class="font-sans font-light mb-2 text-sm">
                         <span class="uppercase">
                           {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
@@ -92,7 +95,7 @@ const { set } = await client.request(
                 </div>
               </div>
 
-              <nav class="flex-shrink-0 flex justify-center items-center text-sm font-light">
+              <nav class="flex-shrink-0 flex justify-center items-center text-sm font-light tracking-wide">
                 {index > 0 ? (
                   <a
                     href={`#image-${index - 1}`}

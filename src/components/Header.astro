@@ -6,10 +6,70 @@ import ContentContainer from "./ContentContainer.astro";
   class="bg-white pt-16 md:pt-24 pb-8 md:pb-10 textured relative overflow-hidden"
 >
   <ContentContainer>
-    <a
-      href="/"
-      class="font-display font-bold text-3xl text-neutral-700 underline decoration-wavy decoration-brand-500 underline-offset-3 decoration-2"
-      >sando</a
+    <div class="flex justify-between items-baseline">
+      <a
+        href="/"
+        class="font-display font-bold text-3xl text-neutral-700 underline decoration-wavy decoration-brand-500 underline-offset-3 decoration-2"
+      >
+        sando
+      </a>
+      <button
+        id="about-toggle"
+        class="text-xs text-neutral-400 hover:text-neutral-600 transition-colors uppercase tracking-wide"
+      >
+        about
+      </button>
+    </div>
+
+    <div
+      id="about-content"
+      class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"
     >
+      <div class="overflow-hidden">
+        <div
+          class="pt-8 pb-4 grid grid-cols-1 md:grid-cols-2 gap-8 font-serif text-neutral-500 text-xs leading-relaxed"
+        >
+          <div class="md:col-start-2 space-y-6">
+            <div class="space-y-4">
+              <p>
+                Named after the humble egg salad <em>sando</em> on my first trip to
+                Japan, this website is a photographical archive of my travels. Just
+                as how food anchors memories, my photos do the same for me. Therefore,
+                I pursue a documentary approach to editing, hoping to capture scenes
+                that will bring me back to how I remember them.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-neutral-100">
+              <p>
+                Want more? Follow me on
+                <a
+                  href="https://www.instagram.com/kzmeyao"
+                  class="hover:text-neutral-700 transition-colors underline"
+                >
+                  Instagram
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </ContentContainer>
 </header>
+
+<script>
+  const toggle = document.getElementById("about-toggle");
+  const content = document.getElementById("about-content");
+
+  toggle?.addEventListener("click", () => {
+    const isExpanded = content?.classList.contains("grid-rows-[1fr]");
+
+    if (isExpanded) {
+      content?.classList.remove("grid-rows-[1fr]");
+      content?.classList.add("grid-rows-[0fr]");
+    } else {
+      content?.classList.remove("grid-rows-[0fr]");
+      content?.classList.add("grid-rows-[1fr]");
+    }
+  });
+</script>
