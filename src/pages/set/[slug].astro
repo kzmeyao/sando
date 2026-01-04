@@ -71,7 +71,7 @@ const { set } = await client.request(
                     width={image.width}
                     height={image.height}
                     loading={index === 0 ? "eager" : "lazy"}
-                    class={`min-h-0 max-h-[1200px] object-contain mx-auto ${
+                    class={`min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto ${
                       image.height > image.width
                         ? "aspect-[2/3]"
                         : "aspect-[3/2]"
