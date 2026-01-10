@@ -1,7 +1,7 @@
 ---
 import { GraphQLClient } from "graphql-request";
 import Main from "../../layouts/main.astro";
-import type { Set } from "../../generated/graphql";
+import type { Asset, Set } from "../../generated/graphql";
 import { transformHygraphImage } from "../../utils";
 
 export async function getStaticPaths() {
@@ -39,116 +39,109 @@ const { set } = Astro.props;
   <div class="h-screen flex flex-col p-4 overflow-hidden">
     <div class="flex-1 min-h-0 relative">
       {
-        set.images.map(
-          (
-            image: {
-              url: string;
-              imageCaption: string;
-              width: number;
-              height: number;
-            },
-            index: number,
-          ) => (
-            <figure
-              data-image-index={index}
-              class="gallery-item absolute inset-0 flex flex-col opacity-0 pointer-events-none transition-opacity duration-500"
-            >
-              <div class="flex-1 min-h-0 flex items-center justify-center md:py-4">
-                <div class="min-h-0 max-h-full flex flex-col items-center">
-                  <img
-                    src={
-                      index === 0
-                        ? image.url
-                        : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    }
-                    data-src={image.url}
-                    alt={image.imageCaption || ""}
-                    width={image.width}
-                    height={image.height}
-                    loading={index === 0 ? "eager" : "lazy"}
-                    class={`min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto ${
-                      image.height > image.width
-                        ? "aspect-[2/3]"
-                        : "aspect-[3/2]"
-                    }`}
-                  />
-                  {image.imageCaption && (
-                    <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
-                      <h1 class="font-sans font-light mb-2 text-sm">
-                        <span class="uppercase">
-                          {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
-                        </span>
-                      </h1>
-                      <p>
-                        {image.imageCaption}
-                        <span class="italic ml-1 whitespace-nowrap">
-                          {`(${index + 1} of ${set.images.length})`}
-                        </span>
-                      </p>
-                    </figcaption>
-                  )}
-                </div>
-              </div>
-
-              <nav class="flex-shrink-0 flex justify-center items-center text-sm font-light tracking-wide">
-                {index > 0 ? (
-                  <a
-                    href={`#image-${index - 1}`}
-                    class="text-neutral-600 hover:text-neutral-900 transition-colors"
-                  >
-                    &lt; PREV
-                  </a>
-                ) : (
-                  <span class="text-neutral-300">&lt; PREV</span>
+        set.images.map((image: Asset, index: number) => (
+          <figure
+            data-image-index={index}
+            class="gallery-item absolute inset-0 flex flex-col opacity-0 pointer-events-none transition-opacity duration-500"
+          >
+            <div class="flex-1 min-h-0 flex items-center justify-center md:py-4">
+              <div class="min-h-0 max-h-full flex flex-col items-center">
+                <img
+                  src={
+                    index === 0
+                      ? image.url
+                      : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  }
+                  data-src={image.url}
+                  alt={image.imageCaption || ""}
+                  width={image.width}
+                  height={image.height}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  class={`min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto ${
+                    image.height && image.width && image.height > image.width
+                      ? "aspect-[2/3]"
+                      : "aspect-[3/2]"
+                  }`}
+                />
+                {image.imageCaption && (
+                  <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
+                    <h1 class="font-sans font-light mb-2 text-sm">
+                      <span class="uppercase">
+                        {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
+                      </span>
+                    </h1>
+                    <p>
+                      {image.imageCaption}
+                      <span class="italic ml-1 whitespace-nowrap">
+                        {`(${index + 1} of ${set.images.length})`}
+                      </span>
+                    </p>
+                  </figcaption>
                 )}
-                <span class="text-neutral-300 px-4">
-                  &nbsp;&nbsp;|&nbsp;&nbsp;
-                </span>
+              </div>
+            </div>
+
+            <nav class="flex-shrink-0 flex justify-center items-center text-sm font-light tracking-wide">
+              {index > 0 ? (
                 <a
-                  href="/"
+                  href={`#image-${index - 1}`}
                   class="text-neutral-600 hover:text-neutral-900 transition-colors"
                 >
-                  HOME
+                  &lt; PREV
                 </a>
-                <span class="text-neutral-300 px-4">
-                  &nbsp;&nbsp;|&nbsp;&nbsp;
-                </span>
-                {index < set.images.length - 1 ? (
-                  <a
-                    href={`#image-${index + 1}`}
-                    class="text-neutral-600 hover:text-neutral-900 transition-colors"
-                  >
-                    NEXT &gt;
-                  </a>
-                ) : (
-                  <span class="text-neutral-300">NEXT &gt;</span>
-                )}
-              </nav>
-            </figure>
-          ),
-        )
+              ) : (
+                <span class="text-neutral-300">&lt; PREV</span>
+              )}
+              <span class="text-neutral-300 px-4">
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+              </span>
+              <a
+                href="/"
+                class="text-neutral-600 hover:text-neutral-900 transition-colors"
+              >
+                HOME
+              </a>
+              <span class="text-neutral-300 px-4">
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+              </span>
+              {index < set.images.length - 1 ? (
+                <a
+                  href={`#image-${index + 1}`}
+                  class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  NEXT &gt;
+                </a>
+              ) : (
+                <span class="text-neutral-300">NEXT &gt;</span>
+              )}
+            </nav>
+          </figure>
+        ))
       }
     </div>
 
     <div
-      class="flex-shrink-0 flex gap-2 overflow-x-auto py-2 w-full justify-center no-scrollbar"
+      class="flex-shrink-0 overflow-x-auto py-2 w-full no-scrollbar draggable-scrollbar cursor-grab active:cursor-grabbing select-none"
     >
-      {
-        set.images.map((thumb: any, index: number) => (
-          <a
-            href={`#image-${index}`}
-            class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity"
-          >
-            <img
-              src={transformHygraphImage(thumb.url, 96)}
-              alt={thumb.imageCaption || ""}
-              width={96}
-              height={Math.round((96 * thumb.height) / thumb.width)}
-              class="h-10 w-auto object-contain cursor-pointer"
-            />
-          </a>
-        ))
-      }
+      <div class="flex gap-2 mx-auto w-fit">
+        {
+          set.images.map((thumb: any, index: number) => (
+            <div
+              data-index={index}
+              class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
+            >
+              <img
+                src={transformHygraphImage(thumb.url, 96)}
+                alt={thumb.imageCaption || ""}
+                width={96}
+                height={Math.round((96 * thumb.height) / thumb.width)}
+                class="h-10 w-auto object-contain"
+                draggable="false"
+              />
+            </div>
+          ))
+        }
+      </div>
     </div>
 
     <style>
@@ -203,4 +196,49 @@ const { set } = Astro.props;
   window.addEventListener("hashchange", updateGallery);
   // Also run on load to be safe
   window.addEventListener("load", updateGallery);
+
+  // Drag to scroll for desktop
+  const slider = document.querySelector(".draggable-scrollbar");
+  if (slider) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+      isDown = true;
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = x - startX;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Prevent clicking links when dragging, and handle thumbnail clicks
+    slider.addEventListener("click", (e) => {
+      const isDrag = Math.abs(startX - (e.pageX - slider.offsetLeft)) > 5;
+      if (isDrag) {
+        e.preventDefault();
+        return;
+      }
+
+      const thumb = e.target.closest(".thumb-link");
+      if (thumb) {
+        const index = thumb.getAttribute("data-index");
+        window.location.hash = `#image-${index}`;
+      }
+    });
+  }
 </script>
