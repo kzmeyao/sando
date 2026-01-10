@@ -10,34 +10,29 @@ export async function getStaticPaths() {
     query Sets {
       sets(first: 100) {
         slug
+        date
+        displayTitle
+        images(first: 20) {
+          imageCaption
+          url
+          width
+          height
+        }
       }
     }
   `);
 
   return sets.map((set: Set) => ({
     params: { slug: set.slug },
+    props: { set },
   }));
 }
 
-const { slug } = Astro.params;
+interface Props {
+  set: Set;
+}
 
-const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
-
-const { set } = await client.request(
-  `query Set($slug: String!) {
-    set(where: {slug: $slug}) {
-    date
-      displayTitle
-      images(first: 20) {
-        imageCaption
-        url
-        width
-        height
-      }
-    }
-  }`,
-  { slug },
-);
+const { set } = Astro.props;
 ---
 
 <Main content={{ title: set.displayTitle }}>
@@ -139,30 +134,20 @@ const { set } = await client.request(
       class="flex-shrink-0 flex gap-2 overflow-x-auto py-2 w-full justify-center no-scrollbar"
     >
       {
-        set.images.map(
-          (
-            thumb: {
-              url: string;
-              imageCaption: string;
-              width: number;
-              height: number;
-            },
-            index: number,
-          ) => (
-            <a
-              href={`#image-${index}`}
-              class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity"
-            >
-              <img
-                src={transformHygraphImage(thumb.url, 96)}
-                alt={thumb.imageCaption || ""}
-                width={96}
-                height={Math.round((96 * thumb.height) / thumb.width)}
-                class="h-10 w-auto object-contain cursor-pointer"
-              />
-            </a>
-          ),
-        )
+        set.images.map((thumb: any, index: number) => (
+          <a
+            href={`#image-${index}`}
+            class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity"
+          >
+            <img
+              src={transformHygraphImage(thumb.url, 96)}
+              alt={thumb.imageCaption || ""}
+              width={96}
+              height={Math.round((96 * thumb.height) / thumb.width)}
+              class="h-10 w-auto object-contain cursor-pointer"
+            />
+          </a>
+        ))
       }
     </div>
 
