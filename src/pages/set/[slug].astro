@@ -1,0 +1,221 @@
+---
+import { GraphQLClient } from "graphql-request";
+import Main from "../../layouts/main.astro";
+import type { Set } from "../../generated/graphql";
+import { transformHygraphImage } from "../../utils";
+
+export async function getStaticPaths() {
+  const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+  const { sets } = await client.request(`
+    query Sets {
+      sets(first: 100) {
+        slug
+      }
+    }
+  `);
+
+  return sets.map((set: Set) => ({
+    params: { slug: set.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+
+const client = new GraphQLClient(import.meta.env.ASTRO_HYGRAPH_ENDPOINT);
+
+const { set } = await client.request(
+  `query Set($slug: String!) {
+    set(where: {slug: $slug}) {
+    date
+      displayTitle
+      images(first: 20) {
+        imageCaption
+        url
+        width
+        height
+      }
+    }
+  }`,
+  { slug },
+);
+---
+
+<Main content={{ title: set.displayTitle }}>
+  <div class="h-screen flex flex-col p-4 overflow-hidden">
+    <div class="flex-1 min-h-0 relative">
+      {
+        set.images.map(
+          (
+            image: {
+              url: string;
+              imageCaption: string;
+              width: number;
+              height: number;
+            },
+            index: number,
+          ) => (
+            <figure
+              data-image-index={index}
+              class="gallery-item absolute inset-0 flex flex-col opacity-0 pointer-events-none transition-opacity duration-500"
+            >
+              <div class="flex-1 min-h-0 flex items-center justify-center md:py-4">
+                <div class="min-h-0 max-h-full flex flex-col items-center">
+                  <img
+                    src={
+                      index === 0
+                        ? image.url
+                        : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    }
+                    data-src={image.url}
+                    alt={image.imageCaption || ""}
+                    width={image.width}
+                    height={image.height}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    class={`min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto ${
+                      image.height > image.width
+                        ? "aspect-[2/3]"
+                        : "aspect-[3/2]"
+                    }`}
+                  />
+                  {image.imageCaption && (
+                    <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
+                      <h1 class="font-sans font-light mb-2 text-sm">
+                        <span class="uppercase">
+                          {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
+                        </span>
+                      </h1>
+                      <p>
+                        {image.imageCaption}
+                        <span class="italic ml-1 whitespace-nowrap">
+                          {`(${index + 1} of ${set.images.length})`}
+                        </span>
+                      </p>
+                    </figcaption>
+                  )}
+                </div>
+              </div>
+
+              <nav class="flex-shrink-0 flex justify-center items-center text-sm font-light tracking-wide">
+                {index > 0 ? (
+                  <a
+                    href={`#image-${index - 1}`}
+                    class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                  >
+                    &lt; PREV
+                  </a>
+                ) : (
+                  <span class="text-neutral-300">&lt; PREV</span>
+                )}
+                <span class="text-neutral-300 px-4">
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
+                </span>
+                <a
+                  href="/"
+                  class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  HOME
+                </a>
+                <span class="text-neutral-300 px-4">
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
+                </span>
+                {index < set.images.length - 1 ? (
+                  <a
+                    href={`#image-${index + 1}`}
+                    class="text-neutral-600 hover:text-neutral-900 transition-colors"
+                  >
+                    NEXT &gt;
+                  </a>
+                ) : (
+                  <span class="text-neutral-300">NEXT &gt;</span>
+                )}
+              </nav>
+            </figure>
+          ),
+        )
+      }
+    </div>
+
+    <div
+      class="flex-shrink-0 flex gap-2 overflow-x-auto py-2 w-full justify-center no-scrollbar"
+    >
+      {
+        set.images.map(
+          (
+            thumb: {
+              url: string;
+              imageCaption: string;
+              width: number;
+              height: number;
+            },
+            index: number,
+          ) => (
+            <a
+              href={`#image-${index}`}
+              class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity"
+            >
+              <img
+                src={transformHygraphImage(thumb.url, 96)}
+                alt={thumb.imageCaption || ""}
+                width={96}
+                height={Math.round((96 * thumb.height) / thumb.width)}
+                class="h-10 w-auto object-contain cursor-pointer"
+              />
+            </a>
+          ),
+        )
+      }
+    </div>
+
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </div>
+</Main>
+
+<script is:inline>
+  function updateGallery() {
+    const hash = window.location.hash || "#image-0";
+    const activeIndex = hash.replace("#image-", "");
+
+    document.querySelectorAll(".gallery-item").forEach((el) => {
+      const idx = el.getAttribute("data-image-index");
+      const isActive = idx === activeIndex;
+
+      if (isActive) {
+        const img = el.querySelector("img");
+        if (img && (img.src.includes("data:image") || !img.src)) {
+          img.src = img.getAttribute("data-src");
+        }
+        el.style.opacity = "1";
+        el.style.pointerEvents = "auto";
+      } else {
+        el.style.opacity = "0";
+        el.style.pointerEvents = "none";
+      }
+    });
+
+    document.querySelectorAll(".thumb-link").forEach((el, i) => {
+      const isActive = i.toString() === activeIndex;
+      el.style.opacity = isActive ? "1" : "0.5";
+      if (isActive) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    });
+  }
+
+  updateGallery();
+
+  window.addEventListener("hashchange", updateGallery);
+  // Also run on load to be safe
+  window.addEventListener("load", updateGallery);
+</script>

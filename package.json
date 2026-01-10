@@ -1,47 +1,27 @@
 {
   "name": "sando",
-  "private": true,
-  "description": "sando",
-  "version": "0.1.0",
-  "author": "Kevin Yao <kzmeyao@gmail.com>",
-  "dependencies": {
-    "classnames": "^2.3.1",
-    "gatsby": "^4.22.1",
-    "gatsby-plugin-catch-links": "^4.22.0",
-    "gatsby-plugin-google-analytics": "^4.22.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-manifest": "^4.22.0",
-    "gatsby-plugin-offline": "^5.22.0",
-    "gatsby-plugin-polyfill-io": "^1.1.0",
-    "gatsby-plugin-react-helmet": "^5.22.0",
-    "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-filesystem": "^4.22.0",
-    "gatsby-transformer-remark": "^5.22.0",
-    "photoswipe": "4.0.8",
-    "query-string": "^7.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.4.0"
-  },
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "npx gatsby build",
-    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "gen": "graphql-codegen --require dotenv/config"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kzmeyao/sando"
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/netlify": "^6.6.3",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/canvas-confetti": "^1.9.0",
+    "astro": "^5.16.6",
+    "canvas-confetti": "^1.9.4",
+    "graphql-request": "^7.4.0",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "cross-env": "^7.0.3",
-    "gatsby-plugin-postcss": "^5.22.0",
-    "npm-check-updates": "^16.1.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
+    "@graphql-codegen/cli": "^6.1.0",
+    "@graphql-codegen/typescript": "^5.0.7",
+    "dotenv": "^17.2.3"
   }
 }
