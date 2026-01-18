@@ -57,9 +57,8 @@ const { set } = Astro.props;
                   width={image.width}
                   height={image.height}
                   loading={index === 0 ? "eager" : "lazy"}
-                  class="min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto bg-neutral-50"
+                  class="min-h-0 max-h-[1200px] w-full max-w-[1200px] object-contain mx-auto"
                   style={`aspect-ratio: ${image.width} / ${image.height};`}
-                  onload="this.classList.remove('bg-neutral-50');"
                 />
                 {image.imageCaption && (
                   <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
