@@ -11,6 +11,7 @@ export async function getStaticPaths() {
       sets(first: 100) {
         slug
         date
+        description
         displayTitle
         images(first: 20) {
           imageCaption
@@ -36,13 +37,61 @@ const { set } = Astro.props;
 ---
 
 <Main content={{ title: set.displayTitle }}>
-  <div class="h-screen flex flex-col p-4 overflow-hidden">
+  <div
+    class="h-screen flex flex-col overflow-hidden relative bg-stone-200 p-4 md:p-6"
+  >
+    <header class="flex-shrink-0 z-[200] relative text-center">
+      <h1 class="font-light text-sm text-neutral-500 uppercase tracking-widest">
+        <span
+          class="summary-toggle cursor-pointer inline-flex items-center gap-2"
+        >
+          {set.displayTitle} [{new Date(set.date).getFullYear()}]
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 transition-transform duration-500 chevron-icon [.is-active_&]:rotate-180"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </span>
+      </h1>
+    </header>
+
+    <div
+      id="summary-panel"
+      class="fixed top-0 left-0 right-0 bg-white z-[100] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-events-none overflow-y-auto -translate-y-full shadow-none [&.is-active]:translate-y-0 [&.is-active]:pointer-events-auto [&.is-active]:shadow-2xl"
+    >
+      <div
+        class="flex flex-col gap-6 md:gap-8 summary-panel-content max-w-128 mx-auto pt-14 md:pt-16 pb-6 md:pb-8 px-4 font-serif text-neutral-500 leading-relaxed text-xs opacity-0 transition-opacity duration-500 [.is-active_&]:opacity-100 [.is-active_&]:delay-300"
+      >
+        <p>{set.description}</p>
+        <div class="flex flex-col gap-2">
+          <div class="border-t border-neutral-100 text-neutral-300"></div>
+          <div class="flex flex-row justify-between">
+            <p>
+              {
+                new Date(set.date).toLocaleDateString("en-US", {
+                  month: "short",
+                  year: "numeric",
+                })
+              }
+            </p>
+            <p>© Kevin Yao, {new Date().getFullYear()}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="flex-1 min-h-0 relative">
       {
         set.images.map((image: Asset, index: number) => (
           <figure
             data-image-index={index}
-            class="gallery-item absolute inset-0 flex flex-col opacity-0 pointer-events-none transition-opacity duration-500"
+            class="gallery-item absolute inset-0 flex flex-col opacity-0 pointer-events-none transition-opacity duration-500 [&.is-active]:opacity-100 [&.is-active]:pointer-events-auto"
           >
             <div class="flex-1 min-h-0 flex items-center justify-center md:py-4">
               <div class="min-h-0 max-h-full flex flex-col items-center w-full">
@@ -61,12 +110,7 @@ const { set } = Astro.props;
                   style={`aspect-ratio: ${image.width} / ${image.height};`}
                 />
                 {image.imageCaption && (
-                  <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide">
-                    <h1 class="font-sans font-light mb-3">
-                      <span class="uppercase">
-                        {`${set.displayTitle} [${new Date(set.date).getFullYear()}]`}
-                      </span>
-                    </h1>
+                  <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide mx-auto">
                     <p class="text-xs text-balance">
                       {image.imageCaption}
                       <span class="italic ml-1 whitespace-nowrap">
@@ -125,7 +169,7 @@ const { set } = Astro.props;
           set.images.map((thumb: any, index: number) => (
             <div
               data-index={index}
-              class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
+              class="thumb-link flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity cursor-pointer [&.is-active]:opacity-100"
             >
               <img
                 src={transformHygraphImage(thumb.url, 96)}
@@ -140,17 +184,17 @@ const { set } = Astro.props;
         }
       </div>
     </div>
-
-    <style>
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
   </div>
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </Main>
 
 <script is:inline>
@@ -161,23 +205,19 @@ const { set } = Astro.props;
     document.querySelectorAll(".gallery-item").forEach((el) => {
       const idx = el.getAttribute("data-image-index");
       const isActive = idx === activeIndex;
+      el.classList.toggle("is-active", isActive);
 
       if (isActive) {
         const img = el.querySelector("img");
         if (img && (img.src.includes("data:image") || !img.src)) {
           img.src = img.getAttribute("data-src");
         }
-        el.style.opacity = "1";
-        el.style.pointerEvents = "auto";
-      } else {
-        el.style.opacity = "0";
-        el.style.pointerEvents = "none";
       }
     });
 
     document.querySelectorAll(".thumb-link").forEach((el, i) => {
       const isActive = i.toString() === activeIndex;
-      el.style.opacity = isActive ? "1" : "0.5";
+      el.classList.toggle("is-active", isActive);
       if (isActive) {
         el.scrollIntoView({
           behavior: "smooth",
@@ -193,6 +233,41 @@ const { set } = Astro.props;
   window.addEventListener("hashchange", updateGallery);
   // Also run on load to be safe
   window.addEventListener("load", updateGallery);
+
+  // Summary Toggle Logic
+  function toggleSummary() {
+    const panel = document.getElementById("summary-panel");
+    const isOpen = panel.classList.toggle("is-active");
+
+    document.querySelectorAll(".summary-toggle").forEach((el) => {
+      el.classList.toggle("is-active", isOpen);
+    });
+  }
+
+  // Use event delegation for reliability
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+
+    // Toggle if clicking a toggle button
+    if (target.closest(".summary-toggle")) {
+      toggleSummary();
+      return;
+    }
+
+    // Close if clicking the summary panel's empty background
+    const panel = document.getElementById("summary-panel");
+    if (panel && panel.classList.contains("is-active") && target === panel) {
+      toggleSummary();
+    }
+  });
+
+  // Close on escape
+  window.addEventListener("keydown", (e) => {
+    const panel = document.getElementById("summary-panel");
+    if (e.key === "Escape" && panel && panel.classList.contains("is-active")) {
+      toggleSummary();
+    }
+  });
 
   // Drag to scroll for desktop
   const slider = document.querySelector(".draggable-scrollbar");

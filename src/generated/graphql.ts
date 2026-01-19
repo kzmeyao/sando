@@ -2781,6 +2781,7 @@ export type Set = Entity & Node & {
   /** User that created this document */
   createdBy?: Maybe<User>;
   date: Scalars['Date']['output'];
+  description?: Maybe<Scalars['String']['output']>;
   displayTitle: Scalars['String']['output'];
   /** Get the document in other stages */
   documentInStages: Array<Set>;
@@ -2889,6 +2890,7 @@ export type SetConnection = {
 export type SetCreateInput = {
   createdAt?: InputMaybe<Scalars['DateTime']['input']>;
   date: Scalars['Date']['input'];
+  description?: InputMaybe<Scalars['String']['input']>;
   displayTitle: Scalars['String']['input'];
   images: AssetCreateManyInlineInput;
   leadingImage: AssetCreateOneInlineInput;
@@ -2961,6 +2963,25 @@ export type SetManyWhereInput = {
   date_not?: InputMaybe<Scalars['Date']['input']>;
   /** All values that are not contained in given list. */
   date_not_in?: InputMaybe<Array<InputMaybe<Scalars['Date']['input']>>>;
+  description?: InputMaybe<Scalars['String']['input']>;
+  /** All values containing the given string. */
+  description_contains?: InputMaybe<Scalars['String']['input']>;
+  /** All values ending with the given string. */
+  description_ends_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values that are contained in given list. */
+  description_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Any other value that exists and is not equal to the given value. */
+  description_not?: InputMaybe<Scalars['String']['input']>;
+  /** All values not containing the given string. */
+  description_not_contains?: InputMaybe<Scalars['String']['input']>;
+  /** All values not ending with the given string */
+  description_not_ends_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values that are not contained in given list. */
+  description_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** All values not starting with the given string. */
+  description_not_starts_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values starting with the given string. */
+  description_starts_with?: InputMaybe<Scalars['String']['input']>;
   displayTitle?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   displayTitle_contains?: InputMaybe<Scalars['String']['input']>;
@@ -3086,6 +3107,8 @@ export enum SetOrderByInput {
   CreatedAtDesc = 'createdAt_DESC',
   DateAsc = 'date_ASC',
   DateDesc = 'date_DESC',
+  DescriptionAsc = 'description_ASC',
+  DescriptionDesc = 'description_DESC',
   DisplayTitleAsc = 'displayTitle_ASC',
   DisplayTitleDesc = 'displayTitle_DESC',
   IdAsc = 'id_ASC',
@@ -3102,6 +3125,7 @@ export enum SetOrderByInput {
 
 export type SetUpdateInput = {
   date?: InputMaybe<Scalars['Date']['input']>;
+  description?: InputMaybe<Scalars['String']['input']>;
   displayTitle?: InputMaybe<Scalars['String']['input']>;
   images?: InputMaybe<AssetUpdateManyInlineInput>;
   leadingImage?: InputMaybe<AssetUpdateOneInlineInput>;
@@ -3128,6 +3152,7 @@ export type SetUpdateManyInlineInput = {
 
 export type SetUpdateManyInput = {
   date?: InputMaybe<Scalars['Date']['input']>;
+  description?: InputMaybe<Scalars['String']['input']>;
   displayTitle?: InputMaybe<Scalars['String']['input']>;
   locationTaxonomy?: InputMaybe<Scalars['String']['input']>;
 };
@@ -3222,6 +3247,25 @@ export type SetWhereInput = {
   date_not?: InputMaybe<Scalars['Date']['input']>;
   /** All values that are not contained in given list. */
   date_not_in?: InputMaybe<Array<InputMaybe<Scalars['Date']['input']>>>;
+  description?: InputMaybe<Scalars['String']['input']>;
+  /** All values containing the given string. */
+  description_contains?: InputMaybe<Scalars['String']['input']>;
+  /** All values ending with the given string. */
+  description_ends_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values that are contained in given list. */
+  description_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Any other value that exists and is not equal to the given value. */
+  description_not?: InputMaybe<Scalars['String']['input']>;
+  /** All values not containing the given string. */
+  description_not_contains?: InputMaybe<Scalars['String']['input']>;
+  /** All values not ending with the given string */
+  description_not_ends_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values that are not contained in given list. */
+  description_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** All values not starting with the given string. */
+  description_not_starts_with?: InputMaybe<Scalars['String']['input']>;
+  /** All values starting with the given string. */
+  description_starts_with?: InputMaybe<Scalars['String']['input']>;
   displayTitle?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   displayTitle_contains?: InputMaybe<Scalars['String']['input']>;
