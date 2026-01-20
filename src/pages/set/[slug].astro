@@ -66,10 +66,10 @@ const { set } = Astro.props;
       class="fixed top-0 left-0 right-0 bg-white z-[100] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-events-none overflow-y-auto -translate-y-full shadow-none [&.is-active]:translate-y-0 [&.is-active]:pointer-events-auto [&.is-active]:shadow-2xl"
     >
       <div
-        class="flex flex-col gap-6 md:gap-8 summary-panel-content max-w-128 mx-auto pt-14 md:pt-16 pb-6 md:pb-8 px-4 font-serif text-neutral-500 leading-relaxed text-xs opacity-0 transition-opacity duration-500 [.is-active_&]:opacity-100 [.is-active_&]:delay-300"
+        class="flex flex-col gap-6 md:gap-8 summary-panel-content max-w-128 mx-auto pt-14 md:pt-16 pb-6 md:pb-8 px-4 font-serif text-neutral-500 leading-relaxed text-xs lg:text-sm opacity-0 transition-opacity duration-500 [.is-active_&]:opacity-100 [.is-active_&]:delay-300"
       >
         <p>{set.description}</p>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 text-xs">
           <div class="border-t border-neutral-100 text-neutral-300"></div>
           <div class="flex flex-row justify-between">
             <p>
@@ -111,7 +111,7 @@ const { set } = Astro.props;
                 />
                 {image.imageCaption && (
                   <figcaption class="flex-shrink-0 py-4 text-center text-sm text-neutral-600 font-serif max-w-128 tracking-wide mx-auto">
-                    <p class="text-xs text-balance">
+                    <p class="text-xs lg:text-sm text-balance">
                       {image.imageCaption}
                       <span class="italic ml-1 whitespace-nowrap">
                         {`(${index + 1} of ${set.images.length})`}
